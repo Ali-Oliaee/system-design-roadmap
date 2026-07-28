@@ -399,12 +399,12 @@
 [ ] How to Design Secure Web API Access
 [ ] What Does an API Gateway Do?
 [ ] What is gRPC?
-[ ] Top 12 Tips for API Security
+[x] Top 12 Tips for API Security ::  HTTPS, SSL, TLS, OAuth, triple A, Authentication, Authorization, Accounting,  OpenID Connect (OIDC) | https://bytebytego.com/guides/top-12-tips-for-api-security| https://t.me/daily_tech_stuff/43 | https://t.me/daily_tech_stuff/43
 [ ] REST API vs. GraphQL
-[ ] What is GraphQL?
-[ ] REST API Cheatsheet
+[x] What is GraphQL? :: Graphql | https://bytebytego.com/guides/what-is-graphql | https://t.me/daily_tech_stuff/37
+[x] REST API Cheatsheet :: Roy Fielding, Stateless, Cacheable, Layered System, Code-On-Demand, Uniform Interface, Resource Identification, Manipulation Through Representations, Self-descriptive Messages, HATEOAS | https://bytebytego.com/guides/rest-api-cheatsheet | https://t.me/daily_tech_stuff/35
 [ ] The Ultimate API Learning Roadmap
-[x] The Evolving Landscape of API Protocols in 2023 :: graphql | https://bytebytego.com/guides/the-evolving-landscape-of-api-protocols-in-2023/ | test.com
+[x] The Evolving Landscape of API Protocols in 2023 :: Graphql, Rest api, Webhook, Soap, WebSocket, GRPC, MQTT, AMPQ, SSE, EDA, Idempotency, soft/hard delete, full duplex, frame, message, ws, ping/pong, Exponential backoff, polling, coupling | https://bytebytego.com/guides/the-evolving-landscape-of-api-protocols-in-2023/ | https://t.me/daily_tech_stuff/6
 
 
 ## AI and Machine Learning | brain
