@@ -1,0 +1,850 @@
+; ============================================================================
+;  SYSTEM DESIGN ROADMAP — source of truth
+;  Edit this file, then reload the page (or press R).
+;
+;  SYNTAX
+;    # Group name                     -> a top-level group heading
+;    ## Category name | icon | concept -> a category card
+;         icon and "concept" are optional. "concept" renders the
+;         one-column glossary layout and marks the card searchable as a concept.
+;    [x] Title :: description | https://link
+;         [x] = done, [ ] = not done (a missing marker also means not done)
+;         " :: " adds a description   (optional)
+;         " | "  adds a resource link (optional, must be last)
+;    ; anything after a leading semicolon is a comment
+;
+;  ICONS: cpu shield infinity cog cloud code tool layers card zap chat db
+;         brain building globe monitor server phone book network lock gauge
+;         refresh eye flask git
+; ============================================================================
+
+
+# Core Roadmap
+
+## Computer Fundamentals | cpu
+[ ] Paging vs Segmentation
+[ ] IPv4 vs. IPv6: Differences
+[ ] Top 4 Most Popular Use Cases for UDP
+[ ] How Does the Domain Name System (DNS) Lookup Work?
+[ ] DNS Record Types You Should Know
+[ ] TCP vs UDP for Online Gaming
+[ ] What is a Deadlock?
+[ ] Process vs Thread: Key Differences
+[ ] OSI Model Explained
+[ ] Visualizing a SQL Query
+[ ] Explaining 8 Popular Network Protocols in 1 Diagram
+[ ] What is the Best Way to Learn SQL?
+
+## Security | shield
+[ ] What is DevSecOps?
+[ ] Encoding vs Encryption vs Tokenization
+[ ] Storing Passwords Safely: A Comprehensive Guide
+[ ] Designing a Permission System
+[ ] How Password Managers Work
+[ ] Is PassKey Shaping a Passwordless Future?
+[ ] Firewall Explained to Kids and Adults
+[ ] Cookies vs Sessions
+[ ] HTTP Cookies Explained With a Simple Diagram
+[ ] Token, Cookie, Session
+[ ] Sessions, Tokens, JWT, SSO, and OAuth Explained
+[ ] How to Design a Secure System
+[ ] Top 6 Firewall Use Cases
+[ ] Top 4 Authentication Mechanisms
+[ ] How Digital Signatures Work
+[ ] How do we manage sensitive data in a system?
+[ ] HTTPS, SSL Handshake, and Data Encryption Explained
+[ ] Symmetric vs Asymmetric Encryption
+[ ] Session-based Authentication vs. JWT
+[ ] JWT 101: Key to Stateless Authentication
+[ ] Is HTTPS Safe?
+[ ] Cybersecurity 101
+[ ] Cookies vs Sessions vs JWT vs PASETO
+[ ] How does SSH work?
+[ ] How Does a VPN Work?
+[ ] How Google Authenticator Works
+[ ] Types of VPNs
+[ ] What is a Cookie?
+[ ] OAuth 2.0 Flows
+[ ] Top Network Security Cheatsheet
+[ ] What is SSO (Single Sign-On)?
+[ ] How does HTTPS work?
+[ ] Session, Cookie, JWT, Token, SSO, and OAuth 2.0 Explained
+[ ] Explaining JSON Web Token (JWT) to a 10 Year Old Kid
+[ ] OAuth 2.0 Explained With Simple Terms
+
+## DevOps and CI/CD | infinity
+[ ] Top 10 Kubernetes Design Patterns
+[ ] Some DevOps Books I Find Enlightening
+[ ] Paradigm Shift: Developer to Tester Ratio
+[ ] Push vs Pull in Metrics Collection Systems
+[ ] Choose the Right Database for Metric Collection
+[ ] Top 4 Kubernetes Service Types
+[ ] Cloud Native Anti-Patterns
+[ ] Kubernetes Tools Stack Wheel
+[ ] Kubernetes Tools Ecosystem
+[ ] Kubernetes Periodic Table
+[ ] 9 Docker Best Practices You Must Know
+[ ] Netflix Tech Stack - CI/CD Pipeline
+[ ] Top 8 Must-Know Docker Concepts
+[ ] CI/CD Simplified Visual Guide
+[ ] Top 5 Most-Used Deployment Strategies
+[ ] Kubernetes Command Cheatsheet
+[ ] Kubernetes Deployment Strategies
+[ ] How does Terraform turn Code into Cloud?
+[ ] DevOps vs. SRE vs. Platform Engineering
+[ ] Deployment Strategies
+[ ] Logging, Tracing, and Metrics
+[ ] Log Parsing Cheat Sheet
+[ ] DevOps vs NoOps: What is the Difference?
+[ ] Why is Nginx so Popular?
+[ ] What is Kubernetes (k8s)?
+[ ] How does Docker work?
+[ ] CI/CD Pipeline Explained in Simple Terms
+
+## How it Works? | cog
+[ ] How do AirTags work?
+[ ] How is Email Delivered?
+[ ] Design Gmail
+[ ] How Google/Apple Maps Blur License Plates and Faces
+[ ] Quadtree
+[ ] Build a Simple Chat Application with Redis
+[ ] Live Streaming Explained
+[ ] How to Design a System for Internationalization
+[ ] How to Design Google Docs
+[ ] Payment System
+[ ] Experiment Platform Architecture
+[ ] Design Google Maps
+[ ] Designing a Chat Application
+[ ] Design Stock Exchange
+[ ] How are Notifications Pushed to Our Phones or PCs?
+[ ] What Happens When You Upload a File to Amazon S3?
+[ ] Proximity Service
+[ ] How Do Search Engines Work?
+
+## Cloud & Distributed Systems | cloud
+[ ] How AWS Lambda Works Behind the Scenes
+[ ] 8 Must-Know Scalability Strategies
+[ ] System Design Cheat Sheet
+[ ] Cloud Disaster Recovery Strategies
+[ ] Vertical vs Horizontal Partitioning
+[ ] Top 9 Architectural Patterns for Data and Communication Flow
+[ ] Top 6 Cases to Apply Idempotency
+[ ] Top 5 Trade-offs in System Designs
+[ ] How to Detect Node Failures in Distributed Systems
+[ ] Why Meta, Google, and Amazon Stop Using Leap Seconds
+[ ] The Fantastic Four of System Design
+[ ] What makes AWS Lambda so fast?
+[ ] Scaling Websites for Millions of Users
+[ ] Resiliency Patterns
+[ ] 25 Papers That Completely Transformed the Computer World
+[ ] A Crash Course on Architectural Scalability
+[ ] Must Know System Design Building Blocks
+[ ] Monorepo vs. Microrepo: Which is Best?
+[ ] How to Handle Web Request Errors
+[ ] A Cheat Sheet for Designing Fault-Tolerant Systems
+[ ] Typical AWS Network Architecture
+[ ] Unique ID Generator
+[ ] Amazon's Build System: Brazil
+[ ] Infrastructure as Code Landscape Cheatsheet
+[ ] How do we manage configurations in a system?
+[ ] How do we incorporate Event Sourcing into systems?
+[ ] The 12-Factor App
+[ ] Explaining 5 Unique ID Generators
+[ ] Retry Strategies for System Failures
+[ ] Cloud Monitoring Cheat Sheet
+[ ] Why Use a Distributed Lock?
+[ ] Top 6 Cloud Messaging Patterns
+[ ] Most Important AWS Services to Learn
+[ ] How to Transform a System to be Cloud Native
+[ ] Hidden Costs of the Cloud
+[ ] 2 Decades of Cloud Evolution
+[ ] Cloud Cost Reduction Techniques
+[ ] Top 7 Most-Used Distributed System Patterns
+[ ] Cloud Load Balancer Cheat Sheet
+[ ] AWS Services Evolution
+[ ] Azure Services Cheat Sheet
+[ ] A cheat sheet for system designs
+[ ] CAP, BASE, SOLID, KISS, What do these acronyms mean?
+[ ] System Design Blueprint: The Ultimate Guide
+[ ] How to Design for High Availability
+[ ] What is Cloud Native?
+[ ] Cloud Comparison Cheat Sheet
+[ ] Big Data Pipeline Cheatsheet for AWS, Azure, and Google Cloud
+[ ] AWS Services Cheat Sheet
+
+## Software Development | code
+[ ] Top 6 Most Commonly Used Server Types
+[ ] How does Garbage Collection work?
+[ ] A Roadmap for Full-Stack Development
+[ ] What Are the Greenest Programming Languages?
+[ ] Java Collection Hierarchy
+[ ] Running C, C++, or Rust in a Web Browser
+[ ] Top 8 C++ Use Cases
+[ ] Top 6 Multithreading Design Patterns You Must Know
+[ ] Data Transmission Between Applications
+[ ] Blocking vs Non-Blocking Queue
+[ ] Big Endian vs Little Endian
+[ ] How to Avoid Crawling Duplicate URLs at Google Scale?
+[ ] 10 Books for Software Developers
+[ ] Top 8 Standards Every Developer Should Know
+[ ] How Do C++, Java, Python Work?
+[ ] 10 Key Data Structures We Use Every Day
+[ ] A Brief History of Programming Languages
+[ ] Top 6 Load Balancing Algorithms
+[ ] The Fundamental Pillars of Object-Oriented Programming
+[ ] Top 8 Programming Paradigms
+[ ] Algorithms for System Design Interviews
+[ ] Imperative vs Functional vs Object-oriented Programming
+[ ] Explaining 9 Types of API Testing
+[ ] The 9 Algorithms That Dominate Our World
+[ ] Concurrency vs Parallelism
+[ ] Linux Boot Process Explained
+[ ] 11 Steps to Go From Junior to Senior Developer
+[ ] 10 Good Coding Principles to Improve Code Quality
+
+## DevTools & Productivity | tool
+[ ] Git Commands Cheat Sheet
+[ ] How does Git Work?
+[ ] JSON Crack: Visualize JSON Files
+[ ] Git vs GitHub
+[ ] Git Merge vs. Git Rebase
+[ ] 30 Useful AI Apps That Can Help You in 2025
+[ ] Diagram as Code
+[ ] Top 9 Causes of 100% CPU Usage
+[ ] Top 6 Tools to Turn Code into Beautiful Diagrams
+[ ] Tools for Shipping Code to Production
+[ ] Making Sense of Search Engine Optimization
+[ ] Most Used Linux Commands Map
+[ ] Linux File Permissions Illustrated
+[ ] 5 Important Components of Linux
+[ ] 15 Open-Source Projects That Changed the World
+[ ] 20 Popular Open Source Projects Started by Big Companies
+[ ] Linux File System Explained
+[ ] Life is Short, Use Dev Tools
+[ ] How Git Works
+[ ] How do Companies Ship Code to Production?
+
+## Software Architecture | layers
+[ ] Inter-Process Communication on Linux
+[ ] Orchestration vs. Choreography in Microservices
+[ ] UML Class Diagrams Cheatsheet
+[ ] Amazon Prime Video Monitoring Service
+[ ] Is Microservice Architecture the Silver Bullet?
+[ ] Database Middleware
+[ ] 9 Best Practices for Developing Microservices
+[ ] Design Patterns Cheat Sheet
+[ ] Key Terms in Domain-Driven Design
+[ ] 8 Key OOP Concepts Every Developer Should Know
+[ ] 18 Key Design Patterns Every Developer Should Know
+[ ] 10 System Design Tradeoffs You Cannot Ignore
+[ ] 9 Essential Components of a Production Microservice Application
+[ ] 9 Best Practices for Building Microservices
+[ ] 8 Key Concepts in Domain-Driven Design
+[ ] 8 Common System Design Problems and Solutions
+[ ] 6 Software Architectural Patterns You Must Know
+[ ] How To Release A Mobile App
+[ ] How Do Computer Programs Run?
+[ ] MVC, MVP, MVVM, VIPER Patterns
+[ ] The Ultimate Software Architect Knowledge Map
+[ ] Typical Microservice Architecture
+[ ] Top 5 Software Architectural Patterns
+
+## Payment and Fintech | card
+[ ] E-commerce Workflow
+[ ] Digital Wallets: Banks vs. Blockchain
+[ ] What is a Stop-Loss Order and How Does it Work?
+[ ] What is Web 3.0? Why does it not have ads?
+[ ] SWIFT Payment Messaging System
+[ ] 4 Ways of QR Code Payment
+[ ] Handling Hotspot Accounts
+[ ] Reconciliation in Payment
+[ ] Unified Payments Interface (UPI)
+[ ] How Scan to Pay Works
+[ ] Money Movement
+[ ] Payment System
+[ ] How to Learn Payments
+[ ] The Payments Ecosystem
+[ ] Foreign Exchange Payments
+[ ] How to Avoid Double Payment
+[ ] How do Apple Pay and Google Pay work?
+[ ] How VISA Works When Swiping a Credit Card
+[ ] How ACH Payment Works
+[ ] How does Visa make money?
+
+## Caching & Performance | zap
+[ ] What is ELK Stack and Why is it Popular?
+[ ] Why are Content Delivery Networks (CDN) so Popular?
+[ ] How Big Keys Impact Redis Persistence
+[ ] A Beginner's Guide to CDN
+[ ] The Ultimate Redis 101
+[ ] Cache Systems Every Developer Should Know
+[ ] Top 5 Strategies to Reduce Latency
+[ ] Top 5 Caching Strategies
+[ ] Things to Consider When Using Cache
+[ ] Cache Eviction Policies
+[ ] Memcached vs Redis
+[ ] Low Latency Stock Exchange
+[ ] Cache Miss Attack
+[ ] Top 8 Cache Eviction Strategies
+[ ] How Can Cache Systems Go Wrong?
+[ ] Top 6 Elasticsearch Use Cases
+[ ] How Does CDN Work?
+[ ] How Redis Architecture Evolved
+[ ] How Does Redis Persist Data?
+[ ] How can Redis be used?
+[ ] Why is Redis so Fast?
+[ ] How to Learn Elasticsearch
+[ ] What is CDN (Content Delivery Network)?
+[ ] Frontend Performance Optimization
+[ ] Which Latency Numbers Should You Know?
+[ ] Top Caching Strategies
+[ ] Top 9 Website Performance Metrics You Cannot Ignore
+[ ] Top 5 Common Ways to Improve API Performance
+[ ] Learn Cache
+
+## Database and Storage | db
+[ ] Read Replica Pattern
+[ ] Pessimistic vs Optimistic Locking
+[ ] How to Upload a Large File to S3
+[ ] Types of Message Queues
+[ ] Smooth Data Migration with Avro
+[ ] The Ultimate Kafka 101 You Cannot Miss
+[ ] Database Isolation Levels
+[ ] Top 6 Data Management Patterns
+[ ] Why is Kafka Fast?
+[ ] Explaining the 4 Most Commonly Used Types of Queues
+[ ] Time Series DB (TSDB) in 20 Lines
+[ ] Differences in Event Sourcing System Design
+[ ] Erasure Coding
+[ ] Delivery Semantics
+[ ] Change Data Capture: Key to Leverage Real-time Data
+[ ] Can Kafka Lose Messages?
+[ ] Storage Systems Overview
+[ ] Explain the Top 6 Use Cases of Object Stores
+[ ] Top Eventual Consistency Patterns You Must Know
+[ ] B-Tree vs. LSM-Tree
+[ ] How to Decide Which Type of Database to Use
+[ ] Cloud Database Cheat Sheet
+[ ] Types of Memory
+[ ] Understanding Database Types
+[ ] Top 4 Data Sharding Algorithms Explained
+[ ] Top 6 Database Models
+[ ] SQL Statement Execution in Database
+[ ] What is Serverless DB?
+[ ] Why PostgreSQL is the Most Loved Database
+[ ] Top 10 Most Popular Open-Source Databases
+[ ] Is PostgreSQL Eating the Database World?
+[ ] How to Choose the Right Database
+[ ] iQIYI Database Selection Trees
+[ ] 8 Data Structures That Power Your Databases
+[ ] How to Implement Read Replica Pattern
+[ ] A Crash Course on Database Sharding
+[ ] IBM MQ to RabbitMQ to Kafka to Pulsar: Message Queue Evolution
+[ ] CAP Theorem: One of the Most Misunderstood Terms
+[ ] Consistent Hashing Explained
+[ ] Types of Databases
+[ ] Key Concepts to Understand Database Sharding
+[ ] Database Locks Explained
+[ ] A Cheatsheet on Database Performance
+[ ] What does ACID mean?
+[ ] Top 5 Kafka Use Cases
+[ ] Types of Memory and Storage
+[ ] 7 Must-Know Strategies to Scale Your Database
+
+## API and Web Development | globe
+[ ] Short/long polling, SSE, WebSocket
+[ ] Load Balancer Realistic Use Cases
+[ ] 5 HTTP Status Codes That Should Never Have Been Created
+[ ] How does gRPC work?
+[ ] How NAT Enabled the Internet
+[ ] Important Things About HTTP Headers
+[ ] Internet Traffic Routing Policies
+[ ] How Browsers Render Web Pages
+[ ] What makes HTTP2 faster than HTTP1?
+[ ] What is CSS (Cascading Style Sheets)?
+[ ] Key Use Cases for Load Balancers
+[ ] 18 Common Ports Worth Knowing
+[ ] What are the differences between WAN, LAN, PAN and MAN?
+[ ] How does Javascript Work?
+[ ] 8 Tips for Efficient API Design
+[ ] Reverse Proxy vs. API Gateway vs. Load Balancer
+[ ] How does REST API work?
+[ ] Load Balancer vs. API Gateway
+[ ] How GraphQL Works at LinkedIn
+[ ] GraphQL Adoption Patterns
+[ ] A cheat sheet for API designs
+[ ] API Gateway 101
+[ ] Top 3 API Gateway Use Cases
+[ ] What do version numbers mean?
+[ ] Do you know all the components of a URL?
+[ ] Unicast vs Broadcast vs Multicast vs Anycast
+[ ] 10 Essential Components of a Production Web Application
+[ ] URL, URI, URN - Differences Explained
+[ ] API vs SDK
+[ ] A Cheatsheet to Build Secure APIs
+[ ] HTTP Status Codes You Should Know
+[ ] SOAP vs REST vs GraphQL vs RPC
+[ ] A Cheatsheet on Comparing API Architectural Styles
+[ ] Top 9 HTTP Request Methods
+[ ] What is a Load Balancer?
+[ ] Proxy vs Reverse Proxy
+[ ] HTTP/1 to HTTP/2 to HTTP/3
+[ ] Polling vs Webhooks
+[ ] How do we Perform Pagination in API Design?
+[ ] How to Design Effective and Safe APIs
+[ ] How to Design Secure Web API Access
+[ ] What Does an API Gateway Do?
+[ ] What is gRPC?
+[ ] Top 12 Tips for API Security
+[ ] REST API vs. GraphQL
+[ ] What is GraphQL?
+[ ] REST API Cheatsheet
+[ ] The Ultimate API Learning Roadmap
+[ ] The Evolving Landscape of API Protocols in 2023
+
+## AI and Machine Learning | brain
+[ ] 5 Functions to Merge Data with Pandas
+[ ] Key Data Terms
+[ ] ChatGPT Timeline
+[ ] DeepSeek 1-Pager
+[ ] The Open Source AI Stack
+[ ] What is an AI Agent?
+[ ] Data Pipelines Overview
+[ ] How does ChatGPT work?
+[ ] RAG (Retrieval-Augmented Generation) Architecture
+[ ] Vector Databases and Embeddings Explained
+[ ] Prompt Engineering vs Fine-Tuning vs RAG
+[ ] How to Serve an LLM at Scale (batching, KV cache, quantization)
+[ ] MLOps: From Notebook to Production
+[ ] Feature Stores: Why and When
+[ ] Model Context Protocol (MCP) Explained
+[ ] Guardrails, Evals, and LLM Observability
+
+## Real World Case Studies | building
+[ ] 100X Postgres Scaling at Figma
+[ ] API of APIs - App Integrations
+[ ] The one-line change that reduced clone times by 99% at Pinterest
+[ ] Is Telegram Secure?
+[ ] Fixing Bugs Automatically at Meta Scale
+[ ] How Levelsfyi Scaled to Millions of Users with Google Sheets
+[ ] McDonald's Event-Driven Architecture
+[ ] Uber Tech Stack - CI/CD
+[ ] How to Design Stack Overflow
+[ ] Twitter 1.0 Tech Stack
+[ ] How does Twitter recommend the "For You" Timeline in 1.5 seconds?
+[ ] How YouTube Handles Massive Video Uploads
+[ ] How Does a Typical Push Notification System Work?
+[ ] 4 Ways Netflix Uses Caching
+[ ] Netflix Tech Stack - Databases
+[ ] 0 to 1.5 Billion Guests: Airbnb's Architectural Evolution
+[ ] How Netflix Scales Push Messaging
+[ ] Netflix's Overall Architecture
+[ ] How TikTok Manages a 200K File Frontend MonoRepo
+[ ] How Netflix Really Uses Java
+[ ] Evolution of Airbnb's Microservice Architecture
+[ ] Reddit's Core Architecture
+[ ] 10 Principles for Building Resilient Payment Systems
+[ ] What is the Journey of a Slack Message?
+[ ] Top 9 Engineering Blogs
+[ ] Uber Tech Stack
+[ ] Evolution of the Netflix API Architecture
+[ ] How Discord Stores Trillions of Messages
+[ ] Twitter Architecture 2022 vs. 2012
+[ ] Evolution of Uber's API Layer
+[ ] Netflix's Tech Stack
+
+## Technical Interviews | flask
+[ ] How do SQL Joins Work?
+[ ] What Happens When You Type google.com Into a Browser?
+[ ] What Happens When You Type a URL Into Your Browser?
+[ ] How to Ace System Design Interviews
+[ ] Recommended Materials for Technical Interviews
+[ ] The 4-Step Framework: Requirements, Estimation, High-Level Design, Deep Dive
+[ ] Back-of-the-Envelope Estimation: QPS, Storage, Bandwidth
+[ ] How to Draw a System Design Diagram Under Pressure
+[ ] Behavioral Interview: STAR Stories for Engineers
+[ ] Coding Interview Patterns: Two Pointers, Sliding Window, BFS/DFS, DP
+
+# Engineering Tracks
+
+## Frontend Engineering | monitor
+[ ] How the Browser Renders a Page: Parse, Style, Layout, Paint, Composite
+[ ] The Critical Rendering Path and Render-Blocking Resources
+[ ] Reflow vs Repaint vs Composite: What Actually Costs Frames
+[ ] The JavaScript Event Loop: Call Stack, Task Queue, Microtasks
+[ ] Core Web Vitals: LCP, INP, CLS (and how to fix each)
+[ ] CSR vs SSR vs SSG vs ISR vs Streaming SSR: Choosing a Rendering Strategy
+[ ] Hydration, Partial Hydration, Islands, and React Server Components
+[ ] Code Splitting, Lazy Loading, and Route-Level Chunking
+[ ] Tree Shaking, Dead Code Elimination, and Bundle Analysis
+[ ] Modern Build Tooling: Vite, esbuild, SWC, Turbopack, Webpack
+[ ] State Management: Local, Global, Server State, and URL State
+[ ] Data Fetching Patterns: SWR, TanStack Query, Caching and Invalidation
+[ ] Optimistic UI Updates and Rollback on Failure
+[ ] Forms: Controlled vs Uncontrolled, Validation, and Accessibility
+[ ] CSS Architecture: BEM, Utility-First, CSS Modules, CSS-in-JS
+[ ] Modern CSS: Grid, Flexbox, Container Queries, :has(), Cascade Layers
+[ ] Design Tokens and Theming (light/dark, brand modes)
+[ ] Responsive Design: Mobile-First, Fluid Type, Breakpoint Strategy
+[ ] Web Accessibility (WCAG 2.2): Semantics, ARIA, Focus Management
+[ ] Keyboard Navigation and Screen Reader Testing
+[ ] Image Optimization: WebP/AVIF, srcset, sizes, lazy loading, CLS
+[ ] Font Loading Strategies: font-display, preload, subsetting, FOUT/FOIT
+[ ] Virtualized Lists and Rendering 100k Rows Without Jank
+[ ] Debounce vs Throttle vs requestAnimationFrame
+[ ] Web Workers, SharedArrayBuffer, and Offloading Heavy Work
+[ ] Service Workers, PWAs, and Offline-First Caching
+[ ] Client-Side Storage: localStorage, sessionStorage, IndexedDB, Cookies
+[ ] Auth on the Frontend: Cookie vs Token Storage, XSS and CSRF Risks
+[ ] Content Security Policy, SRI, and Frontend Hardening
+[ ] Real-Time in the Browser: WebSocket, SSE, WebRTC, WebTransport
+[ ] Micro-Frontends: Module Federation, Trade-offs, When Not To
+[ ] Monorepos for Frontend: Turborepo, Nx, pnpm Workspaces
+[ ] Component Libraries and Design Systems in Practice
+[ ] Frontend Testing Pyramid: Unit, Component, Integration, E2E
+[ ] Visual Regression and Accessibility Testing in CI
+[ ] Error Tracking and RUM: Sentry, Web Vitals in Production
+[ ] Internationalization and Localization: RTL, Plurals, Number/Date Formats
+[ ] SEO for SPAs: Metadata, Structured Data, Sitemaps, Canonicals
+[ ] Animation Performance: transform/opacity, FLIP, prefers-reduced-motion
+[ ] Frontend Security: XSS Sinks, DOM Clobbering, Dependency Risk
+[ ] Feature Flags and A/B Testing on the Client
+[ ] TypeScript for Large Frontends: Strictness, Generics, Type Boundaries
+[ ] Edge Rendering and CDN-Level Personalization
+[ ] Frontend System Design Interview: Design a Feed, Chat, or Autocomplete
+
+## Backend Engineering | server
+[ ] Anatomy of an HTTP Request Through a Backend Stack
+[ ] Layered Architecture: Controller, Service, Repository, Domain
+[ ] Hexagonal / Clean Architecture and Dependency Inversion
+[ ] Domain-Driven Design: Aggregates, Bounded Contexts, Ubiquitous Language
+[ ] REST Resource Modeling and URL Design
+[ ] API Versioning Strategies: URI, Header, Media Type
+[ ] Pagination: Offset vs Cursor vs Keyset (and why offset breaks)
+[ ] Idempotency Keys and Safe Retries for Write APIs
+[ ] Rate Limiting Algorithms: Token Bucket, Leaky Bucket, Sliding Window
+[ ] Input Validation, Serialization, and Schema-First APIs (OpenAPI)
+[ ] Error Contracts: Status Codes, Problem Details, Error Envelopes
+[ ] AuthN vs AuthZ: Sessions, JWT, OAuth 2.1, OIDC, mTLS
+[ ] RBAC vs ABAC vs ReBAC: Designing a Permission Model
+[ ] Multi-Tenancy: Shared Schema, Schema-per-Tenant, DB-per-Tenant
+[ ] Database Modeling: Normalization, Denormalization, and Access Patterns
+[ ] Indexing Deep Dive: B+Tree, Composite, Covering, Partial Indexes
+[ ] Query Plans: Reading EXPLAIN and Killing Slow Queries
+[ ] Transactions, Isolation Levels, and Anomalies (dirty/phantom/write skew)
+[ ] Optimistic vs Pessimistic Locking in Application Code
+[ ] Connection Pooling and the N+1 Query Problem
+[ ] Migrations Without Downtime: Expand/Contract Pattern
+[ ] Caching Layers: Local, Distributed, HTTP, and Cache Invalidation
+[ ] Preventing Cache Stampede: Locks, Jitter, Early Refresh
+[ ] Message Queues vs Streams: RabbitMQ, SQS, Kafka, NATS
+[ ] Delivery Semantics: At-Most-Once, At-Least-Once, Effectively-Once
+[ ] Outbox Pattern and Transactional Messaging
+[ ] Saga Pattern: Orchestration vs Choreography, Compensating Actions
+[ ] Event Sourcing and CQRS: When They Pay Off
+[ ] Background Jobs: Scheduling, Retries, DLQs, Poison Messages
+[ ] Cron at Scale: Leader Election and Distributed Schedulers
+[ ] Distributed Locks: Redlock, Fencing Tokens, and Their Pitfalls
+[ ] Resilience Patterns: Timeout, Retry with Jitter, Circuit Breaker, Bulkhead
+[ ] Backpressure and Load Shedding Under Overload
+[ ] Graceful Shutdown, Draining, and Zero-Downtime Deploys
+[ ] Health Checks: Liveness vs Readiness vs Startup Probes
+[ ] Observability: Structured Logs, Metrics, Traces, Correlation IDs
+[ ] SLI, SLO, SLA, and Error Budgets in Practice
+[ ] Feature Flags, Dark Launches, and Progressive Rollout
+[ ] Search Backends: Inverted Index, Elasticsearch/OpenSearch Design
+[ ] File Uploads at Scale: Presigned URLs, Multipart, Virus Scanning
+[ ] Notification Systems: Email, SMS, Push, Webhooks, Fan-Out
+[ ] Webhook Design: Signing, Retries, Replay Protection, Ordering
+[ ] gRPC and Protobuf: Contracts, Streaming, and Backward Compatibility
+[ ] GraphQL Servers: N+1, DataLoader, Persisted Queries, Federation
+[ ] Real-Time Backends: WebSocket Gateways, Presence, Pub/Sub Fan-Out
+[ ] Secrets Management and Key Rotation
+[ ] Security: OWASP Top 10, SQLi, SSRF, IDOR, Mass Assignment
+[ ] PII, Encryption at Rest/Transit, and Data Retention Rules
+[ ] Testing Backends: Unit, Contract, Integration, Load, Chaos
+[ ] Cost-Aware Backend Design: Egress, Storage Tiers, Right-Sizing
+
+## Mobile Engineering | phone
+[ ] Native vs Cross-Platform: iOS/Android vs React Native vs Flutter vs KMP
+[ ] Mobile App Architecture: MVVM, MVI, TCA, Clean Architecture
+[ ] The Activity/ViewController Lifecycle and State Restoration
+[ ] Declarative UI: SwiftUI and Jetpack Compose Mental Models
+[ ] Navigation Patterns: Stacks, Tabs, Deep Links, Universal Links
+[ ] Offline-First Architecture: Local DB as Source of Truth
+[ ] Local Persistence: SQLite, Room, Core Data, Realm, MMKV
+[ ] Sync Engines and Conflict Resolution (LWW, CRDTs, server arbitration)
+[ ] Networking Layers: Retry, Caching, ETags, Request Coalescing
+[ ] Handling Flaky Networks: Timeouts, Backoff, Queued Mutations
+[ ] Push Notifications: APNs, FCM, Tokens, Silent Push, Delivery Limits
+[ ] Background Execution: WorkManager, BGTaskScheduler, Constraints
+[ ] Battery, CPU, and Network Budgets: Measuring Real Cost
+[ ] App Startup Time: Cold, Warm, Hot Start Optimization
+[ ] Memory Management: ARC, Leaks, Retain Cycles, GC Pauses
+[ ] Image Loading and Caching: Coil, Glide, SDWebImage, Downsampling
+[ ] Smooth Lists: Recycling, Diffing, Prefetching, Jank Profiling
+[ ] Animation and Gesture Handling on the UI Thread
+[ ] Mobile Security: Keychain, Keystore, Biometrics, Jailbreak Detection
+[ ] Certificate Pinning and Protecting API Keys on Device
+[ ] Secure Token Storage and Refresh Flows on Mobile
+[ ] Deep Linking, App Links, and Attribution
+[ ] App Size Optimization: App Bundles, App Thinning, R8/ProGuard
+[ ] Release Engineering: Signing, Provisioning, Fastlane, CI for Mobile
+[ ] Staged Rollouts, Phased Release, and Kill Switches
+[ ] Over-the-Air Updates and Their Store Policy Limits
+[ ] Crash Reporting and Symbolication (Crashlytics, Sentry)
+[ ] Mobile Analytics, Funnels, and Event Taxonomy
+[ ] A/B Testing and Remote Config on Mobile
+[ ] Accessibility on Mobile: VoiceOver, TalkBack, Dynamic Type
+[ ] Localization, RTL Layouts, and Locale-Aware Formatting
+[ ] Testing: Unit, Snapshot, UI Automation (XCUITest, Espresso, Maestro)
+[ ] Device Fragmentation, Emulator vs Real Device Farms
+[ ] App Store and Play Store Review: Common Rejection Reasons
+[ ] Privacy: ATT, Permissions, Data Safety Labels, GDPR Consent
+[ ] In-App Purchases, Subscriptions, and Receipt Validation
+[ ] Mobile System Design Interview: Design Instagram Feed / Chat / Uber Client
+
+# Concepts & Glossary
+
+## Networking & Protocols | network | concept
+[ ] OSI vs TCP/IP model :: Layered mental model: physical, link, network, transport, session, presentation, application. Useful for locating a bug at the right layer.
+[ ] Frame :: Layer-2 unit of data (Ethernet/Wi-Fi). Carries a MAC source/destination and a payload; bounded by MTU.
+[ ] Packet :: Layer-3 unit (IP). Has source/destination IP addresses and TTL; routed hop by hop across networks.
+[ ] Segment / Datagram :: Layer-4 unit: TCP calls it a segment, UDP calls it a datagram. Carries ports and sequence info.
+[ ] MTU / MSS :: MTU is the largest frame a link accepts (typically 1500 bytes); MSS is the largest TCP payload that fits without fragmentation.
+[ ] Three-way handshake :: SYN, SYN-ACK, ACK — TCP connection setup. Costs one RTT before any data flows.
+[ ] TCP vs UDP :: TCP: ordered, reliable, congestion-controlled. UDP: fire-and-forget, no ordering — better for real-time media and games.
+[ ] Head-of-line blocking :: One stalled item blocks everything behind it — in TCP streams, in HTTP/1.1 pipelines, and in single-partition queues.
+[ ] QUIC / HTTP-3 :: UDP-based transport with built-in TLS, independent streams (no TCP head-of-line blocking) and 0-RTT resumption.
+[ ] QoS (Quality of Service) :: Traffic prioritization and shaping: classify, mark (DSCP), queue, and police traffic so latency-sensitive flows win under congestion.
+[ ] Jitter :: Variance in packet arrival time. Voice/video use jitter buffers to smooth it; average latency alone hides it.
+[ ] Bandwidth vs throughput vs goodput :: Capacity of the pipe vs what actually flows vs useful application bytes after overhead and retransmits.
+[ ] TTL (time to live) :: Hop counter on an IP packet that prevents routing loops. Also used generically for cache/DNS expiry.
+[ ] NAT :: Network Address Translation maps many private IPs to one public IP — the reason IPv4 survived, and why P2P needs hole punching.
+[ ] CIDR / subnet :: Address block notation (10.0.0.0/16). Defines how many hosts fit and where routing boundaries sit.
+[ ] ARP :: Resolves an IP address to a MAC address on the local link. ARP spoofing is a classic LAN attack.
+[ ] DNS resolution :: Recursive resolver, root, TLD, authoritative servers. A/AAAA, CNAME, MX, TXT, NS, SRV records; TTL controls caching.
+[ ] Anycast :: One IP advertised from many locations; BGP routes each user to the nearest instance. Backbone of CDNs and public DNS.
+[ ] Unicast / Broadcast / Multicast :: One-to-one, one-to-all on a segment, one-to-a-group. Multicast is how IPTV and service discovery scale.
+[ ] Keep-alive :: Reusing an open TCP/HTTP connection across requests to avoid repeated handshakes.
+[ ] Ping / Pong :: Liveness heartbeat frames (WebSocket control frames, or ICMP echo). If a pong does not arrive within the deadline, the peer is presumed dead.
+[ ] TLS handshake :: Negotiates cipher, verifies the certificate chain, and derives session keys. TLS 1.3 does it in one RTT (or zero on resumption).
+[ ] mTLS :: Both client and server present certificates. Standard for service-to-service auth inside a mesh.
+[ ] SNI / ALPN :: TLS extensions: SNI says which hostname you want, ALPN negotiates the protocol (h2, h3) inside the same handshake.
+[ ] Proxy vs reverse proxy :: Forward proxy acts for the client; reverse proxy acts for the server (TLS termination, routing, caching, WAF).
+[ ] Load balancer L4 vs L7 :: L4 balances TCP/UDP flows; L7 understands HTTP and can route by path, header, or cookie.
+[ ] Sticky sessions :: Pinning a client to one backend. Simple but harms elasticity — prefer externalized session state.
+[ ] Congestion control :: Cubic, BBR: algorithms that adapt send rate to observed loss/latency to avoid collapsing the network.
+[ ] Nagle algorithm :: Batches small TCP writes to reduce overhead; adds latency, so interactive protocols disable it (TCP_NODELAY).
+
+## Real-Time & Messaging | chat | concept
+[ ] Short polling :: Client asks "anything new?" on a fixed interval. Simple, wasteful, and always at least one interval stale.
+[ ] Long polling :: Server holds the request open until data arrives or a timeout fires. Near real-time without a persistent protocol.
+[ ] SSE (Server-Sent Events) :: One-way server-to-client stream over plain HTTP with automatic reconnect and event IDs. Ideal for feeds and notifications.
+[ ] WebSocket :: Full-duplex connection upgraded from HTTP. Frames flow both ways with no request/response overhead.
+[ ] WebSocket frame :: The unit a WebSocket sends: opcode (text/binary/close/ping/pong), mask, payload length, payload. Messages can span multiple frames.
+[ ] Message vs frame :: A message is the logical payload the app cares about; frames are the transport chunks it is split into and reassembled from.
+[ ] Ping/pong (heartbeat) :: Periodic control frames that prove the socket is alive and keep intermediaries from idling it out.
+[ ] Reconnect with backoff :: On disconnect, retry after exponentially growing, jittered delays — plus resume-from-last-event-id so nothing is lost.
+[ ] WebRTC :: Peer-to-peer media/data with STUN/TURN for NAT traversal. Lowest latency, highest operational complexity.
+[ ] Webhook :: Server-to-server HTTP callback. The receiver must verify signatures, be idempotent, and respond fast.
+[ ] Polling vs webhooks :: Pull vs push. Polling is simple and controllable; webhooks are efficient but demand a public, reliable, idempotent endpoint.
+[ ] Pub/Sub :: Publishers emit to a topic; subscribers receive independently. Decouples producers from consumers.
+[ ] Message queue vs event stream :: A queue delivers a job to one consumer and deletes it; a stream is a durable, replayable log many consumers read at their own offsets.
+[ ] Command vs event vs message :: A command asks for something to happen; an event states something happened; a message is the envelope carrying either.
+[ ] Consumer group / offset :: Partitions are split across a group; each consumer commits an offset marking how far it has processed.
+[ ] At-most-once / at-least-once / exactly-once :: Delivery guarantees. Exactly-once end-to-end is really at-least-once delivery plus idempotent processing.
+[ ] Ack / nack / visibility timeout :: Acknowledge to remove a message; nack or let the timeout expire to redeliver it to another consumer.
+[ ] DLQ (dead letter queue) :: Where poison messages land after N failed attempts, so one bad payload cannot stall the pipeline.
+[ ] Fan-out :: One event delivered to many consumers or timelines. Fan-out-on-write precomputes; fan-out-on-read computes at query time.
+[ ] Ordering guarantees :: Usually only per-partition/per-key. Global ordering costs throughput — pick a partition key that matches your ordering need.
+[ ] Backpressure :: Signaling upstream to slow down when the consumer cannot keep up, instead of buffering until memory dies.
+[ ] Outbox pattern :: Write the domain change and the outgoing event in one DB transaction; a relay publishes it. Removes dual-write inconsistency.
+[ ] Idempotent consumer :: Deduplicates by message ID so redelivery does not double-charge or double-send.
+[ ] Replay / reprocessing :: Rewinding the log to rebuild state or fix a bug. The main reason to prefer a stream over a queue.
+[ ] Presence :: Tracking who is online. Usually heartbeat + TTL key in Redis, with a grace window to avoid flapping.
+
+## API Design & Reliability | globe | concept
+[ ] Idempotency :: The same request applied twice has the same effect as once. GET/PUT/DELETE are idempotent by definition; POST is not.
+[ ] Idempotency key :: A client-generated unique key stored server-side with the first response, so a retried payment or order never duplicates.
+[ ] Safe vs unsafe methods :: Safe methods (GET, HEAD, OPTIONS) must not change state — proxies and crawlers assume this.
+[ ] Pagination: offset vs cursor :: Offset is easy but drifts and slows on deep pages; cursor/keyset is stable and index-friendly.
+[ ] Rate limiting :: Token bucket (bursty), leaky bucket (smooth), fixed window (cheap, edge spikes), sliding window (accurate).
+[ ] Throttling vs quota :: Throttling shapes short-term rate; quota caps consumption over a billing period.
+[ ] 429 + Retry-After :: The correct way to reject an over-limit caller and tell it exactly when to come back.
+[ ] Exponential backoff with jitter :: Retry delays double and are randomized, so a thousand clients do not retry in lockstep and cause a thundering herd.
+[ ] Retry storm :: Retries amplifying an outage. Bound them with budgets, jitter, and circuit breakers.
+[ ] Circuit breaker :: Closed, open, half-open. After repeated failures it stops calling the dependency, then probes for recovery.
+[ ] Bulkhead :: Isolated resource pools per dependency so one slow downstream cannot exhaust every thread.
+[ ] Timeout budget :: A total deadline propagated down the call chain, so nested calls cannot exceed the caller patience.
+[ ] Graceful degradation :: Serving a reduced-but-useful response (cached, partial, default) instead of an error when a dependency is down.
+[ ] Fail-open vs fail-closed :: On failure, allow (availability first) or deny (safety first). Auth fails closed; recommendations fail open.
+[ ] ETag / If-None-Match :: A content fingerprint enabling 304 Not Modified responses and optimistic concurrency on writes.
+[ ] Conditional requests :: If-Match / If-Unmodified-Since prevent lost updates when two clients edit the same resource.
+[ ] CORS / preflight :: The browser same-origin policy plus an OPTIONS handshake that authorizes cross-origin calls.
+[ ] Content negotiation :: Accept, Accept-Language, Accept-Encoding let one URL serve JSON, HTML, or a compressed variant.
+[ ] API versioning :: URI (/v2), header, or media type. The real rule: never break a shipped contract; add, deprecate, then remove.
+[ ] Backward vs forward compatibility :: Old clients keep working with new servers; new clients tolerate old servers. Protobuf/Avro schema rules encode this.
+[ ] BFF (backend for frontend) :: A per-client API layer that shapes and aggregates data for web, mobile, or partners.
+[ ] API gateway :: Single entry point handling routing, authN, rate limits, quotas, and observability for many services.
+[ ] REST vs GraphQL vs gRPC vs SOAP :: Resource-oriented, query-driven, contract-first binary RPC, and legacy XML enterprise messaging.
+[ ] HATEOAS :: Responses embed links to next actions. Rarely implemented fully, useful as a discoverability idea.
+[ ] Batching / request coalescing :: Merging duplicate or related in-flight requests into one to cut load and latency.
+[ ] Deadline propagation :: Passing the remaining time budget in metadata so downstream work is abandoned when the client already gave up.
+
+## Data & Storage | db | concept
+[ ] Soft delete :: Mark a row deleted (deleted_at) instead of removing it. Preserves history and referential integrity, but every query must filter it.
+[ ] Hard delete :: Physically remove the row. Required for GDPR erasure; irreversible without backups.
+[ ] Tombstone :: A delete marker written to a log or replica set so the deletion propagates; garbage-collected later (compaction/vacuum).
+[ ] ACID :: Atomicity, Consistency, Isolation, Durability — the transactional guarantees of a classic RDBMS.
+[ ] BASE :: Basically Available, Soft state, Eventually consistent — the pragmatic alternative for large distributed stores.
+[ ] CAP theorem :: Under a network partition you choose consistency or availability. Not a license to abandon consistency when healthy.
+[ ] PACELC :: Extends CAP: on Partition choose A or C, Else choose Latency or Consistency. Describes normal operation too.
+[ ] Isolation levels :: Read uncommitted, read committed, repeatable read, serializable — each removes another anomaly class at a throughput cost.
+[ ] Anomalies :: Dirty read, non-repeatable read, phantom read, lost update, write skew. Know which level prevents which.
+[ ] MVCC :: Multi-version concurrency control: readers see a snapshot instead of blocking on writers. How Postgres avoids read locks.
+[ ] Optimistic locking :: Assume no conflict; check a version column at write time and reject stale updates.
+[ ] Pessimistic locking :: Take the lock up front (SELECT FOR UPDATE). Safe under high contention, but risks deadlocks.
+[ ] Deadlock :: Two transactions each holding what the other needs. Fix with consistent lock ordering and short transactions.
+[ ] Index (B+Tree) :: Sorted structure enabling range scans and ordered reads; the default index in relational databases.
+[ ] LSM tree :: Write-optimized structure using memtables, SSTables, and compaction. Powers RocksDB, Cassandra, ScyllaDB.
+[ ] Covering index :: An index that contains every column the query needs, so the table itself is never touched.
+[ ] Cardinality / selectivity :: How distinct a column is. Low-cardinality columns rarely deserve their own index.
+[ ] N+1 query :: One query for a list plus one per row. Fix with joins, IN batching, or DataLoader-style batching.
+[ ] Connection pool :: A bounded set of reusable DB connections. Too small starves the app; too large melts the database.
+[ ] Sharding :: Splitting data across independent databases by key. Choose the shard key for even distribution and query locality.
+[ ] Hot partition / hotspot :: One shard or key taking a disproportionate share of traffic. Fix by salting keys or re-sharding.
+[ ] Consistent hashing :: Maps keys to a ring of nodes so adding or removing a node only moves a small fraction of keys.
+[ ] Partitioning: vertical vs horizontal :: Vertical splits columns/tables by concern; horizontal splits rows by key.
+[ ] Replication lag :: Delay before a replica reflects a primary write. Causes read-your-own-writes bugs — route those reads to the primary.
+[ ] Quorum (R + W > N) :: Reading and writing overlapping subsets of replicas gives strong-enough consistency without contacting all of them.
+[ ] WAL (write-ahead log) :: Durability mechanism: append the change to a log before applying it. Also the basis of replication and CDC.
+[ ] CDC (change data capture) :: Streaming committed row changes out of the log into other systems (search, cache, warehouse).
+[ ] Bloom filter :: Probabilistic set membership: no false negatives, some false positives. Skips useless disk reads in LSM stores.
+[ ] Materialized view :: A precomputed, stored query result refreshed on a schedule or incrementally. Trades freshness for read speed.
+[ ] Denormalization :: Duplicating data to avoid joins on the read path. Buys latency, costs write complexity and consistency.
+[ ] OLTP vs OLAP :: Many small transactional operations vs large analytical scans. Different engines, different storage layouts.
+[ ] Row store vs column store :: Row layout suits point reads and writes; columnar layout suits aggregations over few columns of many rows.
+[ ] Data lake / warehouse / lakehouse :: Raw storage, modeled analytics store, and the hybrid that adds table semantics over object storage.
+[ ] Erasure coding :: Splitting data into fragments plus parity so it survives failures with far less overhead than full replication.
+[ ] TTL / expiry :: Automatic removal after a duration. Cheap retention policy for sessions, caches, and time-series data.
+
+## Caching & Performance | zap | concept
+[ ] Cache-aside (lazy loading) :: App checks cache, misses, reads the DB, then populates the cache. The default pattern.
+[ ] Read-through :: The cache itself loads from the store on a miss, so the app only ever talks to the cache.
+[ ] Write-through :: Write to cache and store synchronously. Consistent, slower writes.
+[ ] Write-behind (write-back) :: Write to cache and flush to the store asynchronously. Fast, but data can be lost on failure.
+[ ] Write-around :: Write straight to the store and let the cache fill on read. Avoids polluting cache with write-once data.
+[ ] Eviction policies :: LRU, LFU, FIFO, ARC, and random. Choose by access pattern, not by habit.
+[ ] Cache stampede / thundering herd :: A hot key expires and thousands of requests hit the DB at once. Fix with locks, early recompute, and TTL jitter.
+[ ] Cache penetration :: Requests for keys that do not exist bypass the cache every time. Fix with negative caching or a bloom filter.
+[ ] Cache avalanche :: Many keys expiring together (or a cache node dying) collapses onto the database. Fix with staggered TTLs and warmup.
+[ ] Negative caching :: Caching "not found" for a short TTL to absorb junk traffic.
+[ ] Cache invalidation :: TTL, explicit purge, versioned keys, or event-driven invalidation via CDC. Famously the hard part.
+[ ] Hit ratio :: Hits / total lookups. A low ratio usually means wrong key granularity or a TTL that is too short.
+[ ] CDN edge caching :: Serving static and cacheable dynamic content from a POP near the user. Governed by Cache-Control and surrogate keys.
+[ ] Cache-Control / stale-while-revalidate :: Directives that let the edge serve slightly stale content instantly while refreshing in the background.
+[ ] Latency vs throughput :: Time for one operation vs operations per second. Optimizing one often degrades the other.
+[ ] Tail latency (p95/p99) :: The slow requests that define user experience. Averages hide them; always chart percentiles.
+[ ] Tail amplification :: A page fanning out to 50 services makes a p99 backend a near-certain slow page. Hedged requests help.
+[ ] Little law :: Concurrency = arrival rate x latency. Tells you how many in-flight requests your pool must hold.
+[ ] Amdahl / Universal Scalability Law :: Speedup is capped by the serial fraction, and contention plus coherence can make more nodes slower.
+[ ] Connection reuse / keep-alive :: Avoiding repeated TCP+TLS handshakes is often the single cheapest latency win.
+[ ] Compression :: gzip, brotli, zstd. Trades CPU for bytes on the wire; pick per content type and cacheability.
+[ ] Batching vs streaming :: Fewer, larger operations amortize overhead; streaming lowers time-to-first-byte and memory.
+[ ] Cold start :: First-invocation penalty in serverless or JIT runtimes. Mitigate with provisioned concurrency and warmup.
+[ ] GC pause :: Stop-the-world garbage collection showing up as a latency spike. Tune heap or move to a low-pause collector.
+[ ] Zero copy :: Moving data without user-space copies (sendfile, mmap). One reason Kafka is fast.
+
+## Security, Auth & Identity | lock | concept
+[ ] AAA (Authentication, Authorization, Accounting) :: Who are you, what may you do, and what did you actually do. Every access system needs all three.
+[ ] AuthN vs AuthZ :: Authentication proves identity; authorization decides permission. Different failures, different fixes.
+[ ] Session :: Server-side state keyed by an opaque cookie. Instantly revocable, needs shared storage to scale.
+[ ] Cookie :: Small key/value the browser resends per request. Secure, HttpOnly, SameSite, Domain, and Path decide how safe it is.
+[ ] Token :: A bearer credential sent (usually) in the Authorization header. Whoever holds it can use it — so keep the TTL short.
+[ ] JWT :: Signed JSON (header.payload.signature). Stateless and self-describing, but hard to revoke before expiry.
+[ ] PASETO :: A JWT alternative with fixed, safe algorithms — no "alg: none" style footguns.
+[ ] Refresh token rotation :: Each refresh issues a new token and invalidates the old one; reuse of an old token signals theft.
+[ ] OAuth 2.0 / 2.1 :: Delegated authorization. Authorization code + PKCE is the correct flow for web and mobile; implicit is dead.
+[ ] OIDC :: An identity layer on top of OAuth 2.0 that adds the ID token — OAuth authorizes, OIDC authenticates.
+[ ] SSO :: One login across many applications, usually via SAML or OIDC with a central identity provider.
+[ ] SAML :: XML-based enterprise SSO. Still ubiquitous in B2B and legacy corporate environments.
+[ ] MFA / TOTP :: A second factor. TOTP derives a 6-digit code from a shared secret plus current time (RFC 6238).
+[ ] Passkeys / WebAuthn :: Public-key credentials bound to the origin and stored in the device authenticator. Phishing-resistant, passwordless.
+[ ] RBAC / ABAC / ReBAC :: Roles, attributes, or relationships as the basis of permission decisions. ReBAC (Zanzibar-style) handles sharing graphs.
+[ ] Principle of least privilege :: Grant the minimum access needed, for the shortest time. The cheapest blast-radius reduction there is.
+[ ] Hashing vs encryption vs encoding :: One-way, reversible with a key, and reversible with no secret at all. Base64 is not security.
+[ ] Salt and pepper :: A per-user random salt defeats rainbow tables; a global secret pepper adds protection if the DB alone leaks.
+[ ] bcrypt / scrypt / argon2 :: Deliberately slow, memory-hard password hashes. Never store passwords with SHA-256 alone.
+[ ] HMAC signature :: Keyed hash proving a payload came from someone holding the secret. Standard for webhook verification.
+[ ] Digital signature :: Asymmetric signing: private key signs, public key verifies. Gives authenticity plus non-repudiation.
+[ ] Nonce / replay attack :: A one-time value plus timestamp so a captured request cannot be replayed later.
+[ ] CSRF :: A third-party site triggers an authenticated request. Defend with SameSite cookies plus anti-CSRF tokens.
+[ ] XSS :: Injected script executing in your origin. Defend with output encoding, a strict CSP, and no innerHTML on user input.
+[ ] SQL injection :: Untrusted input becoming SQL. Parameterized queries are the fix; escaping by hand is not.
+[ ] SSRF :: Tricking your server into calling internal addresses. Block link-local metadata IPs and use an egress allowlist.
+[ ] IDOR :: Object IDs accepted without an ownership check. Always authorize the object, not just the endpoint.
+[ ] Zero trust :: Never trust the network. Authenticate and authorize every request, even service-to-service (mTLS + policy).
+[ ] Secrets management :: Central vault, short-lived dynamic credentials, and rotation. Never a .env in git.
+[ ] Encryption at rest / in transit :: Disk and field-level encryption plus TLS everywhere — with envelope encryption and a managed KMS.
+[ ] PII and data minimization :: Collect the least, retain it the shortest, and know exactly where it lives before someone asks you to delete it.
+[ ] Rate limiting as a security control :: Blunts credential stuffing, enumeration, and scraping — not just capacity protection.
+[ ] Audit log :: Immutable record of who did what, when, from where. The Accounting in AAA, and the first thing an incident needs.
+
+## Distributed Systems | layers | concept
+[ ] Consensus (Raft / Paxos) :: Getting a replica set to agree on an ordered log despite failures. Underpins etcd, Consul, and most control planes.
+[ ] Leader election :: Choosing one node to coordinate. Needs fencing so a stale leader cannot keep acting after losing the lease.
+[ ] Split brain :: Two nodes both believing they are leader after a partition. Quorums and fencing tokens prevent it.
+[ ] Fencing token :: A monotonically increasing number attached to lock holders so storage can reject writes from an expired holder.
+[ ] Distributed lock :: Mutual exclusion across processes (Redis, etcd, ZooKeeper). Correct only with leases, fencing, and clock awareness.
+[ ] Lease :: A lock with an expiry, so a crashed holder cannot block the system forever.
+[ ] Heartbeat / failure detector :: Periodic liveness signals. Tuning the timeout trades false positives against slow detection.
+[ ] Gossip protocol :: Nodes exchange state with random peers so membership converges without a central registry.
+[ ] Vector clock / Lamport timestamp :: Logical clocks capturing causal ordering when wall clocks cannot be trusted.
+[ ] Clock skew / leap second :: Physical clocks drift and jump. Never derive correctness from wall-clock comparisons across machines.
+[ ] Eventual consistency :: Replicas converge if writes stop. Perfectly fine for feeds and counters, wrong for balances.
+[ ] Strong consistency / linearizability :: Every read sees the latest committed write — as if there were a single copy.
+[ ] Read-your-writes / monotonic reads :: Session guarantees that stop a user seeing their own update disappear on the next page load.
+[ ] CRDT :: Data types that merge concurrent edits deterministically without coordination. The core of collaborative editing.
+[ ] Two-phase commit (2PC) :: Prepare then commit across resources. Correct but blocking — avoid across microservice boundaries.
+[ ] Saga :: A long-lived transaction as a sequence of local transactions with compensating actions on failure.
+[ ] CQRS :: Separate write model and read model, each optimized for its own shape and scaling profile.
+[ ] Event sourcing :: Persist the events, derive state by replaying them. Full audit history at the cost of query complexity and versioning.
+[ ] Idempotent receiver :: Deduplication on the consumer so retried deliveries do not double-apply.
+[ ] Hinted handoff / read repair :: Availability tricks: hold writes for a down replica, and fix stale replicas discovered during reads.
+[ ] Anti-entropy :: Background reconciliation (often Merkle trees) that repairs divergence between replicas.
+[ ] Quorum :: A majority overlap of replicas that guarantees any read sees the latest acknowledged write.
+[ ] Partition tolerance :: The system keeps operating despite dropped messages between nodes. Not optional in practice.
+[ ] Blast radius :: How much fails when one thing fails. Cells, shards, and bulkheads exist to shrink it.
+[ ] Cell-based architecture :: Independent full-stack cells serving slices of traffic, so an outage cannot span all users.
+[ ] Graceful degradation vs cascading failure :: Shedding load early keeps the core alive; unbounded queues and retries turn one slow service into a full outage.
+[ ] Chaos engineering :: Deliberately injecting failure in production-like conditions to validate your assumptions before reality does.
+
+## Observability & Delivery | eye | concept
+[ ] SLI / SLO / SLA :: What you measure, the target you commit to internally, and the contract with penalties externally.
+[ ] Error budget :: The allowed unreliability inside an SLO. Burn it and feature work pauses for reliability work.
+[ ] Logs vs metrics vs traces :: Discrete events, aggregated numbers over time, and the causal path of one request across services.
+[ ] Structured logging :: Machine-parseable key/value logs. Free-text logs cannot be queried, aggregated, or alerted on reliably.
+[ ] Correlation / trace ID :: An ID propagated through every hop so one user action can be reconstructed end to end.
+[ ] Span :: A single timed operation within a trace, with parent/child relationships and attributes.
+[ ] Cardinality explosion :: High-variance labels (user ID, URL with IDs) multiplying time series until the metrics bill outruns the app bill.
+[ ] Sampling :: Keeping a representative subset of traces or logs. Tail-based sampling keeps the interesting slow/failed ones.
+[ ] RED / USE method :: Rate, Errors, Duration for services; Utilization, Saturation, Errors for resources.
+[ ] Golden signals :: Latency, traffic, errors, saturation — the four dashboards to build first.
+[ ] Alert fatigue :: Too many noisy alerts training humans to ignore the real one. Alert on symptoms and SLO burn rate, not every spike.
+[ ] Runbook / playbook :: The written steps for an on-call responder. If an alert has no runbook, it should not page anyone.
+[ ] Postmortem (blameless) :: Structured incident review focused on systemic causes and concrete action items, not individuals.
+[ ] MTTR / MTBF :: Mean time to recovery and between failures. Reducing MTTR usually beats chasing zero failures.
+[ ] Health checks :: Liveness (restart me), readiness (send me traffic), startup (I am still booting). Conflating them causes restart loops.
+[ ] Graceful shutdown :: Stop accepting new work, drain in-flight requests, close connections, then exit within the termination grace period.
+[ ] Blue-green deployment :: Two identical environments; flip traffic at once, roll back by flipping again.
+[ ] Canary release :: Route a small percentage of traffic to the new version, watch metrics, then ramp or abort.
+[ ] Rolling update / surge :: Replace instances gradually with controlled maxSurge and maxUnavailable.
+[ ] Feature flag :: Decouple deploy from release; ship dark, enable per cohort, and kill instantly without a rollback.
+[ ] Immutable infrastructure :: Never patch a running box — build a new image and replace it. Eliminates configuration drift.
+[ ] IaC (infrastructure as code) :: Declarative, version-controlled, reviewable infrastructure (Terraform, Pulumi, CDK).
+[ ] GitOps :: Git as the single source of truth; a controller continuously reconciles the cluster to the committed state.
+[ ] Autoscaling (HPA / VPA / cluster) :: Scale replicas out, resources up, or nodes in the pool — driven by metrics with sensible cooldowns.
+[ ] Load shedding :: Rejecting low-priority work early under overload so critical paths keep succeeding.
+[ ] Disaster recovery: RTO / RPO :: How fast you must be back, and how much data you can afford to lose. They dictate the backup architecture.
+[ ] 12-factor app :: Config in the environment, stateless processes, disposability, dev/prod parity — the baseline for cloud-native services.
