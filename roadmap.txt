@@ -7,10 +7,14 @@
 ;    ## Category name | icon | concept -> a category card
 ;         icon and "concept" are optional. "concept" renders the
 ;         one-column glossary layout and marks the card searchable as a concept.
-;    [x] Title :: description | https://link
+;    [x] Title :: description | https://t.me/post/123 | https://source.com/article
 ;         [x] = done, [ ] = not done (a missing marker also means not done)
-;         " :: " adds a description   (optional)
-;         " | "  adds a resource link (optional, must be last)
+;         " :: " adds a description (optional)
+;         " | "  adds a link — up to two per item:
+;                  a t.me / telegram.me URL renders as the Telegram post,
+;                  any other URL renders as the source.
+;                  Order does not matter. Either one may be left out.
+;                  Prefix a link with "tg:" or "src:" to force its slot.
 ;    ; anything after a leading semicolon is a comment
 ;
 ;  ICONS: cpu shield infinity cog cloud code tool layers card zap chat db
@@ -400,7 +404,8 @@
 [ ] What is GraphQL?
 [ ] REST API Cheatsheet
 [ ] The Ultimate API Learning Roadmap
-[ ] The Evolving Landscape of API Protocols in 2023
+[x] The Evolving Landscape of API Protocols in 2023 :: graphql | https://bytebytego.com/guides/the-evolving-landscape-of-api-protocols-in-2023/ | test.com
+
 
 ## AI and Machine Learning | brain
 [ ] 5 Functions to Merge Data with Pandas

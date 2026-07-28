@@ -243,9 +243,19 @@ a{color:var(--accent-text);}
 a.title{text-decoration:none;}
 a.title:hover{color:var(--accent-text);text-decoration:underline;text-underline-offset:2px;}
 .desc{margin:3px 0 0;font-size:12.5px;line-height:1.5;color:var(--text-muted);}
-.tagline{display:flex;align-items:center;gap:6px;margin-top:5px;flex-wrap:wrap;}
-.linked-note{display:inline-flex;align-items:center;gap:4px;font-family:var(--font-mono);font-size:10.5px;color:var(--accent-text);max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.tagline{display:flex;align-items:center;gap:6px;margin-top:6px;flex-wrap:wrap;}
+.linked-note{
+  display:inline-flex;align-items:center;gap:5px;max-width:min(100%,340px);
+  font-family:var(--font-mono);font-size:10.5px;line-height:1.6;
+  padding:1px 8px 1px 6px;border-radius:99px;text-decoration:none;
+  border:1px solid transparent;transition:background var(--dur) var(--ease),border-color var(--dur) var(--ease);
+}
+.linked-note span{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
 .linked-note svg{width:11px;height:11px;flex:none;}
+.linked-note.tg{color:var(--info);background:var(--info-soft);}
+.linked-note.src{color:var(--accent-text);background:var(--accent-soft);}
+.linked-note:hover{border-color:currentColor;}
+.item.done .linked-note{opacity:.6;}
 
 .item-actions{display:flex;align-items:center;gap:2px;flex:none;}
 .act{
@@ -256,7 +266,8 @@ a.title:hover{color:var(--accent-text);text-decoration:underline;text-underline-
 .item:hover .act,.act:focus-visible{opacity:1;}
 .act:hover{background:var(--surface-3);color:var(--text);}
 .act svg{width:16px;height:16px;}
-.act.open-link{opacity:1;color:var(--accent-text);}
+.act.tg{opacity:1;color:var(--info);}
+.act.src{opacity:1;color:var(--accent-text);}
 @media(max-width:768px){.act{opacity:1;}}
 
 /* ============================= States ============================= */
@@ -410,7 +421,11 @@ html[data-theme="light"] .btn.primary{color:#fff;}
       </button>
       <button class="chip" data-filter="linked" aria-pressed="false">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/></svg>
-        With link <span class="count" id="cLinked">0</span>
+        Linked <span class="count" id="cLinked">0</span>
+      </button>
+      <button class="chip" data-filter="missing" aria-pressed="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8v5M12 16.5h.01"/><circle cx="12" cy="12" r="9"/></svg>
+        Missing a link <span class="count" id="cMissing">0</span>
       </button>
       <button class="chip" data-scope="topics" aria-pressed="false">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5z"/></svg>
@@ -448,8 +463,8 @@ html[data-theme="light"] .btn.primary{color:#fff;}
       <section class="stats" aria-label="Progress summary">
         <div class="stat"><div class="k">Total items</div><div class="v" id="sTotal">—</div></div>
         <div class="stat"><div class="k">Completed</div><div class="v" id="sDone">— <small id="sDonePct"></small></div></div>
-        <div class="stat"><div class="k">Categories</div><div class="v" id="sCats">—</div></div>
-        <div class="stat"><div class="k">Linked</div><div class="v" id="sLinks">—</div></div>
+        <div class="stat"><div class="k">Telegram posts</div><div class="v" id="sTg">—</div></div>
+        <div class="stat"><div class="k">Sources</div><div class="v" id="sSrc">—</div></div>
       </section>
 
       <div class="notice" id="notice">
@@ -524,7 +539,9 @@ const ICONS = {
   eye:'<path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6-10-6-10-6z"/><circle cx="12" cy="12" r="2.5"/>',
   flask:'<path d="M9 3h6M10 3v6l-5.5 9A2 2 0 0 0 6.2 21h11.6a2 2 0 0 0 1.7-3L14 9V3"/>',
   git:'<circle cx="6" cy="6" r="2.5"/><circle cx="6" cy="18" r="2.5"/><circle cx="18" cy="9" r="2.5"/><path d="M6 8.5v7M18 11.5c0 4-6 1.5-6 6.5"/>',
-  chev:'<path d="m6 9 6 6 6-6"/>'
+  chev:'<path d="m6 9 6 6 6-6"/>',
+  send:'<path d="M21.5 2.5 2.8 9.9a.6.6 0 0 0 .05 1.13l4.4 1.5 1.66 5a.6.6 0 0 0 1.04.2l2.3-2.7 4.6 3.4a.6.6 0 0 0 .95-.34l3.5-15a.6.6 0 0 0-.8-.7z"/><path d="M21.5 2.5 8.9 13.3"/>',
+  ext:'<path d="M14 4h6v6"/><path d="M20 4 11 13"/><path d="M18 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h5"/>'
 };
 
 const SOURCE_FILE='roadmap.txt';
@@ -534,9 +551,44 @@ const SOURCE_FILE='roadmap.txt';
    ---------------------------------------------------------------------
      # Group
      ## Category | icon | concept
-     [x] Title :: description | https://link
+     [x] Title :: description | https://t.me/post | https://source
      ; comment
+
+   Each item takes up to two links, separated by " | ":
+     - a t.me / telegram.me URL is recognised as the Telegram post
+     - any other URL is treated as the source
+     - order does not matter; "tg:" and "src:" prefixes force the slot
    ========================================================================= */
+const TG_HOSTS=/^(www\.)?(t\.me|telegram\.me|telegram\.dog|telegram\.org)$/i;
+
+function normUrl(u){
+  u=u.trim();
+  if(!u) return '';
+  if(!/^https?:\/\//i.test(u)) u='https://'+u;
+  try{ new URL(u); return u; }catch(e){ return ''; }
+}
+function isTelegram(u){
+  try{ return TG_HOSTS.test(new URL(u).hostname); }catch(e){ return false; }
+}
+
+/* Assign an ordered list of raw link strings to the two slots. */
+function assignLinks(raw){
+  const out={tg:'',src:''},rest=[];
+  raw.forEach(r=>{
+    let s=r.trim(),forced='';
+    const m=s.match(/^(tg|telegram|post|src|source|ref)\s*:\s*(?!\/\/)/i);
+    if(m){ forced=/^(tg|telegram|post)$/i.test(m[1])?'tg':'src'; s=s.slice(m[0].length); }
+    const u=normUrl(s);
+    if(!u) return;
+    if(forced){ if(!out[forced]) out[forced]=u; else rest.push(u); return; }
+    if(isTelegram(u)){ if(!out.tg) out.tg=u; else rest.push(u); return; }
+    rest.push(u);
+  });
+  // unlabelled, non-telegram links fill source first, then the free slot
+  rest.forEach(u=>{ if(!out.src) out.src=u; else if(!out.tg) out.tg=u; });
+  return out;
+}
+
 function parseRoadmap(text){
   const cats=[];
   let group='Roadmap', cur=null;
@@ -569,9 +621,9 @@ function parseRoadmap(text){
     if(m){ done=!!m[1]; line=line.slice(m[0].length); }
     else line=line.replace(/^[-*]\s+/,'');
 
-    let link='';
-    const pi=line.lastIndexOf(' | ');
-    if(pi>-1){ link=line.slice(pi+3).trim(); line=line.slice(0,pi).trim(); }
+    const parts=line.split(' | ');
+    line=parts[0];
+    const links=assignLinks(parts.slice(1));
 
     let desc='';
     const di=line.indexOf(' :: ');
@@ -580,12 +632,8 @@ function parseRoadmap(text){
     const title=line.trim();
     if(!title) continue;
 
-    if(link){
-      if(!/^https?:\/\//i.test(link)) link='https://'+link;
-      try{ new URL(link); }catch(e){ link=''; }
-    }
     if(!cur){ cur={g:group,name:'Uncategorized',icon:'book',type:'topic',items:[]}; cats.push(cur); }
-    cur.items.push({t:title,d:desc,l:link,done:done});
+    cur.items.push({t:title,d:desc,tg:links.tg,src:links.src,done:done});
   }
   return cats.filter(c=>c.items.length>0);
 }
@@ -673,12 +721,27 @@ function build(){
   drawerNavEl.innerHTML=sideHtml;
 }
 
+function linkChip(kind,url,label){
+  return '<a class="linked-note '+kind+'" href="'+esc(url)+'" target="_blank" rel="noopener noreferrer" title="'+label+': '+esc(url)+'">'
+    +svg(kind==='tg'?'send':'ext')+'<span>'+esc(shortUrl(url))+'</span></a>';
+}
+function linkAct(kind,url,label,title){
+  return '<a class="act '+kind+'" href="'+esc(url)+'" target="_blank" rel="noopener noreferrer" title="'+label+'" aria-label="'+label+' for '+esc(title)+'">'
+    +svg(kind==='tg'?'send':'ext')+'</a>';
+}
+
 function itemHtml(it){
-  const titleHtml=it.l
-    ? '<a class="title" href="'+esc(it.l)+'" target="_blank" rel="noopener noreferrer" data-text="'+esc(it.t)+'">'+esc(it.t)+'</a>'
+  const primary=it.tg||it.src;
+  const n=(it.tg?1:0)+(it.src?1:0);
+  const titleHtml=primary
+    ? '<a class="title" href="'+esc(primary)+'" target="_blank" rel="noopener noreferrer" data-text="'+esc(it.t)+'">'+esc(it.t)+'</a>'
     : '<span class="title" data-text="'+esc(it.t)+'">'+esc(it.t)+'</span>';
 
-  return '<div class="item-wrap" data-done="'+(it.done?'1':'0')+'" data-linked="'+(it.l?'1':'0')+'">'
+  let chips='';
+  if(it.tg) chips+=linkChip('tg',it.tg,'Telegram post');
+  if(it.src) chips+=linkChip('src',it.src,'Source');
+
+  return '<div class="item-wrap" data-done="'+(it.done?'1':'0')+'" data-links="'+n+'">'
     +'<div class="item'+(it.done?' done':'')+'">'
       +'<span class="mk" role="img" aria-label="'+(it.done?'Done':'Not done')+'">'
         +(it.done?'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12.5 4.5 4.5L19 7"/></svg>':'')
@@ -686,23 +749,30 @@ function itemHtml(it){
       +'<div class="body">'
         +titleHtml
         +(it.d?'<p class="desc" data-text="'+esc(it.d)+'">'+esc(it.d)+'</p>':'')
-        +(it.l?'<span class="tagline"><span class="linked-note"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7L11.8 5"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/></svg><span>'+esc(shortUrl(it.l))+'</span></span></span>':'')
+        +(chips?'<span class="tagline">'+chips+'</span>':'')
       +'</div>'
       +'<div class="item-actions">'
-        +(it.l
-          ? '<a class="act open-link" href="'+esc(it.l)+'" target="_blank" rel="noopener noreferrer" title="Open resource" aria-label="Open resource for '+esc(it.t)+'"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4h6v6"/><path d="M20 4 11 13"/><path d="M18 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h5"/></svg></a>'
+        +(it.tg?linkAct('tg',it.tg,'Open Telegram post',it.t):'')
+        +(it.src?linkAct('src',it.src,'Open source',it.t):'')
+        +(n<2
+          ? '<button class="act" data-act="search" title="Search the web for this topic" aria-label="Search the web for '+esc(it.t)+'">'
+            +'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></button>'
           : '')
-        +'<button class="act" data-act="search" title="Search the web for this topic" aria-label="Search the web for '+esc(it.t)+'">'
-          +'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>'
-        +'</button>'
       +'</div>'
     +'</div>'
   +'</div>';
 }
 
 function updateStats(){
-  let total=0,done=0,links=0;
-  DATA.forEach(c=>c.items.forEach(i=>{ total++; if(i.done) done++; if(i.l) links++; }));
+  let total=0,done=0,tg=0,src=0,any=0,missing=0;
+  DATA.forEach(c=>c.items.forEach(i=>{
+    total++;
+    if(i.done) done++;
+    if(i.tg) tg++;
+    if(i.src) src++;
+    if(i.tg||i.src) any++;
+    if(!i.tg||!i.src) missing++;
+  }));
   const pct=total?Math.round(done/total*100):0;
   document.getElementById('globalBar').style.width=pct+'%';
   document.getElementById('globalPct').textContent=pct+'%';
@@ -710,13 +780,14 @@ function updateStats(){
   document.getElementById('sTotal').textContent=total;
   document.getElementById('sDone').firstChild.nodeValue=done+' ';
   document.getElementById('sDonePct').textContent='('+pct+'%)';
-  document.getElementById('sCats').textContent=DATA.length;
-  document.getElementById('sLinks').textContent=links;
+  document.getElementById('sTg').textContent=tg;
+  document.getElementById('sSrc').textContent=src;
   document.getElementById('cAll').textContent=total;
   document.getElementById('cTodo').textContent=total-done;
   document.getElementById('cDone').textContent=done;
-  document.getElementById('cLinked').textContent=links;
-  document.getElementById('brandSub').textContent=total+' items · '+done+' done · read-only';
+  document.getElementById('cLinked').textContent=any;
+  document.getElementById('cMissing').textContent=missing;
+  document.getElementById('brandSub').textContent=total+' items · '+done+' done · '+DATA.length+' categories';
 }
 
 /* =========================================================================
@@ -744,11 +815,12 @@ function applyFilters(){
     let shown=0;
 
     card.querySelectorAll('.item-wrap').forEach(w=>{
-      const done=w.dataset.done==='1',linked=w.dataset.linked==='1';
+      const done=w.dataset.done==='1',links=+w.dataset.links;
       let ok=true;
       if(filter==='todo'&&done) ok=false;
       if(filter==='done'&&!done) ok=false;
-      if(filter==='linked'&&!linked) ok=false;
+      if(filter==='linked'&&links===0) ok=false;
+      if(filter==='missing'&&links===2) ok=false;
       if(ok&&q&&!catMatches){
         const tEl=w.querySelector('.title'),dEl=w.querySelector('.desc');
         const hay=(tEl.getAttribute('data-text')+' '+(dEl?dEl.getAttribute('data-text'):'')).toLowerCase();
