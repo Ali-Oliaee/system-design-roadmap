@@ -399,7 +399,7 @@
 [ ] How to Design Secure Web API Access
 [ ] What Does an API Gateway Do?
 [ ] What is gRPC?
-[x] Top 12 Tips for API Security ::  HTTPS, SSL, TLS, OAuth, triple A, Authentication, Authorization, Accounting,  OpenID Connect (OIDC) | https://bytebytego.com/guides/top-12-tips-for-api-security| https://t.me/daily_tech_stuff/43 | https://t.me/daily_tech_stuff/43
+[x] Top 12 Tips for API Security ::  HTTPS, SSL, TLS, OAuth, triple A, Authentication, Authorization, Accounting,  OpenID Connect (OIDC), WebAuthn, Symmetric/Asymmetric Encryption, passkey, API, Leveled API Key, RBAC | https://bytebytego.com/guides/top-12-tips-for-api-security| https://t.me/daily_tech_stuff/43 | https://t.me/daily_tech_stuff/43
 [ ] REST API vs. GraphQL
 [x] What is GraphQL? :: Graphql | https://bytebytego.com/guides/what-is-graphql | https://t.me/daily_tech_stuff/37
 [x] REST API Cheatsheet :: Roy Fielding, Stateless, Cacheable, Layered System, Code-On-Demand, Uniform Interface, Resource Identification, Manipulation Through Representations, Self-descriptive Messages, HATEOAS | https://bytebytego.com/guides/rest-api-cheatsheet | https://t.me/daily_tech_stuff/35

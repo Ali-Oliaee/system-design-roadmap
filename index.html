@@ -5,6 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>System Design Roadmap — Interactive Checklist</title>
 <meta name="description" content="A searchable, read-only system design roadmap rendered from roadmap.txt — progress marks and resource links are edited in the text file." />
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+<link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png" />
+<link rel="icon" href="assets/favicon-16.png" sizes="16x16" type="image/png" />
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+<link rel="manifest" href="site.webmanifest" />
+<meta name="theme-color" content="#0B1120" media="(prefers-color-scheme:dark)" />
+<meta name="theme-color" content="#F6F8FC" media="(prefers-color-scheme:light)" />
+<meta name="apple-mobile-web-app-title" content="Roadmap" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Fira+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -361,7 +369,6 @@ html[data-theme="light"] .btn.primary{color:#fff;}
 
 /* stats */
 .stats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--sp-3);margin-bottom:var(--sp-5);}
-@media(min-width:720px){.stats{grid-template-columns:repeat(4,minmax(0,1fr));}}
 .stat{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:var(--sp-3) var(--sp-4);}
 .stat .k{font-family:var(--font-mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--text-dim);}
 .stat .v{font-size:24px;font-weight:700;letter-spacing:-.02em;line-height:1.2;margin-top:2px;}
@@ -416,9 +423,12 @@ html[data-theme="light"] .btn.primary{color:#fff;}
       </button>
       <div class="brand">
         <span class="brand-mark" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/>
-            <rect x="3" y="14" width="7" height="7" rx="1.5"/><path d="M17.5 14v7M14 17.5h7"/>
+          <!-- same mark as assets/favicon.svg, minus the gradient tile (.brand-mark supplies it) -->
+          <svg viewBox="6 11 52 42" fill="none">
+            <path d="M14 33 26 45 50 19" stroke="currentColor" stroke-width="5.2" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="14" cy="33" r="6" fill="currentColor"/>
+            <circle cx="26" cy="45" r="6" fill="currentColor"/>
+            <circle cx="50" cy="19" r="6" fill="currentColor"/>
           </svg>
         </span>
         <div class="brand-text">
@@ -509,8 +519,6 @@ html[data-theme="light"] .btn.primary{color:#fff;}
       <section class="stats" aria-label="Progress summary">
         <div class="stat"><div class="k">Total items</div><div class="v" id="sTotal">—</div></div>
         <div class="stat"><div class="k">Completed</div><div class="v" id="sDone">— <small id="sDonePct"></small></div></div>
-        <div class="stat"><div class="k">Telegram posts</div><div class="v" id="sTg">—</div></div>
-        <div class="stat"><div class="k">Sources</div><div class="v" id="sSrc">—</div></div>
       </section>
 
       <div class="notice" id="notice">
@@ -810,12 +818,10 @@ function itemHtml(it){
 }
 
 function updateStats(){
-  let total=0,done=0,tg=0,src=0,any=0,missing=0;
+  let total=0,done=0,any=0,missing=0;
   DATA.forEach(c=>c.items.forEach(i=>{
     total++;
     if(i.done) done++;
-    if(i.tg) tg++;
-    if(i.src) src++;
     if(i.tg||i.src) any++;
     if(!i.tg||!i.src) missing++;
   }));
@@ -826,8 +832,6 @@ function updateStats(){
   document.getElementById('sTotal').textContent=total;
   document.getElementById('sDone').firstChild.nodeValue=done+' ';
   document.getElementById('sDonePct').textContent='('+pct+'%)';
-  document.getElementById('sTg').textContent=tg;
-  document.getElementById('sSrc').textContent=src;
   document.getElementById('cAll').textContent=total;
   document.getElementById('cTodo').textContent=total-done;
   document.getElementById('cDone').textContent=done;
