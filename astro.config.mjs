@@ -2,16 +2,12 @@
 import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
 
-const SITE = 'https://ali-oliaee.github.io';
-
-// GitHub Pages serves the site from a sub-path, but `astro dev` should serve it
-// from the root so http://localhost:4321/ renders the home page.
-const isDev = process.argv.includes('dev');
-const BASE = isDev ? '/' : '/system-design-roadmap';
+// سایت روی دامنه اختصاصی (public/CNAME) از ریشه سرو می شود
+const SITE = 'https://sys-design.ir';
 
 export default defineConfig({
   site: SITE,
-  base: BASE,
+  base: '/',
   trailingSlash: 'ignore',
   build: { format: 'directory' },
   integrations: [sitemap()],
