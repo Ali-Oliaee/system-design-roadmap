@@ -1,5 +1,5 @@
 ---
-title: "Event Sourcing و CQRS: کِی به‌صرفه‌اند؟"
+title: "Event Sourcing و CQRS: کِی به صرفه اند؟"
 titleEn: "Event Sourcing and CQRS: When They Pay Off"
 summary: ""
 section: "backend-engineering"

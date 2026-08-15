@@ -1,5 +1,5 @@
 ---
-title: "CDN چطور کار می‌کند؟"
+title: "CDN چطور کار می کند؟"
 titleEn: "How Does CDN Work?"
 summary: ""
 section: "caching-and-performance"

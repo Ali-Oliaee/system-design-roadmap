@@ -1,5 +1,5 @@
 ---
-title: "JOIN در SQL چطور کار می‌کند؟"
+title: "JOIN در SQL چطور کار می کند؟"
 titleEn: "How do SQL Joins Work?"
 summary: ""
 section: "technical-interviews"

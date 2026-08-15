@@ -7,12 +7,12 @@ const nav = await getNav();
 const stats = await getStats();
 ---
 
-<Base title="خانه" crumbs={[{ label: 'نقشه‌راه' }]}>
+<Base title="خانه" crumbs={[{ label: 'سیستم دیزاین' }]}>
   <section class="hero" data-pagefind-body>
-    <h1>نقشه‌راه طراحی سیستم</h1>
+    <h1>سیستم دیزاین</h1>
     <p class="muted">
-      {stats.total} موضوع در {stats.sections} دسته — از مبانی شبکه و پایگاه داده تا معماری توزیع‌شده،
-      مطالعات موردی و آمادگی مصاحبهٔ فنی. همه‌چیز فارسی، بدون ثبت‌نام و بدون حساب کاربری.
+      {stats.total} موضوع در {stats.sections} دسته — از مبانی شبکه و پایگاه داده تا معماری توزیع شده،
+      مطالعات موردی و آمادگی مصاحبهٔ فنی. همه چیز فارسی، بدون ثبت نام و بدون حساب کاربری.
     </p>
     <div class="hero__stats">
       <div class="stat card">
@@ -22,10 +22,6 @@ const stats = await getStats();
       <div class="stat card">
         <strong class="ltr">{stats.sections}</strong>
         <span class="dim">دسته</span>
-      </div>
-      <div class="stat card">
-        <strong class="ltr">{stats.pct}٪</strong>
-        <span class="dim">پوشش محتوا</span>
       </div>
     </div>
   </section>

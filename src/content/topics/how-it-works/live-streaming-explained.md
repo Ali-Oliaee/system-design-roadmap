@@ -1,5 +1,5 @@
 ---
-title: "پخش زنده چطور کار می‌کند؟"
+title: "پخش زنده چطور کار می کند؟"
 titleEn: "Live Streaming Explained"
 summary: ""
 section: "how-it-works"

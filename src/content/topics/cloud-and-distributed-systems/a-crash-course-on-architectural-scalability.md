@@ -1,5 +1,5 @@
 ---
-title: "دورهٔ فشرده: مقیاس‌پذیری معماری"
+title: "دورهٔ فشرده: مقیاس پذیری معماری"
 titleEn: "A Crash Course on Architectural Scalability"
 summary: ""
 section: "cloud-and-distributed-systems"

@@ -1,5 +1,5 @@
 ---
-title: "ChatGPT چطور کار می‌کند؟"
+title: "ChatGPT چطور کار می کند؟"
 titleEn: "How does ChatGPT work?"
 summary: ""
 section: "ai-and-machine-learning"

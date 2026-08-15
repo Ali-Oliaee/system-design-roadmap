@@ -1,5 +1,5 @@
 ---
-title: "تغییر پارادایم: نسبت توسعه‌دهنده به تستر"
+title: "تغییر پارادایم: نسبت توسعه دهنده به تستر"
 titleEn: "Paradigm Shift: Developer to Tester Ratio"
 summary: ""
 section: "devops-and-ci-cd"

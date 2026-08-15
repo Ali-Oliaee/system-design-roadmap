@@ -1,5 +1,5 @@
 ---
-title: "مشاهده‌پذیری و تحویل"
+title: "مشاهده پذیری و تحویل"
 titleEn: "Observability & Delivery"
 summary: "لاگ، متریک، ترِیس، SLO و الگوهای انتشار امن."
 icon: "eye"

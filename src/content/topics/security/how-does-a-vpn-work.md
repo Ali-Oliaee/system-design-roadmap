@@ -1,5 +1,5 @@
 ---
-title: "VPN چطور کار می‌کند؟"
+title: "VPN چطور کار می کند؟"
 titleEn: "How Does a VPN Work?"
 summary: ""
 section: "security"

@@ -1,5 +1,5 @@
 ---
-title: "سرو کردن LLM در مقیاس: دسته‌بندی، کش KV و کوانتیزاسیون"
+title: "سرو کردن LLM در مقیاس: دسته بندی، کش KV و کوانتیزاسیون"
 titleEn: "How to Serve an LLM at Scale (batching, KV cache, quantization)"
 summary: ""
 section: "ai-and-machine-learning"

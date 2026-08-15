@@ -1,5 +1,5 @@
 ---
-title: "نتفلیکس پیام‌رسانی Push را چطور مقیاس می‌دهد؟"
+title: "نتفلیکس پیام رسانی Push را چطور مقیاس می دهد؟"
 titleEn: "How Netflix Scales Push Messaging"
 summary: ""
 section: "real-world-case-studies"

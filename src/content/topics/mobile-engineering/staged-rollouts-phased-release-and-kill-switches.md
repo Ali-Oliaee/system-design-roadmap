@@ -1,5 +1,5 @@
 ---
-title: "عرضهٔ مرحله‌ای، انتشار تدریجی و کلید توقف اضطراری"
+title: "عرضهٔ مرحله ای، انتشار تدریجی و کلید توقف اضطراری"
 titleEn: "Staged Rollouts, Phased Release, and Kill Switches"
 summary: ""
 section: "mobile-engineering"

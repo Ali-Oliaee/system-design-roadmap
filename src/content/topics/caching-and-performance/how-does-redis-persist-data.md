@@ -1,5 +1,5 @@
 ---
-title: "Redis داده را چطور ماندگار می‌کند؟"
+title: "Redis داده را چطور ماندگار می کند؟"
 titleEn: "How Does Redis Persist Data?"
 summary: ""
 section: "caching-and-performance"

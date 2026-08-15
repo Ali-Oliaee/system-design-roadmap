@@ -1,5 +1,5 @@
 ---
-title: "۱۰ بده‌بستان طراحی سیستم که نباید نادیده بگیرید"
+title: "۱۰ بده بستان طراحی سیستم که نباید نادیده بگیرید"
 titleEn: "10 System Design Tradeoffs You Cannot Ignore"
 summary: ""
 section: "software-architecture"

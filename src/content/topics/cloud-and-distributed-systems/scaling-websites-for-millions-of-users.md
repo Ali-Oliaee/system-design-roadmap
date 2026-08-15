@@ -1,5 +1,5 @@
 ---
-title: "مقیاس‌دهی وب‌سایت برای میلیون‌ها کاربر"
+title: "مقیاس دهی وب سایت برای میلیون ها کاربر"
 titleEn: "Scaling Websites for Millions of Users"
 summary: ""
 section: "cloud-and-distributed-systems"

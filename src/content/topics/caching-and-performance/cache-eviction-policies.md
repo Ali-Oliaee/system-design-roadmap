@@ -1,5 +1,5 @@
 ---
-title: "سیاست‌های حذف از کش"
+title: "سیاست های حذف از کش"
 titleEn: "Cache Eviction Policies"
 summary: ""
 section: "caching-and-performance"

@@ -1,7 +1,7 @@
 ---
 title: "ساعت برداری و مهر زمانی Lamport"
 titleEn: "Vector clock / Lamport timestamp"
-summary: "ساعت‌های منطقی که وقتی به ساعت دیواری نمی‌شود اعتماد کرد، ترتیب علّی را ثبت می‌کنند."
+summary: "ساعت های منطقی که وقتی به ساعت دیواری نمی شود اعتماد کرد، ترتیب علّی را ثبت می کنند."
 section: "distributed-systems"
 order: 9
 done: false

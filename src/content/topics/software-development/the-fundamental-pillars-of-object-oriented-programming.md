@@ -1,5 +1,5 @@
 ---
-title: "ستون‌های بنیادی برنامه‌نویسی شیءگرا"
+title: "ستون های بنیادی برنامه نویسی شیءگرا"
 titleEn: "The Fundamental Pillars of Object-Oriented Programming"
 summary: ""
 section: "software-development"

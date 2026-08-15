@@ -1,5 +1,5 @@
 ---
-title: "مدیریت شبکهٔ ناپایدار: تایم‌اوت، عقب‌نشینی و صف تغییرات"
+title: "مدیریت شبکهٔ ناپایدار: تایم اوت، عقب نشینی و صف تغییرات"
 titleEn: "Handling Flaky Networks: Timeouts, Backoff, Queued Mutations"
 summary: ""
 section: "mobile-engineering"

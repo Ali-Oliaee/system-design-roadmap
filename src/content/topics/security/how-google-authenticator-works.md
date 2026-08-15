@@ -1,5 +1,5 @@
 ---
-title: "Google Authenticator چطور کار می‌کند؟"
+title: "Google Authenticator چطور کار می کند؟"
 titleEn: "How Google Authenticator Works"
 summary: ""
 section: "security"

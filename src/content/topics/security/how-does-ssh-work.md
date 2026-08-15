@@ -1,5 +1,5 @@
 ---
-title: "SSH چطور کار می‌کند؟"
+title: "SSH چطور کار می کند؟"
 titleEn: "How does SSH work?"
 summary: ""
 section: "security"

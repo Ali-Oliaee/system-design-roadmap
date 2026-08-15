@@ -1,5 +1,5 @@
 ---
-title: "معماری لایه‌ای: کنترلر، سرویس، ریپازیتوری و دامنه"
+title: "معماری لایه ای: کنترلر، سرویس، ریپازیتوری و دامنه"
 titleEn: "Layered Architecture: Controller, Service, Repository, Domain"
 summary: ""
 section: "backend-engineering"

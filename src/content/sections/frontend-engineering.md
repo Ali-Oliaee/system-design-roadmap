@@ -1,7 +1,7 @@
 ---
-title: "مهندسی فرانت‌اند"
+title: "مهندسی فرانت اند"
 titleEn: "Frontend Engineering"
-summary: "رندر، حالت، بسته‌بندی، کارایی مرورگر و معماری کلاینت."
+summary: "رندر، حالت، بسته بندی، کارایی مرورگر و معماری کلاینت."
 icon: "monitor"
 group: tracks
 kind: roadmap

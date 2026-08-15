@@ -6,13 +6,13 @@ import { glob } from 'astro/loaders';
 const link = z.object({
   title: z.string(),
   url: z.url(),
-  /** برچسب کوچکی که کنار لینک نشان داده می‌شود */
+  /** برچسب کوچکی که کنار لینک نشان داده می شود */
   kind: z.enum(['article', 'docs', 'video', 'book', 'tool', 'repo', 'telegram']).default('article'),
   note: z.string().optional(),
 });
 
 /**
- * دسته‌ها = آیتم‌های نوار کناری.
+ * دسته ها = آیتم های نوار کناری.
  * هر دسته به یک «گروه» تعلق دارد (مسیر اصلی / مسیرهای تخصصی / مفاهیم).
  */
 const sections = defineCollection({
@@ -23,7 +23,7 @@ const sections = defineCollection({
     summary: z.string().default(''),
     icon: z.string().default('layers'),
     group: z.enum(['core', 'tracks', 'concepts']),
-    /** concept = چیدمان واژه‌نامه‌ای تک‌ستونه */
+    /** concept = چیدمان واژه نامه ای تک ستونه */
     kind: z.enum(['roadmap', 'concept']).default('roadmap'),
     order: z.number().default(999),
     draft: z.boolean().default(false),
@@ -31,11 +31,11 @@ const sections = defineCollection({
 });
 
 /**
- * موضوع‌ها = صفحهٔ اختصاصی هر آیتم.
- * تب‌ها از همین فرانت‌متر ساخته می‌شوند؛ تبِ خالی اصلاً رندر نمی‌شود.
+ * موضوع ها = صفحهٔ اختصاصی هر آیتم.
+ * تب ها از همین فرانت متر ساخته می شوند؛ تبِ خالی اصلاً رندر نمی شود.
  */
 const topics = defineCollection({
-  // رندر مارک‌داون تا لحظهٔ نیاز به تعویق می‌افتد — با ۷۰۰+ فایل تفاوتش محسوس است
+  // رندر مارک داون تا لحظهٔ نیاز به تعویق می افتد — با ۷۰۰+ فایل تفاوتش محسوس است
   loader: glob({ pattern: '**/*.md', base: './src/content/topics', deferRender: true }),
   schema: z.object({
     title: z.string(),
@@ -53,7 +53,7 @@ const topics = defineCollection({
     telegram: z.url().optional(),
     source: z.url().optional(),
 
-    // ---- تب‌ها ----
+    // ---- تب ها ----
     resources: z.array(link).default([]),
     videos: z.array(link).default([]),
     faq: z.array(z.object({ q: z.string(), a: z.string() })).default([]),

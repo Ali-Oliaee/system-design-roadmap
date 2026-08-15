@@ -1,7 +1,7 @@
 ---
-title: "به‌روزرسانی چرخشی و surge"
+title: "به روزرسانی چرخشی و surge"
 titleEn: "Rolling update / surge"
-summary: "نمونه‌ها را تدریجی و با کنترل maxSurge و maxUnavailable جایگزین کن."
+summary: "نمونه ها را تدریجی و با کنترل maxSurge و maxUnavailable جایگزین کن."
 section: "observability-and-delivery"
 order: 19
 done: false

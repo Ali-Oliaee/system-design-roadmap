@@ -1,5 +1,5 @@
 ---
-title: "برگهٔ مرجع سرویس‌های AWS"
+title: "برگهٔ مرجع سرویس های AWS"
 titleEn: "AWS Services Cheat Sheet"
 summary: ""
 section: "cloud-and-distributed-systems"

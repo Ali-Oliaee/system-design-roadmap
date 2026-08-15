@@ -1,5 +1,5 @@
 ---
-title: "طراحی برای دسترس‌پذیری بالا"
+title: "طراحی برای دسترس پذیری بالا"
 titleEn: "How to Design for High Availability"
 summary: ""
 section: "cloud-and-distributed-systems"

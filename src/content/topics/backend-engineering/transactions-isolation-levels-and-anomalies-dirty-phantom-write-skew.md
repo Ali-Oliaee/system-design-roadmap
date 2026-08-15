@@ -1,5 +1,5 @@
 ---
-title: "تراکنش، سطوح ایزولاسیون و ناهنجاری‌ها (خواندن کثیف، فانتوم، انحراف نوشتن)"
+title: "تراکنش، سطوح ایزولاسیون و ناهنجاری ها (خواندن کثیف، فانتوم، انحراف نوشتن)"
 titleEn: "Transactions, Isolation Levels, and Anomalies (dirty/phantom/write skew)"
 summary: ""
 section: "backend-engineering"

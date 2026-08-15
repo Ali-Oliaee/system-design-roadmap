@@ -1,5 +1,5 @@
 ---
-title: "قفل توزیع‌شده: Redlock، توکن حصاری و دام‌هایشان"
+title: "قفل توزیع شده: Redlock، توکن حصاری و دام هایشان"
 titleEn: "Distributed Locks: Redlock, Fencing Tokens, and Their Pitfalls"
 summary: ""
 section: "backend-engineering"

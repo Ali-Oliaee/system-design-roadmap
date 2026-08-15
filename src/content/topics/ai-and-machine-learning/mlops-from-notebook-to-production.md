@@ -1,5 +1,5 @@
 ---
-title: "MLOps: از نوت‌بوک تا محیط عملیاتی"
+title: "MLOps: از نوت بوک تا محیط عملیاتی"
 titleEn: "MLOps: From Notebook to Production"
 summary: ""
 section: "ai-and-machine-learning"

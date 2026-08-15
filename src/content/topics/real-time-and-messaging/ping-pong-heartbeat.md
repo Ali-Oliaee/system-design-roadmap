@@ -1,7 +1,7 @@
 ---
 title: "Ping/Pong (ضربان)"
 titleEn: "Ping/pong (heartbeat)"
-summary: "فریم‌های کنترلی دوره‌ای که زنده بودن سوکت را ثابت می‌کنند و نمی‌گذارند واسطه‌ها اتصال را ببندند."
+summary: "فریم های کنترلی دوره ای که زنده بودن سوکت را ثابت می کنند و نمی گذارند واسطه ها اتصال را ببندند."
 section: "real-time-and-messaging"
 order: 7
 done: false

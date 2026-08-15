@@ -1,5 +1,5 @@
 ---
-title: "HTTPS، دست‌دهی SSL و رمزنگاری داده"
+title: "HTTPS، دست دهی SSL و رمزنگاری داده"
 titleEn: "HTTPS, SSL Handshake, and Data Encryption Explained"
 summary: ""
 section: "security"

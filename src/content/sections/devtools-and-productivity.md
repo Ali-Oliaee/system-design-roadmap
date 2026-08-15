@@ -1,7 +1,7 @@
 ---
-title: "ابزارها و بهره‌وری"
+title: "ابزارها و بهره وری"
 titleEn: "DevTools & Productivity"
-summary: "Git، ویرایشگر، دیباگ و ابزارهایی که سرعت تیم را می‌سازند."
+summary: "Git، ویرایشگر، دیباگ و ابزارهایی که سرعت تیم را می سازند."
 icon: "tool"
 group: core
 kind: roadmap

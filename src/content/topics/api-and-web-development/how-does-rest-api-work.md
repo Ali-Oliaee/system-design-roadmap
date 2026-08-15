@@ -1,5 +1,5 @@
 ---
-title: "REST API چطور کار می‌کند؟"
+title: "REST API چطور کار می کند؟"
 titleEn: "How does REST API work?"
 summary: ""
 section: "api-and-web-development"

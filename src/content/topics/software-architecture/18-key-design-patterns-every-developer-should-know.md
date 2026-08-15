@@ -1,5 +1,5 @@
 ---
-title: "۱۸ الگوی طراحی که هر توسعه‌دهنده باید بداند"
+title: "۱۸ الگوی طراحی که هر توسعه دهنده باید بداند"
 titleEn: "18 Key Design Patterns Every Developer Should Know"
 summary: ""
 section: "software-architecture"

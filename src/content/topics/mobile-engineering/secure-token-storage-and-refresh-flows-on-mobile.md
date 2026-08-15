@@ -1,5 +1,5 @@
 ---
-title: "ذخیرهٔ امن توکن و جریان تازه‌سازی در موبایل"
+title: "ذخیرهٔ امن توکن و جریان تازه سازی در موبایل"
 titleEn: "Secure Token Storage and Refresh Flows on Mobile"
 summary: ""
 section: "mobile-engineering"

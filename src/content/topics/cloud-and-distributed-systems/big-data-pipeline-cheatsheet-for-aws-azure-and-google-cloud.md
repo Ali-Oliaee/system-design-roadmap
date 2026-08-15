@@ -1,5 +1,5 @@
 ---
-title: "برگهٔ مرجع خط لولهٔ کلان‌داده در AWS، Azure و Google Cloud"
+title: "برگهٔ مرجع خط لولهٔ کلان داده در AWS، Azure و Google Cloud"
 titleEn: "Big Data Pipeline Cheatsheet for AWS, Azure, and Google Cloud"
 summary: ""
 section: "cloud-and-distributed-systems"

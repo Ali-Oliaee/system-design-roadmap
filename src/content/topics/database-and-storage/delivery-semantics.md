@@ -1,5 +1,5 @@
 ---
-title: "ضمانت‌های تحویل پیام"
+title: "ضمانت های تحویل پیام"
 titleEn: "Delivery Semantics"
 summary: ""
 section: "database-and-storage"

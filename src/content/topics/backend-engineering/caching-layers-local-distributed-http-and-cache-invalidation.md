@@ -1,5 +1,5 @@
 ---
-title: "لایه‌های کش: محلی، توزیع‌شده، HTTP و باطل‌سازی کش"
+title: "لایه های کش: محلی، توزیع شده، HTTP و باطل سازی کش"
 titleEn: "Caching Layers: Local, Distributed, HTTP, and Cache Invalidation"
 summary: ""
 section: "backend-engineering"

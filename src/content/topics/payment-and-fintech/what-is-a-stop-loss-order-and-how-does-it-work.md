@@ -1,5 +1,5 @@
 ---
-title: "سفارش حد ضرر چیست و چطور کار می‌کند؟"
+title: "سفارش حد ضرر چیست و چطور کار می کند؟"
 titleEn: "What is a Stop-Loss Order and How Does it Work?"
 summary: ""
 section: "payment-and-fintech"

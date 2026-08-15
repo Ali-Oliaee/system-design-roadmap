@@ -1,5 +1,5 @@
 ---
-title: "Push یا Pull در جمع‌آوری متریک"
+title: "Push یا Pull در جمع آوری متریک"
 titleEn: "Push vs Pull in Metrics Collection Systems"
 summary: ""
 section: "devops-and-ci-cd"

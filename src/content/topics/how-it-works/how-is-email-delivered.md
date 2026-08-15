@@ -1,5 +1,5 @@
 ---
-title: "ایمیل چطور تحویل داده می‌شود؟"
+title: "ایمیل چطور تحویل داده می شود؟"
 titleEn: "How is Email Delivered?"
 summary: ""
 section: "how-it-works"

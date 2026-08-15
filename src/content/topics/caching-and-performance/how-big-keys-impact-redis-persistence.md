@@ -1,5 +1,5 @@
 ---
-title: "کلیدهای بزرگ چه بلایی سر ماندگاری Redis می‌آورند؟"
+title: "کلیدهای بزرگ چه بلایی سر ماندگاری Redis می آورند؟"
 titleEn: "How Big Keys Impact Redis Persistence"
 summary: ""
 section: "caching-and-performance"

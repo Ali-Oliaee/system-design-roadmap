@@ -1,5 +1,5 @@
 ---
-title: "مدیریت حساب‌های پرتراکنش"
+title: "مدیریت حساب های پرتراکنش"
 titleEn: "Handling Hotspot Accounts"
 summary: ""
 section: "payment-and-fintech"

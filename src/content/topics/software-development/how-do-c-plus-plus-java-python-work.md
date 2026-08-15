@@ -1,5 +1,5 @@
 ---
-title: "++C، جاوا و پایتون چطور اجرا می‌شوند؟"
+title: "++C، جاوا و پایتون چطور اجرا می شوند؟"
 titleEn: "How Do C++, Java, Python Work?"
 summary: ""
 section: "software-development"

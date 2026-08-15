@@ -1,5 +1,5 @@
 ---
-title: "الگوهای مصاحبهٔ کدنویسی: دو اشاره‌گر، پنجرهٔ لغزان، BFS/DFS و برنامه‌نویسی پویا"
+title: "الگوهای مصاحبهٔ کدنویسی: دو اشاره گر، پنجرهٔ لغزان، BFS/DFS و برنامه نویسی پویا"
 titleEn: "Coding Interview Patterns: Two Pointers, Sliding Window, BFS/DFS, DP"
 summary: ""
 section: "technical-interviews"

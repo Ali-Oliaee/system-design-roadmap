@@ -1,5 +1,5 @@
 ---
-title: "آیا PassKey آیندهٔ بدون رمز را می‌سازد؟"
+title: "آیا PassKey آیندهٔ بدون رمز را می سازد؟"
 titleEn: "Is PassKey Shaping a Passwordless Future?"
 summary: ""
 section: "security"

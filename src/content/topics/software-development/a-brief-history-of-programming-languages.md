@@ -1,5 +1,5 @@
 ---
-title: "تاریخچهٔ کوتاه زبان‌های برنامه‌نویسی"
+title: "تاریخچهٔ کوتاه زبان های برنامه نویسی"
 titleEn: "A Brief History of Programming Languages"
 summary: ""
 section: "software-development"

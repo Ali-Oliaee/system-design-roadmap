@@ -1,7 +1,7 @@
 ---
 title: "CORS و درخواست preflight"
 titleEn: "CORS / preflight"
-summary: "سیاست هم‌مبدأ مرورگر به‌علاوهٔ یک دست‌دهی OPTIONS که فراخوانی‌های میان‌مبدأ را مجاز می‌کند."
+summary: "سیاست هم مبدأ مرورگر به علاوهٔ یک دست دهی OPTIONS که فراخوانی های میان مبدأ را مجاز می کند."
 section: "api-design-and-reliability"
 order: 17
 done: false

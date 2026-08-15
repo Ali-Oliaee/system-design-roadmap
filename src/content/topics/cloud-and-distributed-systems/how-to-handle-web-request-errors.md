@@ -1,5 +1,5 @@
 ---
-title: "مدیریت خطای درخواست‌های وب"
+title: "مدیریت خطای درخواست های وب"
 titleEn: "How to Handle Web Request Errors"
 summary: ""
 section: "cloud-and-distributed-systems"

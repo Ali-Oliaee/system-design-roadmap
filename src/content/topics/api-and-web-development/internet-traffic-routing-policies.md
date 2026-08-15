@@ -1,5 +1,5 @@
 ---
-title: "سیاست‌های مسیریابی ترافیک اینترنت"
+title: "سیاست های مسیریابی ترافیک اینترنت"
 titleEn: "Internet Traffic Routing Policies"
 summary: ""
 section: "api-and-web-development"

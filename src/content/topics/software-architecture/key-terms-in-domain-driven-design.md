@@ -1,5 +1,5 @@
 ---
-title: "اصطلاحات کلیدی طراحی دامنه‌محور"
+title: "اصطلاحات کلیدی طراحی دامنه محور"
 titleEn: "Key Terms in Domain-Driven Design"
 summary: ""
 section: "software-architecture"

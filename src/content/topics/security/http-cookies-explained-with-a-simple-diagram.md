@@ -1,5 +1,5 @@
 ---
-title: "کوکی‌های HTTP در یک دیاگرام ساده"
+title: "کوکی های HTTP در یک دیاگرام ساده"
 titleEn: "HTTP Cookies Explained With a Simple Diagram"
 summary: ""
 section: "security"

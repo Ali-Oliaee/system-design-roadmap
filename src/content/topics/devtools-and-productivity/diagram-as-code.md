@@ -1,5 +1,5 @@
 ---
-title: "دیاگرام به‌عنوان کد"
+title: "دیاگرام به عنوان کد"
 titleEn: "Diagram as Code"
 summary: ""
 section: "devtools-and-productivity"

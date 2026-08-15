@@ -1,7 +1,7 @@
 ---
 title: "مغز دوپاره (Split Brain)"
 titleEn: "Split brain"
-summary: "دو نود که بعد از پارتیشن هر دو خود را رهبر می‌دانند. حد نصاب و توکن حصاری جلویش را می‌گیرند."
+summary: "دو نود که بعد از پارتیشن هر دو خود را رهبر می دانند. حد نصاب و توکن حصاری جلویش را می گیرند."
 section: "distributed-systems"
 order: 3
 done: false

@@ -1,5 +1,5 @@
 ---
-title: "راهبردهای نسخه‌بندی API: مسیر، هدر و نوع رسانه"
+title: "راهبردهای نسخه بندی API: مسیر، هدر و نوع رسانه"
 titleEn: "API Versioning Strategies: URI, Header, Media Type"
 summary: ""
 section: "backend-engineering"

@@ -1,5 +1,5 @@
 ---
-title: "زمان راه‌اندازی اپ: بهینه‌سازی شروع سرد، گرم و داغ"
+title: "زمان راه اندازی اپ: بهینه سازی شروع سرد، گرم و داغ"
 titleEn: "App Startup Time: Cold, Warm, Hot Start Optimization"
 summary: ""
 section: "mobile-engineering"

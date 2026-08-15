@@ -1,5 +1,5 @@
 ---
-title: "قفل بدبینانه در برابر خوش‌بینانه"
+title: "قفل بدبینانه در برابر خوش بینانه"
 titleEn: "Pessimistic vs Optimistic Locking"
 summary: ""
 section: "database-and-storage"

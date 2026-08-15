@@ -1,5 +1,5 @@
 ---
-title: "الگوی Outbox و پیام‌رسانی تراکنشی"
+title: "الگوی Outbox و پیام رسانی تراکنشی"
 titleEn: "Outbox Pattern and Transactional Messaging"
 summary: ""
 section: "backend-engineering"

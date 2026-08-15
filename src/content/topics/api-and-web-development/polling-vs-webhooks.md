@@ -1,5 +1,5 @@
 ---
-title: "پولینگ در برابر وب‌هوک"
+title: "پولینگ در برابر وب هوک"
 titleEn: "Polling vs Webhooks"
 summary: ""
 section: "api-and-web-development"

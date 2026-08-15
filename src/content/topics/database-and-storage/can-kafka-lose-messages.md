@@ -1,5 +1,5 @@
 ---
-title: "آیا Kafka پیام گم می‌کند؟"
+title: "آیا Kafka پیام گم می کند؟"
 titleEn: "Can Kafka Lose Messages?"
 summary: ""
 section: "database-and-storage"

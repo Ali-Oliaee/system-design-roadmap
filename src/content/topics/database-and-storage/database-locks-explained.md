@@ -1,5 +1,5 @@
 ---
-title: "قفل‌های پایگاه داده"
+title: "قفل های پایگاه داده"
 titleEn: "Database Locks Explained"
 summary: ""
 section: "database-and-storage"

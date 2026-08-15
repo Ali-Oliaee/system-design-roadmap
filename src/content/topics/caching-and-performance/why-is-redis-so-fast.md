@@ -1,5 +1,5 @@
 ---
-title: "چرا Redis این‌قدر سریع است؟"
+title: "چرا Redis این قدر سریع است؟"
 titleEn: "Why is Redis so Fast?"
 summary: ""
 section: "caching-and-performance"

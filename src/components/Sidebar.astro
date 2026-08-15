@@ -11,8 +11,8 @@ const { activeSection, activeTopic } = Astro.props;
 const nav = await getNav();
 const stats = await getStats();
 
-// نوار کناری فقط پیش‌نمایش می‌دهد؛ فهرست کامل در صفحهٔ دسته است.
-// (۷۷۲ لینک در هر صفحه یعنی HTML چند صد کیلوبایتی — نمی‌ارزد.)
+// نوار کناری فقط پیش نمایش می دهد؛ فهرست کامل در صفحهٔ دسته است.
+// (۷۷۲ لینک در هر صفحه یعنی HTML چند صد کیلوبایتی — نمی ارزد.)
 const PREVIEW = 6;
 
 function preview(topics: typeof nav[number]['sections'][number]['topics']) {
@@ -23,7 +23,7 @@ function preview(topics: typeof nav[number]['sections'][number]['topics']) {
 }
 ---
 
-<aside class="sidebar" id="sidebar" aria-label="فهرست بخش‌ها">
+<aside class="sidebar" id="sidebar" aria-label="فهرست بخش ها">
   <a class="brand" href={url()}>
     <span class="brand__mark"><Icon name="check" size={20} /></span>
     <span>
@@ -82,17 +82,12 @@ function preview(topics: typeof nav[number]['sections'][number]['topics']) {
     ))}
   </nav>
 
-  <div class="sidebar__foot card">
-    <p class="dim">پوشش محتوا</p>
-    <div class="bar"><i style={`width:${stats.pct}%`}></i></div>
-    <p class="ltr" style="text-align:end">{stats.done} / {stats.total} — {stats.pct}%</p>
-  </div>
 </aside>
 
 <div class="scrim" id="sidebarScrim" hidden></div>
 
 <script>
-  // نوار کناری بلند است؛ بدون این، آیتم فعال معمولاً زیر خط تا می‌ماند
+  // نوار کناری بلند است؛ بدون این، آیتم فعال معمولاً زیر خط تا می ماند
   const active = document.querySelector('#sidebar [aria-current="page"], #sidebar [data-active]');
   active?.scrollIntoView({ block: 'center' });
 </script>
@@ -203,7 +198,7 @@ function preview(topics: typeof nav[number]['sections'][number]['topics']) {
     .sidebar {
       position: fixed;
       inset-block: 0;
-      /* در RTL، inline-start همان لبهٔ راست است — کشو از سمت راست می‌آید */
+      /* در RTL، inline-start همان لبهٔ راست است — کشو از سمت راست می آید */
       inset-inline-start: 0;
       width: min(320px, 86vw);
       z-index: var(--z-modal);

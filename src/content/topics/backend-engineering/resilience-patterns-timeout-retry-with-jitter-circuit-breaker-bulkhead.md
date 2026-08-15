@@ -1,5 +1,5 @@
 ---
-title: "الگوهای تاب‌آوری: تایم‌اوت، تلاش مجدد با jitter، قطع‌کنندهٔ مدار و Bulkhead"
+title: "الگوهای تاب آوری: تایم اوت، تلاش مجدد با jitter، قطع کنندهٔ مدار و Bulkhead"
 titleEn: "Resilience Patterns: Timeout, Retry with Jitter, Circuit Breaker, Bulkhead"
 summary: ""
 section: "backend-engineering"

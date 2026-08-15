@@ -1,7 +1,7 @@
 ---
 title: "طراحی API و پایداری"
 titleEn: "API Design & Reliability"
-summary: "نسخه‌بندی، idempotency، تلاش مجدد، محدودسازی نرخ و قطع‌کنندهٔ مدار."
+summary: "نسخه بندی، idempotency، تلاش مجدد، محدودسازی نرخ و قطع کنندهٔ مدار."
 icon: "globe"
 group: concepts
 kind: concept

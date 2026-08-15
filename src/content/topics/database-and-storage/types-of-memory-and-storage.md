@@ -1,5 +1,5 @@
 ---
-title: "انواع حافظه و ذخیره‌سازی"
+title: "انواع حافظه و ذخیره سازی"
 titleEn: "Types of Memory and Storage"
 summary: ""
 section: "database-and-storage"

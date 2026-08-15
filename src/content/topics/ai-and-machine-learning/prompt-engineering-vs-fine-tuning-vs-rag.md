@@ -1,5 +1,5 @@
 ---
-title: "مهندسی پرامپت، فاین‌تیون و RAG"
+title: "مهندسی پرامپت، فاین تیون و RAG"
 titleEn: "Prompt Engineering vs Fine-Tuning vs RAG"
 summary: ""
 section: "ai-and-machine-learning"

@@ -1,5 +1,5 @@
 ---
-title: "موتورهای جست‌وجو چطور کار می‌کنند؟"
+title: "موتورهای جست وجو چطور کار می کنند؟"
 titleEn: "How Do Search Engines Work?"
 summary: ""
 section: "how-it-works"

@@ -1,5 +1,5 @@
 ---
-title: "مهم‌ترین سرویس‌های AWS برای یادگیری"
+title: "مهم ترین سرویس های AWS برای یادگیری"
 titleEn: "Most Important AWS Services to Learn"
 summary: ""
 section: "cloud-and-distributed-systems"

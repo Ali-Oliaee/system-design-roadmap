@@ -1,5 +1,5 @@
 ---
-title: "۸ استاندارد که هر توسعه‌دهنده باید بداند"
+title: "۸ استاندارد که هر توسعه دهنده باید بداند"
 titleEn: "Top 8 Standards Every Developer Should Know"
 summary: ""
 section: "software-development"

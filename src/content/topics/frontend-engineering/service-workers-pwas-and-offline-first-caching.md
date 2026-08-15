@@ -1,5 +1,5 @@
 ---
-title: "Service Worker، PWA و کش آفلاین‌اول"
+title: "Service Worker، PWA و کش آفلاین اول"
 titleEn: "Service Workers, PWAs, and Offline-First Caching"
 summary: ""
 section: "frontend-engineering"

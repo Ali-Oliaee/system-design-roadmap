@@ -1,5 +1,5 @@
 ---
-title: "۸ راهبرد ضروری مقیاس‌پذیری"
+title: "۸ راهبرد ضروری مقیاس پذیری"
 titleEn: "8 Must-Know Scalability Strategies"
 summary: ""
 section: "cloud-and-distributed-systems"

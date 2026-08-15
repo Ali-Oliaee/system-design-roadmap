@@ -1,7 +1,7 @@
 ---
 title: "مهندسی موبایل"
 titleEn: "Mobile Engineering"
-summary: "کلاینت آفلاین‌اول، همگام‌سازی، نوتیفیکیشن و محدودیت‌های دستگاه."
+summary: "کلاینت آفلاین اول، همگام سازی، نوتیفیکیشن و محدودیت های دستگاه."
 icon: "phone"
 group: tracks
 kind: roadmap

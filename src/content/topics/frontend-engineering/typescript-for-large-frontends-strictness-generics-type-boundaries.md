@@ -1,5 +1,5 @@
 ---
-title: "تایپ‌اسکریپت در فرانت‌اند بزرگ: سخت‌گیری، جنریک و مرزهای نوع"
+title: "تایپ اسکریپت در فرانت اند بزرگ: سخت گیری، جنریک و مرزهای نوع"
 titleEn: "TypeScript for Large Frontends: Strictness, Generics, Type Boundaries"
 summary: ""
 section: "frontend-engineering"

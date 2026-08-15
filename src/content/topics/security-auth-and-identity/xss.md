@@ -1,7 +1,7 @@
 ---
 title: "XSS"
 titleEn: "XSS"
-summary: "اسکریپت تزریق‌شده‌ای که در مبدأ شما اجرا می‌شود. با کدگذاری خروجی، CSP سخت‌گیرانه و پرهیز از innerHTML روی ورودی کاربر دفاع کنید."
+summary: "اسکریپت تزریق شده ای که در مبدأ شما اجرا می شود. با کدگذاری خروجی، CSP سخت گیرانه و پرهیز از innerHTML روی ورودی کاربر دفاع کنید."
 section: "security-auth-and-identity"
 order: 24
 done: false

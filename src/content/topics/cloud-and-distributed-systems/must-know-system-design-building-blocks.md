@@ -1,5 +1,5 @@
 ---
-title: "بلوک‌های سازندهٔ ضروری طراحی سیستم"
+title: "بلوک های سازندهٔ ضروری طراحی سیستم"
 titleEn: "Must Know System Design Building Blocks"
 summary: ""
 section: "cloud-and-distributed-systems"

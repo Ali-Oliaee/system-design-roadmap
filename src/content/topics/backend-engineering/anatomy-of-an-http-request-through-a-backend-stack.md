@@ -1,5 +1,5 @@
 ---
-title: "کالبدشکافی یک درخواست HTTP در پشتهٔ بک‌اند"
+title: "کالبدشکافی یک درخواست HTTP در پشتهٔ بک اند"
 titleEn: "Anatomy of an HTTP Request Through a Backend Stack"
 summary: ""
 section: "backend-engineering"

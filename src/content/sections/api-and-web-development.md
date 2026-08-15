@@ -1,7 +1,7 @@
 ---
 title: "API و توسعهٔ وب"
 titleEn: "API and Web Development"
-summary: "REST، GraphQL، gRPC، وب‌هوک و قراردادهای پایدار بین سرویس‌ها."
+summary: "REST، GraphQL، gRPC، وب هوک و قراردادهای پایدار بین سرویس ها."
 icon: "globe"
 group: core
 kind: roadmap

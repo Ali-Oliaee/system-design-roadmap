@@ -1,5 +1,5 @@
 ---
-title: "نقشه‌های گوگل و اپل چطور پلاک و چهره را محو می‌کنند؟"
+title: "نقشه های گوگل و اپل چطور پلاک و چهره را محو می کنند؟"
 titleEn: "How Google/Apple Maps Blur License Plates and Faces"
 summary: ""
 section: "how-it-works"

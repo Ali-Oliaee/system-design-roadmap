@@ -1,5 +1,5 @@
 ---
-title: "برگهٔ مقایسهٔ ارائه‌دهندگان ابر"
+title: "برگهٔ مقایسهٔ ارائه دهندگان ابر"
 titleEn: "Cloud Comparison Cheat Sheet"
 summary: ""
 section: "cloud-and-distributed-systems"

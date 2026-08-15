@@ -1,5 +1,5 @@
 ---
-title: "Redis را کجاها می‌توان به کار برد؟"
+title: "Redis را کجاها می توان به کار برد؟"
 titleEn: "How can Redis be used?"
 summary: ""
 section: "caching-and-performance"

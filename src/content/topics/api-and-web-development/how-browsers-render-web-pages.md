@@ -1,5 +1,5 @@
 ---
-title: "مرورگرها صفحهٔ وب را چطور رندر می‌کنند؟"
+title: "مرورگرها صفحهٔ وب را چطور رندر می کنند؟"
 titleEn: "How Browsers Render Web Pages"
 summary: ""
 section: "api-and-web-development"

@@ -1,5 +1,5 @@
 ---
-title: "برنامه‌نویسی دستوری، تابعی و شیءگرا"
+title: "برنامه نویسی دستوری، تابعی و شیءگرا"
 titleEn: "Imperative vs Functional vs Object-oriented Programming"
 summary: ""
 section: "software-development"

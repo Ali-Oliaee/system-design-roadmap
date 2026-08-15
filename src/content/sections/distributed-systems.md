@@ -1,7 +1,7 @@
 ---
-title: "سیستم‌های توزیع‌شده"
+title: "سیستم های توزیع شده"
 titleEn: "Distributed Systems"
-summary: "اجماع، ساعت، پارتیشن، سازگاری و شکست‌های جزئی."
+summary: "اجماع، ساعت، پارتیشن، سازگاری و شکست های جزئی."
 icon: "layers"
 group: concepts
 kind: concept

@@ -1,12 +1,12 @@
 ---
-/** آیکون‌های خطی سبک (بدون وابستگی بیرونی) — نام‌ها همان نام‌های roadmap.txt */
+/** آیکون های خطی سبک (بدون وابستگی بیرونی) — نام ها همان نام های roadmap.txt */
 interface Props {
   name: string;
   size?: number;
   class?: string;
   [key: string]: unknown;
 }
-// rest حاوی data-astro-cid-* والد است — بدون آن استایل‌های اسکوپ‌شده روی svg نمی‌نشیند
+// rest حاوی data-astro-cid-* والد است — بدون آن استایل های اسکوپ شده روی svg نمی نشیند
 const { name, size = 18, class: cls = '', ...rest } = Astro.props;
 
 const P: Record<string, string> = {

@@ -1,5 +1,5 @@
 ---
-title: "سرویس مکان‌یابی نزدیکی"
+title: "سرویس مکان یابی نزدیکی"
 titleEn: "Proximity Service"
 summary: ""
 section: "how-it-works"

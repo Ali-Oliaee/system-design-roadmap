@@ -1,5 +1,5 @@
 ---
-title: "۸ مفهوم کلیدی در طراحی دامنه‌محور"
+title: "۸ مفهوم کلیدی در طراحی دامنه محور"
 titleEn: "8 Key Concepts in Domain-Driven Design"
 summary: ""
 section: "software-architecture"

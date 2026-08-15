@@ -1,5 +1,5 @@
 ---
-title: "سلسله‌مراتب Collection در جاوا"
+title: "سلسله مراتب Collection در جاوا"
 titleEn: "Java Collection Hierarchy"
 summary: ""
 section: "software-development"

@@ -1,5 +1,5 @@
 ---
-title: "برگهٔ مرجع سرویس‌های Azure"
+title: "برگهٔ مرجع سرویس های Azure"
 titleEn: "Azure Services Cheat Sheet"
 summary: ""
 section: "cloud-and-distributed-systems"

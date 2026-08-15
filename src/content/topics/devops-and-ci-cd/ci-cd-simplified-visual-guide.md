@@ -1,5 +1,5 @@
 ---
-title: "راهنمای تصویری ساده‌شدهٔ CI/CD"
+title: "راهنمای تصویری ساده شدهٔ CI/CD"
 titleEn: "CI/CD Simplified Visual Guide"
 summary: ""
 section: "devops-and-ci-cd"

@@ -1,5 +1,5 @@
 ---
-title: "چرا Nginx این‌قدر محبوب است؟"
+title: "چرا Nginx این قدر محبوب است؟"
 titleEn: "Why is Nginx so Popular?"
 summary: ""
 section: "devops-and-ci-cd"

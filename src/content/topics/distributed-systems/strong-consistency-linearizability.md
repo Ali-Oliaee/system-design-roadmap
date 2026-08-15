@@ -1,7 +1,7 @@
 ---
-title: "سازگاری قوی و خطی‌پذیری"
+title: "سازگاری قوی و خطی پذیری"
 titleEn: "Strong consistency / linearizability"
-summary: "هر خواندن آخرین نوشتهٔ تثبیت‌شده را می‌بیند — انگار فقط یک نسخه وجود دارد."
+summary: "هر خواندن آخرین نوشتهٔ تثبیت شده را می بیند — انگار فقط یک نسخه وجود دارد."
 section: "distributed-systems"
 order: 12
 done: false

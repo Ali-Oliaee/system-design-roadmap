@@ -1,5 +1,5 @@
 ---
-title: "صفحه‌بندی: offset، cursor و keyset — و چرا offset می‌شکند"
+title: "صفحه بندی: offset، cursor و keyset — و چرا offset می شکند"
 titleEn: "Pagination: Offset vs Cursor vs Keyset (and why offset breaks)"
 summary: ""
 section: "backend-engineering"

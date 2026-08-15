@@ -4,8 +4,8 @@
  *
  * اجرا:  npm run import
  *
- * قابل اجرای مکرر است. بدنهٔ مارک‌داونی که دستی نوشته‌اید حفظ می‌شود؛
- * فقط فرانت‌متر با roadmap.txt و فایل ترجمه هم‌گام می‌شود.
+ * قابل اجرای مکرر است. بدنهٔ مارک داونی که دستی نوشته اید حفظ می شود؛
+ * فقط فرانت متر با roadmap.txt و فایل ترجمه هم گام می شود.
  * برای بازنویسی کامل:  npm run import -- --force
  */
 import fs from 'node:fs';
@@ -33,14 +33,14 @@ const slugify = (s) =>
     .replace(/^-+|-+$/g, '')
     .slice(0, 70) || 'topic';
 
-/** رشته را برای YAML امن می‌کند (همیشه نقل‌قول دوتایی) */
+/** رشته را برای YAML امن می کند (همیشه نقل قول دوتایی) */
 const yq = (s) => `"${String(s).replace(/\\/g, '\\\\').replace(/"/g, '\\"')}"`;
 
 const isTelegram = (u) => /^https?:\/\/(t\.me|telegram\.me)\//i.test(u);
 
-/* --------------------------------------------------------------- ترجمه‌ها */
+/* --------------------------------------------------------------- ترجمه ها */
 
-// ترجمه‌ها تکه‌تکه در i18n/parts/*.json نگه‌داری می‌شوند تا فایل‌ها قابل‌مدیریت بمانند
+// ترجمه ها تکه تکه در i18n/parts/*.json نگه داری می شوند تا فایل ها قابل مدیریت بمانند
 let TITLES = {};
 const PARTS_DIR = path.join(ROOT, 'src/content/i18n/parts');
 if (fs.existsSync(PARTS_DIR)) {
@@ -57,7 +57,7 @@ const fa = (en) => {
   const hit = TITLES[en];
   if (hit && hit.trim()) return hit.trim();
   missingTitles.push(en);
-  return en; // تا وقتی ترجمه نشده، متن انگلیسی می‌ماند
+  return en; // تا وقتی ترجمه نشده، متن انگلیسی می ماند
 };
 const faDesc = (en) => {
   const hit = TITLES[`::${en}`];
@@ -101,7 +101,7 @@ function parse(text) {
     if (!m || !section) continue;
 
     const done = m[1].toLowerCase() === 'x';
-    // لینک‌ها با «|» جدا می‌شوند و همیشه بعد از عنوان/توضیح می‌آیند
+    // لینک ها با «|» جدا می شوند و همیشه بعد از عنوان/توضیح می آیند
     const parts = m[2].split('|').map((p) => p.trim()).filter(Boolean);
     const head = parts.shift() ?? '';
     const [titleEn, descEn = ''] = head.split(' :: ').map((p) => p.trim());
@@ -123,7 +123,7 @@ function parse(text) {
   return out;
 }
 
-/* -------------------------------------------- نوشتن با حفظ بدنهٔ دست‌نویس */
+/* -------------------------------------------- نوشتن با حفظ بدنهٔ دست نویس */
 
 const FM = /^---\r?\n([\s\S]*?)\r?\n---\r?\n?/;
 
@@ -132,7 +132,7 @@ function writeEntry(file, frontmatter, defaultBody) {
   if (fs.existsSync(file) && !FORCE) {
     const prev = fs.readFileSync(file, 'utf8');
     const rest = prev.replace(FM, '');
-    // بدنهٔ ویرایش‌شده را نگه دار؛ فقط استاب خودکار را دور بریز
+    // بدنهٔ ویرایش شده را نگه دار؛ فقط استاب خودکار را دور بریز
     if (rest.trim() && !rest.includes('<!-- stub:auto -->')) body = rest.replace(/^\n+/, '');
   }
   fs.mkdirSync(path.dirname(file), { recursive: true });

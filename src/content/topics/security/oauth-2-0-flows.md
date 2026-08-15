@@ -1,5 +1,5 @@
 ---
-title: "جریان‌های OAuth 2.0"
+title: "جریان های OAuth 2.0"
 titleEn: "OAuth 2.0 Flows"
 summary: ""
 section: "security"

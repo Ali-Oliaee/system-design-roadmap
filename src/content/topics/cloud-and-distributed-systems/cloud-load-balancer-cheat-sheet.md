@@ -1,5 +1,5 @@
 ---
-title: "برگهٔ مرجع متعادل‌کننده‌های بار ابری"
+title: "برگهٔ مرجع متعادل کننده های بار ابری"
 titleEn: "Cloud Load Balancer Cheat Sheet"
 summary: ""
 section: "cloud-and-distributed-systems"

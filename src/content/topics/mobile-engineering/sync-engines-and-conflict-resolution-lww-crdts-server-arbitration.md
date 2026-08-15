@@ -1,5 +1,5 @@
 ---
-title: "موتور همگام‌سازی و حل تعارض (LWW، CRDT و داوری سرور)"
+title: "موتور همگام سازی و حل تعارض (LWW، CRDT و داوری سرور)"
 titleEn: "Sync Engines and Conflict Resolution (LWW, CRDTs, server arbitration)"
 summary: ""
 section: "mobile-engineering"

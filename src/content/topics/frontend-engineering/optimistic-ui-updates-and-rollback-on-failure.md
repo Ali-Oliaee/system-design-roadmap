@@ -1,5 +1,5 @@
 ---
-title: "به‌روزرسانی خوش‌بینانهٔ رابط و بازگردانی هنگام خطا"
+title: "به روزرسانی خوش بینانهٔ رابط و بازگردانی هنگام خطا"
 titleEn: "Optimistic UI Updates and Rollback on Failure"
 summary: ""
 section: "frontend-engineering"

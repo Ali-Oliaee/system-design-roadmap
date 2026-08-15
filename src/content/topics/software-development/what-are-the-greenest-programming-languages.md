@@ -1,5 +1,5 @@
 ---
-title: "سبزترین زبان‌های برنامه‌نویسی کدام‌اند؟"
+title: "سبزترین زبان های برنامه نویسی کدام اند؟"
 titleEn: "What Are the Greenest Programming Languages?"
 summary: ""
 section: "software-development"

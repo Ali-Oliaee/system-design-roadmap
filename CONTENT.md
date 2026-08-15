@@ -4,26 +4,26 @@
 
 ```
 src/content/
-├─ sections/            ۲۶ فایل = آیتم‌های نوار کناری
+├─ sections/            ۲۶ فایل = آیتم های نوار کناری
 │  └─ security.md
-├─ topics/              ۷۷۲ فایل = صفحه‌های موضوع
+├─ topics/              ۷۷۲ فایل = صفحه های موضوع
 │  └─ security/
 │     └─ what-is-a-cookie.md
 └─ i18n/parts/*.json    ترجمهٔ عنوان و توضیح (خوراک اسکریپت import)
 ```
 
-آدرس هر صفحه از مسیر فایل ساخته می‌شود:
+آدرس هر صفحه از مسیر فایل ساخته می شود:
 `topics/security/what-is-a-cookie.md` → `/security/what-is-a-cookie/`
 
 ## نوشتن یک موضوع
 
-هر موضوع **یک فایل مارک‌داون** است. تب‌ها از فرانت‌متر و بدنه ساخته می‌شوند؛
-**تبِ بدون داده اصلاً رندر نمی‌شود.**
+هر موضوع **یک فایل مارک داون** است. تب ها از فرانت متر و بدنه ساخته می شوند؛
+**تبِ بدون داده اصلاً رندر نمی شود.**
 
 | تب | منبع داده |
 | --- | --- |
-| نمای کلی | بدنهٔ مارک‌داون |
-| سرفصل‌ها | خودکار از تیترهای `##` و `###` |
+| نمای کلی | بدنهٔ مارک داون |
+| سرفصل ها | خودکار از تیترهای `##` و `###` |
 | منابع | `resources:` |
 | ویدیوها | `videos:` |
 | برگهٔ تقلب | `cheatsheet:` |
@@ -31,19 +31,19 @@ src/content/
 
 نمونهٔ کامل: [src/content/topics/security/what-is-a-cookie.md](src/content/topics/security/what-is-a-cookie.md)
 
-### فرانت‌متر
+### فرانت متر
 
 ```yaml
 ---
 title: "کوکی چیست؟"            # اجباری — عنوان فارسی
 titleEn: "What is a Cookie?"   # زیرعنوان لاتین (اختیاری)
-summary: "توضیح یک‌خطی."        # در کارت دسته و متای صفحه می‌آید
+summary: "توضیح یک خطی."        # در کارت دسته و متای صفحه می آید
 section: "security"            # اسلاگ فایل داخل sections/
 order: 27                      # ترتیب در دسته
 done: true                     # پوشش محتوا (نه پیشرفت کاربر)
 updated: 2026-08-10
 tags: ["HTTP", "نشست"]
-icon: "lock"                   # اختیاری؛ پیش‌فرض آیکون دسته
+icon: "lock"                   # اختیاری؛ پیش فرض آیکون دسته
 telegram: "https://t.me/..."   # دکمهٔ «پست تلگرام»
 source: "https://..."          # دکمهٔ «منبع اصلی»
 
@@ -56,8 +56,8 @@ cheatsheet:
 faq:
   - { q: "...", a: "..." }
 
-related: ["cookies-vs-sessions"]   # اسلاگ موضوع‌های هم‌دسته
-draft: false                       # true = فقط در dev دیده می‌شود
+related: ["cookies-vs-sessions"]   # اسلاگ موضوع های هم دسته
+draft: false                       # true = فقط در dev دیده می شود
 ---
 ```
 
@@ -65,9 +65,9 @@ draft: false                       # true = فقط در dev دیده می‌شو
 
 ### نکات نگارشی
 
-- کد، دستور و نام فایل را داخل بک‌تیک بگذارید؛ خودکار چپ‌به‌راست می‌شود.
-- بلوک کد با ` ```http ` یا ` ```ts ` — هایلایت در هر دو پوسته کار می‌کند.
-- جدول‌ها خودکار اسکرول افقی می‌گیرند.
+- کد، دستور و نام فایل را داخل بک تیک بگذارید؛ خودکار چپ به راست می شود.
+- بلوک کد با ` ```http ` یا ` ```ts ` — هایلایت در هر دو پوسته کار می کند.
+- جدول ها خودکار اسکرول افقی می گیرند.
 
 ## افزودن یک دسته
 
@@ -80,14 +80,14 @@ titleEn: "English Name"
 summary: "یک جمله."
 icon: "db"
 group: core            # core | tracks | concepts
-kind: roadmap          # roadmap = کارتی، concept = واژه‌نامه‌ای
+kind: roadmap          # roadmap = کارتی، concept = واژه نامه ای
 order: 12
 ---
 ```
 
-آیکون‌های موجود در [src/components/Icon.astro](src/components/Icon.astro) تعریف شده‌اند.
+آیکون های موجود در [src/components/Icon.astro](src/components/Icon.astro) تعریف شده اند.
 
-## همگام‌سازی با roadmap.txt
+## همگام سازی با roadmap.txt
 
 `roadmap.txt` هنوز منبع اولیهٔ فهرست است. بعد از ویرایش آن:
 
@@ -95,28 +95,28 @@ order: 12
 npm run import
 ```
 
-اسکریپت **فرانت‌متر را به‌روز می‌کند ولی بدنهٔ دست‌نویس را دست نمی‌زند**
-(فایل‌هایی که هنوز `<!-- stub:auto -->` دارند استاب حساب می‌شوند).
+اسکریپت **فرانت متر را به روز می کند ولی بدنهٔ دست نویس را دست نمی زند**
+(فایل هایی که هنوز `<!-- stub:auto -->` دارند استاب حساب می شوند).
 برای بازنویسی کامل: `npm run import -- --force`
 
-عنوان‌های ترجمه‌نشده در `src/content/i18n/_missing.json` جمع می‌شوند؛
-ترجمه را در یکی از فایل‌های `src/content/i18n/parts/*.json` اضافه کنید
+عنوان های ترجمه نشده در `src/content/i18n/_missing.json` جمع می شوند؛
+ترجمه را در یکی از فایل های `src/content/i18n/parts/*.json` اضافه کنید
 (کلید = متن انگلیسی؛ برای توضیح، کلید را با `::` شروع کنید).
 
-وقتی محتوای همهٔ موضوع‌ها فارسی شد، `roadmap.txt` و اسکریپت import قابل حذف‌اند.
+وقتی محتوای همهٔ موضوع ها فارسی شد، `roadmap.txt` و اسکریپت import قابل حذف اند.
 
 ## دستورها
 
 ```bash
 npm run dev       # سرور توسعه
-npm run build     # بیلد + ایندکس جست‌وجو (Pagefind)
-npm run preview   # پیش‌نمایش خروجی بیلد
-npm run import    # roadmap.txt → فایل‌های محتوا
+npm run build     # بیلد + ایندکس جست وجو (Pagefind)
+npm run preview   # پیش نمایش خروجی بیلد
+npm run import    # roadmap.txt → فایل های محتوا
 ```
 
-جست‌وجو فقط روی خروجی `build` کار می‌کند (Pagefind بعد از بیلد ایندکس می‌سازد).
+جست وجو فقط روی خروجی `build` کار می کند (Pagefind بعد از بیلد ایندکس می سازد).
 
 ## انتشار
 
-پوش روی `main` → اکشن `.github/workflows/deploy.yml` بیلد و روی GitHub Pages منتشر می‌کند.
-یک‌بار در تنظیمات ریپو، Pages → Source را روی **GitHub Actions** بگذارید.
+پوش روی `main` → اکشن `.github/workflows/deploy.yml` بیلد و روی GitHub Pages منتشر می کند.
+یک بار در تنظیمات ریپو، Pages → Source را روی **GitHub Actions** بگذارید.

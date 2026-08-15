@@ -1,5 +1,5 @@
 ---
-title: "امنیت فرانت‌اند: نقاط تزریق XSS، DOM Clobbering و ریسک وابستگی‌ها"
+title: "امنیت فرانت اند: نقاط تزریق XSS، DOM Clobbering و ریسک وابستگی ها"
 titleEn: "Frontend Security: XSS Sinks, DOM Clobbering, Dependency Risk"
 summary: ""
 section: "frontend-engineering"

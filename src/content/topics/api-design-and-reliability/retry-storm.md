@@ -1,7 +1,7 @@
 ---
 title: "طوفان تلاش مجدد"
 titleEn: "Retry storm"
-summary: "تلاش‌های مجدد که قطعی را تشدید می‌کنند. با بودجه، jitter و قطع‌کنندهٔ مدار مهارشان کنید."
+summary: "تلاش های مجدد که قطعی را تشدید می کنند. با بودجه، jitter و قطع کنندهٔ مدار مهارشان کنید."
 section: "api-design-and-reliability"
 order: 9
 done: false

@@ -1,5 +1,5 @@
 ---
-title: "الگوریتم‌های محدودسازی نرخ: سطل توکن، سطل چکه‌ای و پنجرهٔ لغزان"
+title: "الگوریتم های محدودسازی نرخ: سطل توکن، سطل چکه ای و پنجرهٔ لغزان"
 titleEn: "Rate Limiting Algorithms: Token Bucket, Leaky Bucket, Sliding Window"
 summary: ""
 section: "backend-engineering"

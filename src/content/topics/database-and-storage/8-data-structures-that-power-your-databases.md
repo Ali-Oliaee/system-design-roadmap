@@ -1,5 +1,5 @@
 ---
-title: "۸ ساختار داده‌ای که پایگاه داده‌ها را می‌گردانند"
+title: "۸ ساختار داده ای که پایگاه داده ها را می گردانند"
 titleEn: "8 Data Structures That Power Your Databases"
 summary: ""
 section: "database-and-storage"

@@ -1,5 +1,5 @@
 ---
-title: "Terraform چطور کد را به زیرساخت ابری تبدیل می‌کند؟"
+title: "Terraform چطور کد را به زیرساخت ابری تبدیل می کند؟"
 titleEn: "How does Terraform turn Code into Cloud?"
 summary: ""
 section: "devops-and-ci-cd"

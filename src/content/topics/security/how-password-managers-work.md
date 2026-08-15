@@ -1,5 +1,5 @@
 ---
-title: "مدیرهای رمز عبور چطور کار می‌کنند؟"
+title: "مدیرهای رمز عبور چطور کار می کنند؟"
 titleEn: "How Password Managers Work"
 summary: ""
 section: "security"

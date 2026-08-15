@@ -1,5 +1,5 @@
 ---
-title: "بین‌المللی‌سازی و بومی‌سازی: راست‌به‌چپ، جمع‌بندی و قالب عدد و تاریخ"
+title: "بین المللی سازی و بومی سازی: راست به چپ، جمع بندی و قالب عدد و تاریخ"
 titleEn: "Internationalization and Localization: RTL, Plurals, Number/Date Formats"
 summary: ""
 section: "frontend-engineering"

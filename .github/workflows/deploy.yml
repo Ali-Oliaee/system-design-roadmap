@@ -10,7 +10,7 @@ permissions:
   pages: write
   id-token: write
 
-# استقرارهای هم‌زمان صف می‌شوند؛ اجرای در حال انجام لغو نمی‌شود
+# استقرارهای هم زمان صف می شوند؛ اجرای در حال انجام لغو نمی شود
 concurrency:
   group: pages
   cancel-in-progress: false

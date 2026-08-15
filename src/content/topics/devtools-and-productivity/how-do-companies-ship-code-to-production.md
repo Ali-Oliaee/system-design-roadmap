@@ -1,5 +1,5 @@
 ---
-title: "شرکت‌ها چطور کد را به محیط عملیاتی می‌رسانند؟"
+title: "شرکت ها چطور کد را به محیط عملیاتی می رسانند؟"
 titleEn: "How do Companies Ship Code to Production?"
 summary: ""
 section: "devtools-and-productivity"

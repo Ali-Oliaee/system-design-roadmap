@@ -1,7 +1,7 @@
 ---
 title: "هش، رمزنگاری و کدگذاری"
 titleEn: "Hashing vs encryption vs encoding"
-summary: "یک‌طرفه، برگشت‌پذیر با کلید، و برگشت‌پذیر بدون هیچ رازی. Base64 امنیت نیست."
+summary: "یک طرفه، برگشت پذیر با کلید، و برگشت پذیر بدون هیچ رازی. Base64 امنیت نیست."
 section: "security-auth-and-identity"
 order: 17
 done: false

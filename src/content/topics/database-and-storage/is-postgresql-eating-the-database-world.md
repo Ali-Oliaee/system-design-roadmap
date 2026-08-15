@@ -1,5 +1,5 @@
 ---
-title: "آیا PostgreSQL دنیای پایگاه داده را می‌بلعد؟"
+title: "آیا PostgreSQL دنیای پایگاه داده را می بلعد؟"
 titleEn: "Is PostgreSQL Eating the Database World?"
 summary: ""
 section: "database-and-storage"

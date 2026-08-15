@@ -1,5 +1,5 @@
 ---
-title: "ویزا هنگام کشیدن کارت چه می‌کند؟"
+title: "ویزا هنگام کشیدن کارت چه می کند؟"
 titleEn: "How VISA Works When Swiping a Credit Card"
 summary: ""
 section: "payment-and-fintech"

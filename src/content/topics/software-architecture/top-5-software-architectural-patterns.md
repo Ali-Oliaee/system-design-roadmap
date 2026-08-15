@@ -1,5 +1,5 @@
 ---
-title: "۵ الگوی اصلی معماری نرم‌افزار"
+title: "۵ الگوی اصلی معماری نرم افزار"
 titleEn: "Top 5 Software Architectural Patterns"
 summary: ""
 section: "software-architecture"

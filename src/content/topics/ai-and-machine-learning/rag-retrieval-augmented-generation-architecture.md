@@ -1,5 +1,5 @@
 ---
-title: "معماری RAG (تولید تقویت‌شده با بازیابی)"
+title: "معماری RAG (تولید تقویت شده با بازیابی)"
 titleEn: "RAG (Retrieval-Augmented Generation) Architecture"
 summary: ""
 section: "ai-and-machine-learning"

@@ -1,5 +1,5 @@
 ---
-title: "هیدریشن، هیدریشن جزئی، جزیره‌ها و React Server Components"
+title: "هیدریشن، هیدریشن جزئی، جزیره ها و React Server Components"
 titleEn: "Hydration, Partial Hydration, Islands, and React Server Components"
 summary: ""
 section: "frontend-engineering"

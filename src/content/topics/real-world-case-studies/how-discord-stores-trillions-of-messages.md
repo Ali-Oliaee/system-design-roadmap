@@ -1,5 +1,5 @@
 ---
-title: "دیسکورد تریلیون‌ها پیام را چطور ذخیره می‌کند؟"
+title: "دیسکورد تریلیون ها پیام را چطور ذخیره می کند؟"
 titleEn: "How Discord Stores Trillions of Messages"
 summary: ""
 section: "real-world-case-studies"

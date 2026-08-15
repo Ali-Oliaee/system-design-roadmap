@@ -1,5 +1,5 @@
 ---
-title: "سامانه‌های کشی که هر توسعه‌دهنده باید بشناسد"
+title: "سامانه های کشی که هر توسعه دهنده باید بشناسد"
 titleEn: "Cache Systems Every Developer Should Know"
 summary: ""
 section: "caching-and-performance"

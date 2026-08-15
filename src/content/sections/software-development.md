@@ -1,7 +1,7 @@
 ---
-title: "توسعهٔ نرم‌افزار"
+title: "توسعهٔ نرم افزار"
 titleEn: "Software Development"
-summary: "کیفیت کد، تست، الگوهای برنامه‌نویسی و جریان کار تیمی."
+summary: "کیفیت کد، تست، الگوهای برنامه نویسی و جریان کار تیمی."
 icon: "code"
 group: core
 kind: roadmap

@@ -1,7 +1,7 @@
 ---
-title: "معماری نرم‌افزار"
+title: "معماری نرم افزار"
 titleEn: "Software Architecture"
-summary: "میکروسرویس، مونولیت، DDD و تصمیم‌های بلندمدت ساختاری."
+summary: "میکروسرویس، مونولیت، DDD و تصمیم های بلندمدت ساختاری."
 icon: "layers"
 group: core
 kind: roadmap

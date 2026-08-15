@@ -1,5 +1,5 @@
 ---
-title: "۲۰ پروژهٔ متن‌باز محبوب که شرکت‌های بزرگ آغاز کردند"
+title: "۲۰ پروژهٔ متن باز محبوب که شرکت های بزرگ آغاز کردند"
 titleEn: "20 Popular Open Source Projects Started by Big Companies"
 summary: ""
 section: "devtools-and-productivity"

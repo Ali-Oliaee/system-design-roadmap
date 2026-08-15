@@ -1,5 +1,5 @@
 ---
-title: "نقشه‌راه کامل یادگیری API"
+title: "نقشه راه کامل یادگیری API"
 titleEn: "The Ultimate API Learning Roadmap"
 summary: ""
 section: "api-and-web-development"

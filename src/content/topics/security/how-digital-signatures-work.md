@@ -1,5 +1,5 @@
 ---
-title: "امضای دیجیتال چطور کار می‌کند؟"
+title: "امضای دیجیتال چطور کار می کند؟"
 titleEn: "How Digital Signatures Work"
 summary: ""
 section: "security"

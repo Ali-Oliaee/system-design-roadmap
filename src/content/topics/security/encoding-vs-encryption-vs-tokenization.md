@@ -1,5 +1,5 @@
 ---
-title: "کدگذاری، رمزنگاری و توکن‌سازی"
+title: "کدگذاری، رمزنگاری و توکن سازی"
 titleEn: "Encoding vs Encryption vs Tokenization"
 summary: ""
 section: "security"

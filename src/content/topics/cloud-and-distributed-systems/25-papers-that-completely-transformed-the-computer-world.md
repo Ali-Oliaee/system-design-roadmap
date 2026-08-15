@@ -1,5 +1,5 @@
 ---
-title: "۲۵ مقاله‌ای که دنیای کامپیوتر را دگرگون کرد"
+title: "۲۵ مقاله ای که دنیای کامپیوتر را دگرگون کرد"
 titleEn: "25 Papers That Completely Transformed the Computer World"
 summary: ""
 section: "cloud-and-distributed-systems"

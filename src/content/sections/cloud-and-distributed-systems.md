@@ -1,7 +1,7 @@
 ---
-title: "ابر و سیستم‌های توزیع‌شده"
+title: "ابر و سیستم های توزیع شده"
 titleEn: "Cloud & Distributed Systems"
-summary: "مقیاس‌پذیری، هماهنگی، CAP و الگوهای زیرساخت ابری."
+summary: "مقیاس پذیری، هماهنگی، CAP و الگوهای زیرساخت ابری."
 icon: "cloud"
 group: core
 kind: roadmap

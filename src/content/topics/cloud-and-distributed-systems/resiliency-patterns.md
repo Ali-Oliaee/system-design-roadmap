@@ -1,5 +1,5 @@
 ---
-title: "الگوهای تاب‌آوری"
+title: "الگوهای تاب آوری"
 titleEn: "Resiliency Patterns"
 summary: ""
 section: "cloud-and-distributed-systems"

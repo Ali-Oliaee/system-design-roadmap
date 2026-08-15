@@ -1,7 +1,7 @@
 ---
-title: "پرداخت و فین‌تک"
+title: "پرداخت و فین تک"
 titleEn: "Payment and Fintech"
-summary: "تسویه، درگاه، idempotency و دقت پولی در سیستم‌های مالی."
+summary: "تسویه، درگاه، idempotency و دقت پولی در سیستم های مالی."
 icon: "card"
 group: core
 kind: roadmap

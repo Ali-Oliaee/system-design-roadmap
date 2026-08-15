@@ -1,5 +1,5 @@
 ---
-title: "تحلیل موبایل، قیف‌ها و رده‌بندی رویداد"
+title: "تحلیل موبایل، قیف ها و رده بندی رویداد"
 titleEn: "Mobile Analytics, Funnels, and Event Taxonomy"
 summary: ""
 section: "mobile-engineering"

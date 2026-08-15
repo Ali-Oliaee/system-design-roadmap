@@ -1,5 +1,5 @@
 ---
-title: "جمع‌آوری زباله (GC) چطور کار می‌کند؟"
+title: "جمع آوری زباله (GC) چطور کار می کند؟"
 titleEn: "How does Garbage Collection work?"
 summary: ""
 section: "software-development"

@@ -1,7 +1,7 @@
 ---
 title: "GitOps"
 titleEn: "GitOps"
-summary: "گیت به‌عنوان تنها منبع حقیقت؛ یک کنترلر پیوسته کلاستر را با حالت ثبت‌شده تطبیق می‌دهد."
+summary: "گیت به عنوان تنها منبع حقیقت؛ یک کنترلر پیوسته کلاستر را با حالت ثبت شده تطبیق می دهد."
 section: "observability-and-delivery"
 order: 23
 done: false

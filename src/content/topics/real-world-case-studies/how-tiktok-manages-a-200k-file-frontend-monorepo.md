@@ -1,5 +1,5 @@
 ---
-title: "تیک‌تاک مونوریپوی ۲۰۰ هزار فایلی را چطور اداره می‌کند؟"
+title: "تیک تاک مونوریپوی ۲۰۰ هزار فایلی را چطور اداره می کند؟"
 titleEn: "How TikTok Manages a 200K File Frontend MonoRepo"
 summary: ""
 section: "real-world-case-studies"

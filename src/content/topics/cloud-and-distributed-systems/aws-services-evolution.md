@@ -1,5 +1,5 @@
 ---
-title: "تکامل سرویس‌های AWS"
+title: "تکامل سرویس های AWS"
 titleEn: "AWS Services Evolution"
 summary: ""
 section: "cloud-and-distributed-systems"

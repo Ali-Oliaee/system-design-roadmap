@@ -1,5 +1,5 @@
 ---
-title: "مونوریپو در فرانت‌اند: Turborepo، Nx و pnpm Workspaces"
+title: "مونوریپو در فرانت اند: Turborepo، Nx و pnpm Workspaces"
 titleEn: "Monorepos for Frontend: Turborepo, Nx, pnpm Workspaces"
 summary: ""
 section: "frontend-engineering"

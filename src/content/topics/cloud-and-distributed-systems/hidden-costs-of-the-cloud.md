@@ -1,5 +1,5 @@
 ---
-title: "هزینه‌های پنهان ابر"
+title: "هزینه های پنهان ابر"
 titleEn: "Hidden Costs of the Cloud"
 summary: ""
 section: "cloud-and-distributed-systems"

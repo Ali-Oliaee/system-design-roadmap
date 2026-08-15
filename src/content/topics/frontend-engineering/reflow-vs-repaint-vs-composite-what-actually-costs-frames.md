@@ -1,5 +1,5 @@
 ---
-title: "Reflow، Repaint و Composite: کدام فریم می‌خورد؟"
+title: "Reflow، Repaint و Composite: کدام فریم می خورد؟"
 titleEn: "Reflow vs Repaint vs Composite: What Actually Costs Frames"
 summary: ""
 section: "frontend-engineering"

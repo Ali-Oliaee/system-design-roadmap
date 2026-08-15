@@ -1,5 +1,5 @@
 ---
-title: "پرداخت‌های ارزی"
+title: "پرداخت های ارزی"
 titleEn: "Foreign Exchange Payments"
 summary: ""
 section: "payment-and-fintech"

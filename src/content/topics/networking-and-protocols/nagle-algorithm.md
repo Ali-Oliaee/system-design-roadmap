@@ -1,7 +1,7 @@
 ---
 title: "الگوریتم Nagle"
 titleEn: "Nagle algorithm"
-summary: "نوشتن‌های کوچک TCP را دسته می‌کند تا سربار کم شود؛ چون تأخیر می‌افزاید، پروتکل‌های تعاملی آن را خاموش می‌کنند (TCP_NODELAY)."
+summary: "نوشتن های کوچک TCP را دسته می کند تا سربار کم شود؛ چون تأخیر می افزاید، پروتکل های تعاملی آن را خاموش می کنند (TCP_NODELAY)."
 section: "networking-and-protocols"
 order: 29
 done: false

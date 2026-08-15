@@ -1,5 +1,5 @@
 ---
-title: "تشخیص خرابی نود در سیستم‌های توزیع‌شده"
+title: "تشخیص خرابی نود در سیستم های توزیع شده"
 titleEn: "How to Detect Node Failures in Distributed Systems"
 summary: ""
 section: "cloud-and-distributed-systems"

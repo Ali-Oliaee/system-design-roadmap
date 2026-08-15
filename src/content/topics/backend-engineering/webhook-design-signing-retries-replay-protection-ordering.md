@@ -1,5 +1,5 @@
 ---
-title: "طراحی وب‌هوک: امضا، تلاش مجدد، محافظت از بازپخش و ترتیب"
+title: "طراحی وب هوک: امضا، تلاش مجدد، محافظت از بازپخش و ترتیب"
 titleEn: "Webhook Design: Signing, Retries, Replay Protection, Ordering"
 summary: ""
 section: "backend-engineering"

@@ -1,5 +1,5 @@
 ---
-title: "توکن‌های طراحی و پوسته‌بندی (روشن/تاریک و حالت‌های برند)"
+title: "توکن های طراحی و پوسته بندی (روشن/تاریک و حالت های برند)"
 titleEn: "Design Tokens and Theming (light/dark, brand modes)"
 summary: ""
 section: "frontend-engineering"

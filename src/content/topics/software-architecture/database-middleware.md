@@ -1,5 +1,5 @@
 ---
-title: "میان‌افزار پایگاه داده"
+title: "میان افزار پایگاه داده"
 titleEn: "Database Middleware"
 summary: ""
 section: "software-architecture"

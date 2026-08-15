@@ -1,5 +1,5 @@
 ---
-title: "اجرای پس‌زمینه: WorkManager، BGTaskScheduler و محدودیت‌ها"
+title: "اجرای پس زمینه: WorkManager، BGTaskScheduler و محدودیت ها"
 titleEn: "Background Execution: WorkManager, BGTaskScheduler, Constraints"
 summary: ""
 section: "mobile-engineering"

@@ -18,7 +18,7 @@ type Props = { section: NavSection; groupTitle: string };
 const { section, groupTitle } = Astro.props;
 const d = section.data;
 
-// نمای واژه‌نامه‌ای: توضیح زیر عنوان، بدون کارت‌بندی سنگین
+// نمای واژه نامه ای: توضیح زیر عنوان، بدون کارت بندی سنگین
 const glossary = d.kind === 'concept';
 ---
 
@@ -36,8 +36,8 @@ const glossary = d.kind === 'concept';
       {d.summary && <p class="muted head__summary">{d.summary}</p>}
       <div class="head__meta">
         <span class="chip"><Icon name="list" size={13} />{section.total} موضوع</span>
-        <span class="chip chip--done"><Icon name="check" size={13} />{section.done} پوشش‌داده‌شده</span>
-        {glossary && <span class="chip">واژه‌نامه</span>}
+        <span class="chip chip--done"><Icon name="check" size={13} />{section.done} پوشش داده شده</span>
+        {glossary && <span class="chip">واژه نامه</span>}
       </div>
     </div>
   </header>

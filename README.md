@@ -1,10 +1,10 @@
-# نقشه‌راه طراحی سیستم
+# سیستم دیزاین
 
 سایت ایستای فارسی برای یادگیری طراحی سیستم — ۷۷۲ موضوع در ۲۶ دسته،
-هر موضوع صفحهٔ خودش را با تب‌های نمای کلی، سرفصل‌ها، منابع، ویدیوها،
-برگهٔ تقلب و پرسش‌وپاسخ دارد.
+هر موضوع صفحهٔ خودش را با تب های نمای کلی، سرفصل ها، منابع، ویدیوها،
+برگهٔ تقلب و پرسش وپاسخ دارد.
 
-**پشته:** Astro (SSG) · بدون فریم‌ورک کلاینتی · Pagefind برای جست‌وجو · GitHub Pages
+**پشته:** Astro (SSG) · بدون فریم ورک کلاینتی · Pagefind برای جست وجو · GitHub Pages
 
 ## شروع
 
@@ -16,38 +16,38 @@ npm run dev        # http://localhost:4321/system-design-roadmap/
 | دستور | کار |
 | --- | --- |
 | `npm run dev` | سرور توسعه |
-| `npm run build` | بیلد ایستا + ایندکس جست‌وجو |
-| `npm run preview` | پیش‌نمایش خروجی بیلد |
-| `npm run import` | همگام‌سازی محتوا با `roadmap.txt` |
+| `npm run build` | بیلد ایستا + ایندکس جست وجو |
+| `npm run preview` | پیش نمایش خروجی بیلد |
+| `npm run import` | همگام سازی محتوا با `roadmap.txt` |
 
-> جست‌وجو فقط روی خروجی `build` کار می‌کند؛ Pagefind ایندکس را بعد از بیلد می‌سازد.
+> جست وجو فقط روی خروجی `build` کار می کند؛ Pagefind ایندکس را بعد از بیلد می سازد.
 
 ## ساختار
 
 ```
 src/
 ├─ content/
-│  ├─ sections/          ۲۶ دسته (آیتم‌های نوار کناری)
-│  ├─ topics/<section>/   ۷۷۲ موضوع، یک فایل مارک‌داون برای هر کدام
+│  ├─ sections/          ۲۶ دسته (آیتم های نوار کناری)
+│  ├─ topics/<section>/   ۷۷۲ موضوع، یک فایل مارک داون برای هر کدام
 │  └─ i18n/parts/*.json   ترجمهٔ عنوان و توضیح
 ├─ components/           Sidebar, TopBar, Tabs, Icon
-├─ layouts/Base.astro    پوسته، RTL، پوسته‌ٔ روشن/تاریک، جست‌وجو
+├─ layouts/Base.astro    پوسته، RTL، پوسته ٔ روشن/تاریک، جست وجو
 ├─ pages/
-│  ├─ index.astro             صفحهٔ نقشه‌راه
+│  ├─ index.astro             صفحهٔ نقشه راه
 │  ├─ [section]/index.astro   صفحهٔ دسته
-│  └─ [section]/[topic].astro صفحهٔ موضوع با تب‌ها
-└─ styles/global.css     توکن‌های طراحی
+│  └─ [section]/[topic].astro صفحهٔ موضوع با تب ها
+└─ styles/global.css     توکن های طراحی
 
-scripts/import-roadmap.mjs   roadmap.txt → فایل‌های محتوا
-legacy/                      نسخهٔ تک‌فایلی قبلی (بایگانی)
+scripts/import-roadmap.mjs   roadmap.txt → فایل های محتوا
+legacy/                      نسخهٔ تک فایلی قبلی (بایگانی)
 ```
 
 نوشتن و مدیریت محتوا: [CONTENT.md](CONTENT.md)
 
 ## انتشار
 
-پوش روی `main` باعث اجرای [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml) می‌شود.
+پوش روی `main` باعث اجرای [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml) می شود.
 یک بار در تنظیمات ریپو **Settings → Pages → Source** را روی *GitHub Actions* بگذارید.
 
 مسیر پایه در [astro.config.mjs](astro.config.mjs) روی `/system-design-roadmap` تنظیم شده؛
-اگر نام ریپو عوض شد، `base` و `public/site.webmanifest` را هم به‌روز کنید.
+اگر نام ریپو عوض شد، `base` و `public/site.webmanifest` را هم به روز کنید.

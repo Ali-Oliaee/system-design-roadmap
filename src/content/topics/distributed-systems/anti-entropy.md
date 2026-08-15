@@ -1,7 +1,7 @@
 ---
 title: "ضدآنتروپی"
 titleEn: "Anti-entropy"
-summary: "تطبیق پس‌زمینه (اغلب با درخت مرکل) که واگرایی بین همانندها را ترمیم می‌کند."
+summary: "تطبیق پس زمینه (اغلب با درخت مرکل) که واگرایی بین همانندها را ترمیم می کند."
 section: "distributed-systems"
 order: 21
 done: false

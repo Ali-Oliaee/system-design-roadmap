@@ -1,5 +1,5 @@
 ---
-title: "Git از درون چطور کار می‌کند؟"
+title: "Git از درون چطور کار می کند؟"
 titleEn: "How Git Works"
 summary: ""
 section: "devtools-and-productivity"

@@ -1,7 +1,7 @@
 ---
-title: "مصاحبه‌های فنی"
+title: "مصاحبه های فنی"
 titleEn: "Technical Interviews"
-summary: "چارچوب پاسخ‌دهی، سؤال‌های پرتکرار و تمرین طراحی سیستم."
+summary: "چارچوب پاسخ دهی، سؤال های پرتکرار و تمرین طراحی سیستم."
 icon: "flask"
 group: core
 kind: roadmap

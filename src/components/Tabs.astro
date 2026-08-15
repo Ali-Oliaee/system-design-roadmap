@@ -48,7 +48,7 @@ const { tabs } = Astro.props;
 
     bar.addEventListener('keydown', (e) => {
       const i = btns.findIndex((b) => b.getAttribute('aria-selected') === 'true');
-      // در RTL جهت فلش‌ها برعکس است
+      // در RTL جهت فلش ها برعکس است
       const step = e.key === 'ArrowLeft' ? 1 : e.key === 'ArrowRight' ? -1 : 0;
       if (!step) return;
       e.preventDefault();

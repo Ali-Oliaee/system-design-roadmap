@@ -1,5 +1,5 @@
 ---
-title: "الگوی Saga: ارکستراسیون یا کرئوگرافی و کنش‌های جبرانی"
+title: "الگوی Saga: ارکستراسیون یا کرئوگرافی و کنش های جبرانی"
 titleEn: "Saga Pattern: Orchestration vs Choreography, Compensating Actions"
 summary: ""
 section: "backend-engineering"

@@ -1,5 +1,5 @@
 ---
-title: "فشار برگشتی و رهاسازی بار هنگام اضافه‌بار"
+title: "فشار برگشتی و رهاسازی بار هنگام اضافه بار"
 titleEn: "Backpressure and Load Shedding Under Overload"
 summary: ""
 section: "backend-engineering"

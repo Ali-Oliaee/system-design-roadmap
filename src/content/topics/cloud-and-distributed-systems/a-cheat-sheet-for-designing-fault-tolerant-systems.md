@@ -1,5 +1,5 @@
 ---
-title: "برگهٔ مرجع طراحی سیستم‌های تحمل‌پذیر خطا"
+title: "برگهٔ مرجع طراحی سیستم های تحمل پذیر خطا"
 titleEn: "A Cheat Sheet for Designing Fault-Tolerant Systems"
 summary: ""
 section: "cloud-and-distributed-systems"

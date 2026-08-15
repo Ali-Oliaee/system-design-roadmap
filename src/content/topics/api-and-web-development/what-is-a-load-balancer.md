@@ -1,5 +1,5 @@
 ---
-title: "متعادل‌کنندهٔ بار چیست؟"
+title: "متعادل کنندهٔ بار چیست؟"
 titleEn: "What is a Load Balancer?"
 summary: ""
 section: "api-and-web-development"

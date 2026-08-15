@@ -1,5 +1,5 @@
 ---
-title: "مدل‌سازی پایگاه داده: نرمال‌سازی، غیرنرمال‌سازی و الگوهای دسترسی"
+title: "مدل سازی پایگاه داده: نرمال سازی، غیرنرمال سازی و الگوهای دسترسی"
 titleEn: "Database Modeling: Normalization, Denormalization, and Access Patterns"
 summary: ""
 section: "backend-engineering"

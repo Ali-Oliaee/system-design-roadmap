@@ -1,5 +1,5 @@
 ---
-title: "رندر در لبه و شخصی‌سازی در سطح CDN"
+title: "رندر در لبه و شخصی سازی در سطح CDN"
 titleEn: "Edge Rendering and CDN-Level Personalization"
 summary: ""
 section: "frontend-engineering"

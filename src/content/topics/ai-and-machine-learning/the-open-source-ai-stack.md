@@ -1,5 +1,5 @@
 ---
-title: "پشتهٔ متن‌باز هوش مصنوعی"
+title: "پشتهٔ متن باز هوش مصنوعی"
 titleEn: "The Open Source AI Stack"
 summary: ""
 section: "ai-and-machine-learning"

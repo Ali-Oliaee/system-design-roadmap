@@ -1,5 +1,5 @@
 ---
-title: "الگوریتم‌های لازم برای مصاحبهٔ طراحی سیستم"
+title: "الگوریتم های لازم برای مصاحبهٔ طراحی سیستم"
 titleEn: "Algorithms for System Design Interviews"
 summary: ""
 section: "software-development"

@@ -1,5 +1,5 @@
 ---
-title: "کرون در مقیاس: انتخاب رهبر و زمان‌بندهای توزیع‌شده"
+title: "کرون در مقیاس: انتخاب رهبر و زمان بندهای توزیع شده"
 titleEn: "Cron at Scale: Leader Election and Distributed Schedulers"
 summary: ""
 section: "backend-engineering"

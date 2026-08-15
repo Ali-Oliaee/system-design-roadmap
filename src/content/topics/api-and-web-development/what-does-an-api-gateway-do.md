@@ -1,5 +1,5 @@
 ---
-title: "دروازهٔ API دقیقاً چه می‌کند؟"
+title: "دروازهٔ API دقیقاً چه می کند؟"
 titleEn: "What Does an API Gateway Do?"
 summary: ""
 section: "api-and-web-development"

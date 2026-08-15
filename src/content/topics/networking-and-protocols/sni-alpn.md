@@ -1,7 +1,7 @@
 ---
 title: "SNI و ALPN"
 titleEn: "SNI / ALPN"
-summary: "افزونه‌های TLS: با SNI می‌گویید کدام نام میزبان را می‌خواهید و با ALPN پروتکل (h2، h3) در همان دست‌دهی مذاکره می‌شود."
+summary: "افزونه های TLS: با SNI می گویید کدام نام میزبان را می خواهید و با ALPN پروتکل (h2، h3) در همان دست دهی مذاکره می شود."
 section: "networking-and-protocols"
 order: 24
 done: false

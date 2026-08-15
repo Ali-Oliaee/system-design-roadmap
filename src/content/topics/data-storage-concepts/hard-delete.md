@@ -1,7 +1,7 @@
 ---
 title: "حذف قطعی"
 titleEn: "Hard delete"
-summary: "سطر را فیزیکی حذف می‌کند. برای پاک‌سازی طبق GDPR لازم است و بدون پشتیبان برگشت‌ناپذیر."
+summary: "سطر را فیزیکی حذف می کند. برای پاک سازی طبق GDPR لازم است و بدون پشتیبان برگشت ناپذیر."
 section: "data-storage-concepts"
 order: 2
 done: false

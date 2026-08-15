@@ -1,7 +1,7 @@
 ---
-title: "Idempotency (خنثی‌بودن تکرار)"
+title: "Idempotency (خنثی بودن تکرار)"
 titleEn: "Idempotency"
-summary: "اجرای دوبارهٔ یک درخواست همان اثر یک‌بار اجرا را دارد. GET، PUT و DELETE ذاتاً Idempotent‌اند؛ POST نیست."
+summary: "اجرای دوبارهٔ یک درخواست همان اثر یک بار اجرا را دارد. GET، PUT و DELETE ذاتاً Idempotent اند؛ POST نیست."
 section: "api-design-and-reliability"
 order: 1
 done: false

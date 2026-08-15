@@ -1,5 +1,5 @@
 ---
-title: "API روی APIها — یکپارچه‌سازی اپلیکیشن‌ها"
+title: "API روی APIها — یکپارچه سازی اپلیکیشن ها"
 titleEn: "API of APIs - App Integrations"
 summary: ""
 section: "real-world-case-studies"

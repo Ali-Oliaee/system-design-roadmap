@@ -35,7 +35,7 @@ const related = siblings
   .concat(d.related.length ? [] : siblings.filter((t) => t.id !== topic.id).slice(0, 4));
 
 const tabs: Tab[] = [{ id: 'overview', label: 'نمای کلی', icon: 'book' }];
-if (toc.length) tabs.push({ id: 'contents', label: 'سرفصل‌ها', icon: 'list', count: toc.length });
+if (toc.length) tabs.push({ id: 'contents', label: 'سرفصل ها', icon: 'list', count: toc.length });
 if (d.resources.length) tabs.push({ id: 'resources', label: 'منابع', icon: 'link', count: d.resources.length });
 if (d.videos.length) tabs.push({ id: 'videos', label: 'ویدیوها', icon: 'play', count: d.videos.length });
 if (d.cheatsheet.length) tabs.push({ id: 'cheatsheet', label: 'برگهٔ تقلب', icon: 'flask', count: d.cheatsheet.length });
@@ -46,7 +46,7 @@ const fmt = new Intl.DateTimeFormat('fa-IR', { dateStyle: 'medium' });
 
 <Base
   title={d.title}
-  description={d.summary || `${d.title} — بخشی از ${section.data.title} در نقشه‌راه طراحی سیستم.`}
+  description={d.summary || `${d.title} — بخشی از ${section.data.title} در نقشه راه طراحی سیستم.`}
   activeSection={sectionSlug}
   activeTopic={topicSlug(topic)}
   crumbs={[
@@ -66,7 +66,7 @@ const fmt = new Intl.DateTimeFormat('fa-IR', { dateStyle: 'medium' });
         <div class="head__meta">
           <span class={`chip ${d.done ? 'chip--done' : ''}`}>
             {d.done ? <Icon name="check" size={13} /> : <Icon name="cog" size={13} />}
-            {d.done ? 'پوشش‌داده‌شده' : 'در دست تکمیل'}
+            {d.done ? 'پوشش داده شده' : 'در دست تکمیل'}
           </span>
           {d.tags.map((t) => <span class="chip">{t}</span>)}
           {d.updated && <span class="chip">آخرین بروزرسانی: {fmt.format(d.updated)}</span>}
@@ -99,7 +99,7 @@ const fmt = new Intl.DateTimeFormat('fa-IR', { dateStyle: 'medium' });
           <div class="empty card">
             <Icon name="flask" size={22} />
             <p><strong>این صفحه هنوز محتوای فارسی ندارد.</strong></p>
-            <p class="muted">لینک‌های بالا فعلاً مرجع اصلی‌اند.</p>
+            <p class="muted">لینک های بالا فعلاً مرجع اصلی اند.</p>
             <p class="muted">
               برای نوشتن محتوا فایل <code class="ltr">src/content/topics/{topic.id}.md</code> را ویرایش کنید.
             </p>
@@ -198,7 +198,7 @@ const fmt = new Intl.DateTimeFormat('fa-IR', { dateStyle: 'medium' });
 
     {related.length > 0 && (
       <section class="related">
-        <h2>موضوع‌های مرتبط</h2>
+        <h2>موضوع های مرتبط</h2>
         <ul>
           {related.slice(0, 6).map((t) => (
             <li><a href={topicUrl(t)}><Icon name={section.data.icon} size={15} />{t.data.title}</a></li>

@@ -1,5 +1,5 @@
 ---
-title: "نتفلیکس واقعاً چطور از جاوا استفاده می‌کند؟"
+title: "نتفلیکس واقعاً چطور از جاوا استفاده می کند؟"
 titleEn: "How Netflix Really Uses Java"
 summary: ""
 section: "real-world-case-studies"

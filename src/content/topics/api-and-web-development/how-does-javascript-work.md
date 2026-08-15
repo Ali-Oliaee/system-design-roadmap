@@ -1,5 +1,5 @@
 ---
-title: "جاوااسکریپت چطور کار می‌کند؟"
+title: "جاوااسکریپت چطور کار می کند؟"
 titleEn: "How does Javascript Work?"
 summary: ""
 section: "api-and-web-development"

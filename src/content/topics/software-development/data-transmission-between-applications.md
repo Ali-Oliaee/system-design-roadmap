@@ -1,5 +1,5 @@
 ---
-title: "انتقال داده بین اپلیکیشن‌ها"
+title: "انتقال داده بین اپلیکیشن ها"
 titleEn: "Data Transmission Between Applications"
 summary: ""
 section: "software-development"

@@ -1,5 +1,5 @@
 ---
-title: "AirTag چطور کار می‌کند؟"
+title: "AirTag چطور کار می کند؟"
 titleEn: "How do AirTags work?"
 summary: ""
 section: "how-it-works"

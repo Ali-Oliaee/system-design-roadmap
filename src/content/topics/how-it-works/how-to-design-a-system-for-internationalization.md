@@ -1,5 +1,5 @@
 ---
-title: "طراحی سیستم برای چندزبانه‌سازی"
+title: "طراحی سیستم برای چندزبانه سازی"
 titleEn: "How to Design a System for Internationalization"
 summary: ""
 section: "how-it-works"

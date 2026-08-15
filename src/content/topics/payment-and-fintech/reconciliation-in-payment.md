@@ -1,5 +1,5 @@
 ---
-title: "مغایرت‌گیری در پرداخت"
+title: "مغایرت گیری در پرداخت"
 titleEn: "Reconciliation in Payment"
 summary: ""
 section: "payment-and-fintech"

@@ -1,5 +1,5 @@
 ---
-title: "قفل خوش‌بینانه در برابر بدبینانه در کد اپلیکیشن"
+title: "قفل خوش بینانه در برابر بدبینانه در کد اپلیکیشن"
 titleEn: "Optimistic vs Pessimistic Locking in Application Code"
 summary: ""
 section: "backend-engineering"

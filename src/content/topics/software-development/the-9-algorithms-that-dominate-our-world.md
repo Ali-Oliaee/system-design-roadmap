@@ -1,5 +1,5 @@
 ---
-title: "۹ الگوریتمی که دنیای ما را می‌گردانند"
+title: "۹ الگوریتمی که دنیای ما را می گردانند"
 titleEn: "The 9 Algorithms That Dominate Our World"
 summary: ""
 section: "software-development"

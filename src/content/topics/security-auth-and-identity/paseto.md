@@ -1,7 +1,7 @@
 ---
 title: "PASETO"
 titleEn: "PASETO"
-summary: "جایگزین JWT با الگوریتم‌های ثابت و امن — بدون دام‌هایی مثل «alg: none»."
+summary: "جایگزین JWT با الگوریتم های ثابت و امن — بدون دام هایی مثل «alg: none»."
 section: "security-auth-and-identity"
 order: 7
 done: false

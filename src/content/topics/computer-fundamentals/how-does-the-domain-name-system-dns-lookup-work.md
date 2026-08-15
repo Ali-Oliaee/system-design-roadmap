@@ -1,5 +1,5 @@
 ---
-title: "جست‌وجوی DNS چطور کار می‌کند؟"
+title: "جست وجوی DNS چطور کار می کند؟"
 titleEn: "How Does the Domain Name System (DNS) Lookup Work?"
 summary: ""
 section: "computer-fundamentals"

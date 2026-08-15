@@ -1,7 +1,7 @@
 ---
-title: "درخواست‌های شرطی"
+title: "درخواست های شرطی"
 titleEn: "Conditional requests"
-summary: "هدرهای If-Match و If-Unmodified-Since جلوی گم‌شدن تغییرات را وقتی دو کلاینت یک منبع را ویرایش می‌کنند می‌گیرند."
+summary: "هدرهای If-Match و If-Unmodified-Since جلوی گم شدن تغییرات را وقتی دو کلاینت یک منبع را ویرایش می کنند می گیرند."
 section: "api-design-and-reliability"
 order: 16
 done: false

@@ -1,5 +1,5 @@
 ---
-title: "بلادرنگ و پیام‌رسانی"
+title: "بلادرنگ و پیام رسانی"
 titleEn: "Real-Time & Messaging"
 summary: "پولینگ، WebSocket، SSE، صف و استریم رویداد."
 icon: "chat"

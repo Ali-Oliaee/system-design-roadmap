@@ -1,5 +1,5 @@
 ---
-title: "نقشهٔ جامع دانش معمار نرم‌افزار"
+title: "نقشهٔ جامع دانش معمار نرم افزار"
 titleEn: "The Ultimate Software Architect Knowledge Map"
 summary: ""
 section: "software-architecture"

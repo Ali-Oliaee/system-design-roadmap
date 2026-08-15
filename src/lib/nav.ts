@@ -5,14 +5,14 @@ export type Topic = CollectionEntry<'topics'>;
 
 export const GROUP_LABELS: Record<string, { title: string; summary: string; order: number }> = {
   core: { title: 'مسیر اصلی', summary: 'ستون فقرات طراحی سیستم — از مبانی تا مصاحبهٔ فنی.', order: 1 },
-  tracks: { title: 'مسیرهای تخصصی', summary: 'عمق‌بخشی بر اساس نقش: فرانت‌اند، بک‌اند و موبایل.', order: 2 },
-  concepts: { title: 'مفاهیم و واژه‌نامه', summary: 'تعریف‌های کوتاه برای مرور سریع.', order: 3 },
+  tracks: { title: 'مسیرهای تخصصی', summary: 'عمق بخشی بر اساس نقش: فرانت اند، بک اند و موبایل.', order: 2 },
+  concepts: { title: 'مفاهیم و واژه نامه', summary: 'تعریف های کوتاه برای مرور سریع.', order: 3 },
 };
 
 const isPublished = <T extends { data: { draft?: boolean } }>(e: T) =>
   import.meta.env.DEV || !e.data.draft;
 
-/** آیدی رفرنس ممکن است رشته یا آبجکت باشد — هر دو را نرمال می‌کند */
+/** آیدی رفرنس ممکن است رشته یا آبجکت باشد — هر دو را نرمال می کند */
 const refId = (v: unknown): string =>
   typeof v === 'string' ? v : ((v as { id: string })?.id ?? '');
 
@@ -33,7 +33,7 @@ export interface NavGroup {
 
 let cache: NavGroup[] | null = null;
 
-/** درخت کامل نوار کناری — یک بار در هر بیلد ساخته می‌شود */
+/** درخت کامل نوار کناری — یک بار در هر بیلد ساخته می شود */
 export async function getNav(): Promise<NavGroup[]> {
   if (cache) return cache;
 
@@ -97,9 +97,9 @@ export async function getStats() {
 }
 
 /**
- * آدرس‌سازی با احترام به base در gh-pages.
- * مسیر صفحه اسلش پایانی می‌گیرد، ولی فایل (هر چیزی با پسوند) نه —
- * وگرنه assets/favicon.svg/ تبدیل به ۴۰۴ می‌شود.
+ * آدرس سازی با احترام به base در gh-pages.
+ * مسیر صفحه اسلش پایانی می گیرد، ولی فایل (هر چیزی با پسوند) نه —
+ * وگرنه assets/favicon.svg/ تبدیل به ۴۰۴ می شود.
  */
 export const url = (p = '') => {
   const base = import.meta.env.BASE_URL.replace(/\/$/, '');
@@ -112,7 +112,7 @@ export const url = (p = '') => {
 export const topicUrl = (t: Topic) => url(`${refId(t.data.section)}/${topicSlug(t)}`);
 export const sectionUrl = (slug: string) => url(slug);
 
-/** id موضوع «<section>/<slug>» است — فقط بخش دوم را می‌خواهیم */
+/** id موضوع «<section>/<slug>» است — فقط بخش دوم را می خواهیم */
 export const topicSlug = (t: Topic) => t.id.split('/').pop()!;
 
 export { refId };

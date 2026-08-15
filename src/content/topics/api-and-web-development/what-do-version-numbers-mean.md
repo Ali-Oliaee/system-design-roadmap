@@ -1,5 +1,5 @@
 ---
-title: "شماره‌های نسخه چه معنایی دارند؟"
+title: "شماره های نسخه چه معنایی دارند؟"
 titleEn: "What do version numbers mean?"
 summary: ""
 section: "api-and-web-development"

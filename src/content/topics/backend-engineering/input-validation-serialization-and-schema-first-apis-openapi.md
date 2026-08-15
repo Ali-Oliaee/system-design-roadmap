@@ -1,5 +1,5 @@
 ---
-title: "اعتبارسنجی ورودی، سریال‌سازی و API اسکیمااول (OpenAPI)"
+title: "اعتبارسنجی ورودی، سریال سازی و API اسکیمااول (OpenAPI)"
 titleEn: "Input Validation, Serialization, and Schema-First APIs (OpenAPI)"
 summary: ""
 section: "backend-engineering"

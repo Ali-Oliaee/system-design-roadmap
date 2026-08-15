@@ -1,5 +1,5 @@
 ---
-title: "۸ پارادایم برنامه‌نویسی"
+title: "۸ پارادایم برنامه نویسی"
 titleEn: "Top 8 Programming Paradigms"
 summary: ""
 section: "software-development"

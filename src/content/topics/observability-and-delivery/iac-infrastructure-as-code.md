@@ -1,7 +1,7 @@
 ---
-title: "IaC (زیرساخت به‌عنوان کد)"
+title: "IaC (زیرساخت به عنوان کد)"
 titleEn: "IaC (infrastructure as code)"
-summary: "زیرساخت اعلانی، نسخه‌دار و قابل‌بازبینی (Terraform، Pulumi، CDK)."
+summary: "زیرساخت اعلانی، نسخه دار و قابل بازبینی (Terraform، Pulumi، CDK)."
 section: "observability-and-delivery"
 order: 22
 done: false

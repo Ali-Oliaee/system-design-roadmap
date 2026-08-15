@@ -1,5 +1,5 @@
 ---
-title: "تنوع دستگاه‌ها: شبیه‌ساز در برابر مزرعهٔ دستگاه واقعی"
+title: "تنوع دستگاه ها: شبیه ساز در برابر مزرعهٔ دستگاه واقعی"
 titleEn: "Device Fragmentation, Emulator vs Real Device Farms"
 summary: ""
 section: "mobile-engineering"

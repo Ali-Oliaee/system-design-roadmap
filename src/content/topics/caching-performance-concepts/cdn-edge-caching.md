@@ -1,7 +1,7 @@
 ---
 title: "کش لبه در CDN"
 titleEn: "CDN edge caching"
-summary: "سرو کردن محتوای ایستا و پویای کش‌پذیر از یک POP نزدیک کاربر. با Cache-Control و کلیدهای جانشین کنترل می‌شود."
+summary: "سرو کردن محتوای ایستا و پویای کش پذیر از یک POP نزدیک کاربر. با Cache-Control و کلیدهای جانشین کنترل می شود."
 section: "caching-performance-concepts"
 order: 13
 done: false

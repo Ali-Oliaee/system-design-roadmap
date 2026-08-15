@@ -1,5 +1,5 @@
 ---
-title: "همهٔ اجزای یک URL را می‌شناسید؟"
+title: "همهٔ اجزای یک URL را می شناسید؟"
 titleEn: "Do you know all the components of a URL?"
 summary: ""
 section: "api-and-web-development"

@@ -1,5 +1,5 @@
 ---
-title: "Docker چطور کار می‌کند؟"
+title: "Docker چطور کار می کند؟"
 titleEn: "How does Docker work?"
 summary: ""
 section: "devops-and-ci-cd"

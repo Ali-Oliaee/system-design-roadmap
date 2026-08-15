@@ -1,5 +1,5 @@
 ---
-title: "سامانهٔ نوتیفیکیشن چطور کار می‌کند؟"
+title: "سامانهٔ نوتیفیکیشن چطور کار می کند؟"
 titleEn: "How Does a Typical Push Notification System Work?"
 summary: ""
 section: "real-world-case-studies"

@@ -1,7 +1,7 @@
 ---
-title: "BFF (بک‌اند مخصوص فرانت‌اند)"
+title: "BFF (بک اند مخصوص فرانت اند)"
 titleEn: "BFF (backend for frontend)"
-summary: "یک لایهٔ API به‌ازای هر نوع کلاینت که داده را برای وب، موبایل یا شرکا شکل می‌دهد و تجمیع می‌کند."
+summary: "یک لایهٔ API به ازای هر نوع کلاینت که داده را برای وب، موبایل یا شرکا شکل می دهد و تجمیع می کند."
 section: "api-design-and-reliability"
 order: 21
 done: false

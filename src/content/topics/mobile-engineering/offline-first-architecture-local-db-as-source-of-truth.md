@@ -1,5 +1,5 @@
 ---
-title: "معماری آفلاین‌اول: پایگاه دادهٔ محلی به‌عنوان منبع حقیقت"
+title: "معماری آفلاین اول: پایگاه دادهٔ محلی به عنوان منبع حقیقت"
 titleEn: "Offline-First Architecture: Local DB as Source of Truth"
 summary: ""
 section: "mobile-engineering"

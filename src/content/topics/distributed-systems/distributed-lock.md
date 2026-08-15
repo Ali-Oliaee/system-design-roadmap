@@ -1,7 +1,7 @@
 ---
-title: "قفل توزیع‌شده"
+title: "قفل توزیع شده"
 titleEn: "Distributed lock"
-summary: "انحصار متقابل بین پردازه‌ها (Redis، etcd، ZooKeeper). فقط با اجاره، حصارکشی و آگاهی از ساعت درست کار می‌کند."
+summary: "انحصار متقابل بین پردازه ها (Redis، etcd، ZooKeeper). فقط با اجاره، حصارکشی و آگاهی از ساعت درست کار می کند."
 section: "distributed-systems"
 order: 5
 done: false

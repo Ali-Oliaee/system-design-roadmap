@@ -1,5 +1,5 @@
 ---
-title: "الگوهای دریافت داده: SWR، TanStack Query، کش و باطل‌سازی"
+title: "الگوهای دریافت داده: SWR، TanStack Query، کش و باطل سازی"
 titleEn: "Data Fetching Patterns: SWR, TanStack Query, Caching and Invalidation"
 summary: ""
 section: "frontend-engineering"

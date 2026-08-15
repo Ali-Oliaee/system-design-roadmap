@@ -1,5 +1,5 @@
 ---
-title: "مقیاس‌دهی صد برابری Postgres در Figma"
+title: "مقیاس دهی صد برابری Postgres در Figma"
 titleEn: "100X Postgres Scaling at Figma"
 summary: ""
 section: "real-world-case-studies"

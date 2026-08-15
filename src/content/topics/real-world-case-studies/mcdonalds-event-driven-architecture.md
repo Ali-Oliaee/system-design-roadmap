@@ -1,5 +1,5 @@
 ---
-title: "معماری رویدادمحور مک‌دونالد"
+title: "معماری رویدادمحور مک دونالد"
 titleEn: "McDonald's Event-Driven Architecture"
 summary: ""
 section: "real-world-case-studies"

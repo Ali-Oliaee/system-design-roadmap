@@ -1,5 +1,5 @@
 ---
-title: "معماری شش‌ضلعی و تمیز، و وارونگی وابستگی"
+title: "معماری شش ضلعی و تمیز، و وارونگی وابستگی"
 titleEn: "Hexagonal / Clean Architecture and Dependency Inversion"
 summary: ""
 section: "backend-engineering"

@@ -1,5 +1,5 @@
 ---
-title: "الگوهای پیمایش: پشته، تب، دیپ‌لینک و Universal Link"
+title: "الگوهای پیمایش: پشته، تب، دیپ لینک و Universal Link"
 titleEn: "Navigation Patterns: Stacks, Tabs, Deep Links, Universal Links"
 summary: ""
 section: "mobile-engineering"

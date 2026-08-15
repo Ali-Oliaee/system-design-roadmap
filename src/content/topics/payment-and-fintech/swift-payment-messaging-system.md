@@ -1,5 +1,5 @@
 ---
-title: "سامانهٔ پیام‌رسانی پرداخت SWIFT"
+title: "سامانهٔ پیام رسانی پرداخت SWIFT"
 titleEn: "SWIFT Payment Messaging System"
 summary: ""
 section: "payment-and-fintech"

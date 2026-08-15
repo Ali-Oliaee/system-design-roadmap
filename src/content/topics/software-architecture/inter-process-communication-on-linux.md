@@ -1,5 +1,5 @@
 ---
-title: "ارتباط بین پردازه‌ها در لینوکس"
+title: "ارتباط بین پردازه ها در لینوکس"
 titleEn: "Inter-Process Communication on Linux"
 summary: ""
 section: "software-architecture"

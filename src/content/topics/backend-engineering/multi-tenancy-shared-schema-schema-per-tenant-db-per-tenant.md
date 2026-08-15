@@ -1,5 +1,5 @@
 ---
-title: "چنداجاره‌ای: اسکیمای مشترک، اسکیما به‌ازای مستأجر، پایگاه داده به‌ازای مستأجر"
+title: "چنداجاره ای: اسکیمای مشترک، اسکیما به ازای مستأجر، پایگاه داده به ازای مستأجر"
 titleEn: "Multi-Tenancy: Shared Schema, Schema-per-Tenant, DB-per-Tenant"
 summary: ""
 section: "backend-engineering"

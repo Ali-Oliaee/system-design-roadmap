@@ -1,5 +1,5 @@
 ---
-title: "احراز هویت در فرانت‌اند: کوکی یا توکن، و خطر XSS و CSRF"
+title: "احراز هویت در فرانت اند: کوکی یا توکن، و خطر XSS و CSRF"
 titleEn: "Auth on the Frontend: Cookie vs Token Storage, XSS and CSRF Risks"
 summary: ""
 section: "frontend-engineering"

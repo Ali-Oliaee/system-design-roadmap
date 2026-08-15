@@ -1,5 +1,5 @@
 ---
-title: "Git چطور کار می‌کند؟"
+title: "Git چطور کار می کند؟"
 titleEn: "How does Git Work?"
 summary: ""
 section: "devtools-and-productivity"

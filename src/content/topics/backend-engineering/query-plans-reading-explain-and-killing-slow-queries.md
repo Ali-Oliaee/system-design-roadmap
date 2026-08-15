@@ -1,5 +1,5 @@
 ---
-title: "نقشهٔ اجرای کوئری: خواندن EXPLAIN و کشتن کوئری‌های کند"
+title: "نقشهٔ اجرای کوئری: خواندن EXPLAIN و کشتن کوئری های کند"
 titleEn: "Query Plans: Reading EXPLAIN and Killing Slow Queries"
 summary: ""
 section: "backend-engineering"

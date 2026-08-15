@@ -1,5 +1,5 @@
 ---
-title: "سیگنال‌های طلایی"
+title: "سیگنال های طلایی"
 titleEn: "Golden signals"
 summary: "تأخیر، ترافیک، خطا و اشباع — چهار داشبوردی که اول باید بسازید."
 section: "observability-and-delivery"

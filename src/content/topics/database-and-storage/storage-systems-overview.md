@@ -1,5 +1,5 @@
 ---
-title: "نگاهی کلی به سامانه‌های ذخیره‌سازی"
+title: "نگاهی کلی به سامانه های ذخیره سازی"
 titleEn: "Storage Systems Overview"
 summary: ""
 section: "database-and-storage"

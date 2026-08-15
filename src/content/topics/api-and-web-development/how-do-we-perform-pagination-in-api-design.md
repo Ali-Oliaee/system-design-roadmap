@@ -1,5 +1,5 @@
 ---
-title: "صفحه‌بندی را در طراحی API چطور انجام دهیم؟"
+title: "صفحه بندی را در طراحی API چطور انجام دهیم؟"
 titleEn: "How do we Perform Pagination in API Design?"
 summary: ""
 section: "api-and-web-development"

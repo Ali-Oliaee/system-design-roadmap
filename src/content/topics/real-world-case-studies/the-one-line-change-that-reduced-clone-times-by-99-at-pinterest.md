@@ -1,5 +1,5 @@
 ---
-title: "تغییر یک‌خطی که زمان clone را در Pinterest ۹۹٪ کم کرد"
+title: "تغییر یک خطی که زمان clone را در Pinterest ۹۹٪ کم کرد"
 titleEn: "The one-line change that reduced clone times by 99% at Pinterest"
 summary: ""
 section: "real-world-case-studies"

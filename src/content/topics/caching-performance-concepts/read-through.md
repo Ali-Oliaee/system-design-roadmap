@@ -1,7 +1,7 @@
 ---
 title: "Read-through"
 titleEn: "Read-through"
-summary: "خود کش هنگام نبود داده از منبع می‌خواند، پس اپ فقط با کش حرف می‌زند."
+summary: "خود کش هنگام نبود داده از منبع می خواند، پس اپ فقط با کش حرف می زند."
 section: "caching-performance-concepts"
 order: 2
 done: false

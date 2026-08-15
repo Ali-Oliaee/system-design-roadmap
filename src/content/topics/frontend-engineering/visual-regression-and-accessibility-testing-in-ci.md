@@ -1,5 +1,5 @@
 ---
-title: "تست رگرسیون بصری و دسترس‌پذیری در CI"
+title: "تست رگرسیون بصری و دسترس پذیری در CI"
 titleEn: "Visual Regression and Accessibility Testing in CI"
 summary: ""
 section: "frontend-engineering"

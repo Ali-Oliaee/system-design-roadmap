@@ -1,5 +1,5 @@
 ---
-title: "CSP، SRI و سخت‌سازی فرانت‌اند"
+title: "CSP، SRI و سخت سازی فرانت اند"
 titleEn: "Content Security Policy, SRI, and Frontend Hardening"
 summary: ""
 section: "frontend-engineering"

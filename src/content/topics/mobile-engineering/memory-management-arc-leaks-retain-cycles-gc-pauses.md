@@ -1,5 +1,5 @@
 ---
-title: "مدیریت حافظه: ARC، نشتی، چرخهٔ نگه‌داشت و مکث GC"
+title: "مدیریت حافظه: ARC، نشتی، چرخهٔ نگه داشت و مکث GC"
 titleEn: "Memory Management: ARC, Leaks, Retain Cycles, GC Pauses"
 summary: ""
 section: "mobile-engineering"

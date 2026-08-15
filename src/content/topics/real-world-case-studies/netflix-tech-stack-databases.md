@@ -1,5 +1,5 @@
 ---
-title: "پشتهٔ فناوری نتفلیکس — پایگاه‌های داده"
+title: "پشتهٔ فناوری نتفلیکس — پایگاه های داده"
 titleEn: "Netflix Tech Stack - Databases"
 summary: ""
 section: "real-world-case-studies"

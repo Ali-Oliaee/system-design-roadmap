@@ -1,5 +1,5 @@
 ---
-title: "سامانهٔ کش کجاها خراب می‌شود؟"
+title: "سامانهٔ کش کجاها خراب می شود؟"
 titleEn: "How Can Cache Systems Go Wrong?"
 summary: ""
 section: "caching-and-performance"

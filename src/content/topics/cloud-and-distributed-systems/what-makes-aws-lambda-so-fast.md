@@ -1,5 +1,5 @@
 ---
-title: "چه چیزی AWS Lambda را این‌قدر سریع می‌کند؟"
+title: "چه چیزی AWS Lambda را این قدر سریع می کند؟"
 titleEn: "What makes AWS Lambda so fast?"
 summary: ""
 section: "cloud-and-distributed-systems"

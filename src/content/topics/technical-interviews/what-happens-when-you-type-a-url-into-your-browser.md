@@ -1,5 +1,5 @@
 ---
-title: "وقتی یک URL را در مرورگر وارد می‌کنید چه می‌شود؟"
+title: "وقتی یک URL را در مرورگر وارد می کنید چه می شود؟"
 titleEn: "What Happens When You Type a URL Into Your Browser?"
 summary: ""
 section: "technical-interviews"

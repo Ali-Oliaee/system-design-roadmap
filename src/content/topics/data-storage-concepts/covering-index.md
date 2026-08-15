@@ -1,7 +1,7 @@
 ---
 title: "ایندکس پوشا"
 titleEn: "Covering index"
-summary: "ایندکسی که همهٔ ستون‌های موردنیاز کوئری را دارد، پس اصلاً سراغ خود جدول نمی‌رود."
+summary: "ایندکسی که همهٔ ستون های موردنیاز کوئری را دارد، پس اصلاً سراغ خود جدول نمی رود."
 section: "data-storage-concepts"
 order: 16
 done: false

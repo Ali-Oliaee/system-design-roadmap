@@ -1,5 +1,5 @@
 ---
-title: "مدل‌سازی منابع REST و طراحی URL"
+title: "مدل سازی منابع REST و طراحی URL"
 titleEn: "REST Resource Modeling and URL Design"
 summary: ""
 section: "backend-engineering"

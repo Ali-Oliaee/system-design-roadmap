@@ -1,7 +1,7 @@
 ---
 title: "گیرندهٔ Idempotent"
 titleEn: "Idempotent receiver"
-summary: "حذف تکراری در سمت مصرف‌کننده تا تحویل مجدد دوبار اعمال نشود."
+summary: "حذف تکراری در سمت مصرف کننده تا تحویل مجدد دوبار اعمال نشود."
 section: "distributed-systems"
 order: 19
 done: false

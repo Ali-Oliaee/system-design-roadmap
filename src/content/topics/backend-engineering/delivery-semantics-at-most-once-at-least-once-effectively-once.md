@@ -1,5 +1,5 @@
 ---
-title: "ضمانت تحویل: حداکثر یک‌بار، حداقل یک‌بار، عملاً یک‌بار"
+title: "ضمانت تحویل: حداکثر یک بار، حداقل یک بار، عملاً یک بار"
 titleEn: "Delivery Semantics: At-Most-Once, At-Least-Once, Effectively-Once"
 summary: ""
 section: "backend-engineering"

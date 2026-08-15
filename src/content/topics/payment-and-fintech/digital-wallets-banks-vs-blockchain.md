@@ -1,5 +1,5 @@
 ---
-title: "کیف پول دیجیتال: بانک در برابر بلاک‌چین"
+title: "کیف پول دیجیتال: بانک در برابر بلاک چین"
 titleEn: "Digital Wallets: Banks vs. Blockchain"
 summary: ""
 section: "payment-and-fintech"

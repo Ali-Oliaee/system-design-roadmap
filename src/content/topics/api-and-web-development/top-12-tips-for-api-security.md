@@ -1,7 +1,7 @@
 ---
 title: "۱۲ نکتهٔ امنیت API"
 titleEn: "Top 12 Tips for API Security"
-summary: "HTTPS، SSL و TLS، OAuth، سه‌گانهٔ AAA (احراز هویت، مجوزدهی، حسابداری)، OIDC، WebAuthn، رمزنگاری متقارن و نامتقارن، Passkey، کلید API سطح‌بندی‌شده و RBAC."
+summary: "HTTPS، SSL و TLS، OAuth، سه گانهٔ AAA (احراز هویت، مجوزدهی، حسابداری)، OIDC، WebAuthn، رمزنگاری متقارن و نامتقارن، Passkey، کلید API سطح بندی شده و RBAC."
 section: "api-and-web-development"
 order: 44
 done: true

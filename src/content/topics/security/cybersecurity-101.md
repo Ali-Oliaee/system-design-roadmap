@@ -1,5 +1,5 @@
 ---
-title: "مقدمه‌ای بر امنیت سایبری"
+title: "مقدمه ای بر امنیت سایبری"
 titleEn: "Cybersecurity 101"
 summary: ""
 section: "security"

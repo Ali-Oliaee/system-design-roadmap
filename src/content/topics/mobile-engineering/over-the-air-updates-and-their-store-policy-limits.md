@@ -1,5 +1,5 @@
 ---
-title: "به‌روزرسانی OTA و محدودیت‌های قوانین استور"
+title: "به روزرسانی OTA و محدودیت های قوانین استور"
 titleEn: "Over-the-Air Updates and Their Store Policy Limits"
 summary: ""
 section: "mobile-engineering"

@@ -1,5 +1,5 @@
 ---
-title: "کاربردهای واقعی متعادل‌کنندهٔ بار"
+title: "کاربردهای واقعی متعادل کنندهٔ بار"
 titleEn: "Load Balancer Realistic Use Cases"
 summary: ""
 section: "api-and-web-development"

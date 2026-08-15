@@ -1,5 +1,5 @@
 ---
-title: "برگهٔ مرجع زیرساخت به‌عنوان کد"
+title: "برگهٔ مرجع زیرساخت به عنوان کد"
 titleEn: "Infrastructure as Code Landscape Cheatsheet"
 summary: ""
 section: "cloud-and-distributed-systems"

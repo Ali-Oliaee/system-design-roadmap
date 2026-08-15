@@ -1,5 +1,5 @@
 ---
-title: "کدگذاری پاک‌شونده (Erasure Coding)"
+title: "کدگذاری پاک شونده (Erasure Coding)"
 titleEn: "Erasure Coding"
 summary: ""
 section: "database-and-storage"

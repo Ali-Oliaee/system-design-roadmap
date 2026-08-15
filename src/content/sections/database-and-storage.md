@@ -1,7 +1,7 @@
 ---
-title: "پایگاه داده و ذخیره‌سازی"
+title: "پایگاه داده و ذخیره سازی"
 titleEn: "Database and Storage"
-summary: "SQL و NoSQL، ایندکس، شاردینگ، تراکنش و موتورهای ذخیره‌سازی."
+summary: "SQL و NoSQL، ایندکس، شاردینگ، تراکنش و موتورهای ذخیره سازی."
 icon: "db"
 group: core
 kind: roadmap

@@ -1,5 +1,5 @@
 ---
-title: "WAL (لاگ پیش‌نوشت)"
+title: "WAL (لاگ پیش نوشت)"
 titleEn: "WAL (write-ahead log)"
 summary: "سازوکار ماندگاری: تغییر را پیش از اعمال، به لاگ اضافه کن. پایهٔ همانندسازی و CDC هم هست."
 section: "data-storage-concepts"

@@ -1,5 +1,5 @@
 ---
-title: "همروندی در برابر موازی‌سازی"
+title: "همروندی در برابر موازی سازی"
 titleEn: "Concurrency vs Parallelism"
 summary: ""
 section: "software-development"

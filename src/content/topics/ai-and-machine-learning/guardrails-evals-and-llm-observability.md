@@ -1,5 +1,5 @@
 ---
-title: "حفاظ‌ها، ارزیابی و مشاهده‌پذیری LLM"
+title: "حفاظ ها، ارزیابی و مشاهده پذیری LLM"
 titleEn: "Guardrails, Evals, and LLM Observability"
 summary: ""
 section: "ai-and-machine-learning"

@@ -1,5 +1,5 @@
 ---
-title: "برنامه‌های کامپیوتری چطور اجرا می‌شوند؟"
+title: "برنامه های کامپیوتری چطور اجرا می شوند؟"
 titleEn: "How Do Computer Programs Run?"
 summary: ""
 section: "software-architecture"

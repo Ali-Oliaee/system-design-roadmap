@@ -1,5 +1,5 @@
 ---
-title: "کاربردهای کلیدی متعادل‌کنندهٔ بار"
+title: "کاربردهای کلیدی متعادل کنندهٔ بار"
 titleEn: "Key Use Cases for Load Balancers"
 summary: ""
 section: "api-and-web-development"

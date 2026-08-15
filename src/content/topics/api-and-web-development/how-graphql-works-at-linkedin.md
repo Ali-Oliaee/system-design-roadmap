@@ -1,5 +1,5 @@
 ---
-title: "GraphQL در لینکدین چطور به کار می‌رود؟"
+title: "GraphQL در لینکدین چطور به کار می رود؟"
 titleEn: "How GraphQL Works at LinkedIn"
 summary: ""
 section: "api-and-web-development"

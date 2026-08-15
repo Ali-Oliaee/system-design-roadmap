@@ -1,5 +1,5 @@
 ---
-title: "وب‌هوک"
+title: "وب هوک"
 titleEn: "Webhook"
 summary: "فراخوان HTTP سرور به سرور. گیرنده باید امضا را بررسی کند، Idempotent باشد و سریع پاسخ دهد."
 section: "real-time-and-messaging"

@@ -1,7 +1,7 @@
 ---
-title: "فشرده‌سازی"
+title: "فشرده سازی"
 titleEn: "Compression"
-summary: "gzip، brotli و zstd. پردازنده را با بایت روی سیم معامله می‌کند؛ بر اساس نوع محتوا و کش‌پذیری انتخاب کنید."
+summary: "gzip، brotli و zstd. پردازنده را با بایت روی سیم معامله می کند؛ بر اساس نوع محتوا و کش پذیری انتخاب کنید."
 section: "caching-performance-concepts"
 order: 21
 done: false

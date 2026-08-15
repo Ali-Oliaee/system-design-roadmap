@@ -1,5 +1,5 @@
 ---
-title: "JSON Crack: تصویرسازی فایل‌های JSON"
+title: "JSON Crack: تصویرسازی فایل های JSON"
 titleEn: "JSON Crack: Visualize JSON Files"
 summary: ""
 section: "devtools-and-productivity"

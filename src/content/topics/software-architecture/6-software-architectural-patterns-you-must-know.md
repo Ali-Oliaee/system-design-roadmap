@@ -1,5 +1,5 @@
 ---
-title: "۶ الگوی معماری نرم‌افزار"
+title: "۶ الگوی معماری نرم افزار"
 titleEn: "6 Software Architectural Patterns You Must Know"
 summary: ""
 section: "software-architecture"

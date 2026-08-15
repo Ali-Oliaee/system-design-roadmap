@@ -1,5 +1,5 @@
 ---
-title: "۱۰ کتاب برای توسعه‌دهندگان نرم‌افزار"
+title: "۱۰ کتاب برای توسعه دهندگان نرم افزار"
 titleEn: "10 Books for Software Developers"
 summary: ""
 section: "software-development"

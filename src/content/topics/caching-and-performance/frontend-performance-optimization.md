@@ -1,5 +1,5 @@
 ---
-title: "بهینه‌سازی کارایی فرانت‌اند"
+title: "بهینه سازی کارایی فرانت اند"
 titleEn: "Frontend Performance Optimization"
 summary: ""
 section: "caching-and-performance"

@@ -1,5 +1,5 @@
 ---
-title: "تفاوت‌های طراحی سیستم با Event Sourcing"
+title: "تفاوت های طراحی سیستم با Event Sourcing"
 titleEn: "Differences in Event Sourcing System Design"
 summary: ""
 section: "database-and-storage"

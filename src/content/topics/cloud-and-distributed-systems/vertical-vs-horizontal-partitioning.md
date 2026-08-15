@@ -1,5 +1,5 @@
 ---
-title: "پارتیشن‌بندی عمودی در برابر افقی"
+title: "پارتیشن بندی عمودی در برابر افقی"
 titleEn: "Vertical vs Horizontal Partitioning"
 summary: ""
 section: "cloud-and-distributed-systems"

@@ -1,5 +1,5 @@
 ---
-title: "تفاوت‌های IPv4 و IPv6"
+title: "تفاوت های IPv4 و IPv6"
 titleEn: "IPv4 vs. IPv6: Differences"
 summary: ""
 section: "computer-fundamentals"

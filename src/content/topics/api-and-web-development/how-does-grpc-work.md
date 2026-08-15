@@ -1,5 +1,5 @@
 ---
-title: "gRPC چطور کار می‌کند؟"
+title: "gRPC چطور کار می کند؟"
 titleEn: "How does gRPC work?"
 summary: ""
 section: "api-and-web-development"

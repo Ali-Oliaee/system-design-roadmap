@@ -1,5 +1,5 @@
 ---
-title: "HTTPS چطور کار می‌کند؟"
+title: "HTTPS چطور کار می کند؟"
 titleEn: "How does HTTPS work?"
 summary: ""
 section: "security"

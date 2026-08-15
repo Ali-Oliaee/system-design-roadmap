@@ -1,5 +1,5 @@
 ---
-title: "۶ کاربرد اصلی ذخیره‌سازهای شیءگرا"
+title: "۶ کاربرد اصلی ذخیره سازهای شیءگرا"
 titleEn: "Explain the Top 6 Use Cases of Object Stores"
 summary: ""
 section: "database-and-storage"

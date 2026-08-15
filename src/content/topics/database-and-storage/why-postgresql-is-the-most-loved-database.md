@@ -1,5 +1,5 @@
 ---
-title: "چرا PostgreSQL محبوب‌ترین پایگاه داده است؟"
+title: "چرا PostgreSQL محبوب ترین پایگاه داده است؟"
 titleEn: "Why PostgreSQL is the Most Loved Database"
 summary: ""
 section: "database-and-storage"
