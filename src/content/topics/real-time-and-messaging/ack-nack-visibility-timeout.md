@@ -1,0 +1,10 @@
+---
+title: "Ack، Nack و مهلت نامرئی‌بودن"
+titleEn: "Ack / nack / visibility timeout"
+summary: "با Ack پیام حذف می‌شود؛ با Nack یا انقضای مهلت، پیام دوباره به مصرف‌کنندهٔ دیگری تحویل می‌رود."
+section: "real-time-and-messaging"
+order: 17
+done: false
+---
+
+<!-- stub:auto -->

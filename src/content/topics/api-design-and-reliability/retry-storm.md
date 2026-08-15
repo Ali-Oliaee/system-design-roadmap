@@ -1,0 +1,10 @@
+---
+title: "طوفان تلاش مجدد"
+titleEn: "Retry storm"
+summary: "تلاش‌های مجدد که قطعی را تشدید می‌کنند. با بودجه، jitter و قطع‌کنندهٔ مدار مهارشان کنید."
+section: "api-design-and-reliability"
+order: 9
+done: false
+---
+
+<!-- stub:auto -->

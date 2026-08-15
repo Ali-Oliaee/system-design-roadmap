@@ -1,0 +1,10 @@
+---
+title: "فرمان، رویداد و پیام"
+titleEn: "Command vs event vs message"
+summary: "فرمان می‌خواهد کاری انجام شود؛ رویداد اعلام می‌کند کاری انجام شده؛ پیام پاکتی است که هر دو را حمل می‌کند."
+section: "real-time-and-messaging"
+order: 14
+done: false
+---
+
+<!-- stub:auto -->

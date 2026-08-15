@@ -1,0 +1,10 @@
+---
+title: "فرم‌ها: کنترل‌شده یا نشده، اعتبارسنجی و دسترس‌پذیری"
+titleEn: "Forms: Controlled vs Uncontrolled, Validation, and Accessibility"
+summary: ""
+section: "frontend-engineering"
+order: 14
+done: false
+---
+
+<!-- stub:auto -->

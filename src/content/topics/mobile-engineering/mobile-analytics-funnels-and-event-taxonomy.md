@@ -1,0 +1,10 @@
+---
+title: "تحلیل موبایل، قیف‌ها و رده‌بندی رویداد"
+titleEn: "Mobile Analytics, Funnels, and Event Taxonomy"
+summary: ""
+section: "mobile-engineering"
+order: 28
+done: false
+---
+
+<!-- stub:auto -->

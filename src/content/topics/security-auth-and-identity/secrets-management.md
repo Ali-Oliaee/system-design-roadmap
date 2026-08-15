@@ -1,0 +1,10 @@
+---
+title: "مدیریت رازها"
+titleEn: "Secrets management"
+summary: "خزانهٔ مرکزی، اعتبارنامه‌های پویا و کوتاه‌عمر، و چرخش. هرگز env. در گیت."
+section: "security-auth-and-identity"
+order: 29
+done: false
+---
+
+<!-- stub:auto -->

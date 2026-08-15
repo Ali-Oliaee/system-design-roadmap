@@ -1,0 +1,97 @@
+---
+import Base from '../layouts/Base.astro';
+import Icon from '../components/Icon.astro';
+import { getNav, getStats, sectionUrl } from '../lib/nav';
+
+const nav = await getNav();
+const stats = await getStats();
+---
+
+<Base title="خانه" crumbs={[{ label: 'نقشه‌راه' }]}>
+  <section class="hero" data-pagefind-body>
+    <h1>نقشه‌راه طراحی سیستم</h1>
+    <p class="muted">
+      {stats.total} موضوع در {stats.sections} دسته — از مبانی شبکه و پایگاه داده تا معماری توزیع‌شده،
+      مطالعات موردی و آمادگی مصاحبهٔ فنی. همه‌چیز فارسی، بدون ثبت‌نام و بدون حساب کاربری.
+    </p>
+    <div class="hero__stats">
+      <div class="stat card">
+        <strong class="ltr">{stats.total}</strong>
+        <span class="dim">موضوع</span>
+      </div>
+      <div class="stat card">
+        <strong class="ltr">{stats.sections}</strong>
+        <span class="dim">دسته</span>
+      </div>
+      <div class="stat card">
+        <strong class="ltr">{stats.pct}٪</strong>
+        <span class="dim">پوشش محتوا</span>
+      </div>
+    </div>
+  </section>
+
+  {nav.map((group) => (
+    <section class="group">
+      <header class="group__head">
+        <h2>{group.title}</h2>
+        <p class="muted">{group.summary}</p>
+      </header>
+
+      <ul class="cards">
+        {group.sections.map((s) => (
+          <li class="card cat">
+            <a href={sectionUrl(s.slug)}>
+              <span class="cat__icon"><Icon name={s.data.icon} size={20} /></span>
+              <span class="cat__body">
+                <strong>{s.data.title}</strong>
+                <em class="muted">{s.data.summary}</em>
+              </span>
+              <span class="cat__meta">
+                <span class="ltr dim">{s.done}/{s.total}</span>
+                <span class="bar"><i style={`width:${s.total ? (s.done / s.total) * 100 : 0}%`}></i></span>
+              </span>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </section>
+  ))}
+</Base>
+
+<style>
+  .hero { margin-bottom: var(--sp-7); }
+  .hero h1 { margin: 0 0 var(--sp-3); font-size: clamp(1.8rem, 4vw, 2.6rem); line-height: 1.4; }
+  .hero p { max-width: 72ch; margin: 0; }
+  .hero__stats { display: flex; flex-wrap: wrap; gap: var(--sp-3); margin-top: var(--sp-5); }
+  .stat { padding: var(--sp-3) var(--sp-5); text-align: center; min-width: 110px; }
+  .stat strong { display: block; font-size: 1.6rem; line-height: 1.4; color: var(--accent-text); }
+  .stat span { font-size: 12.5px; }
+
+  .group { margin-bottom: var(--sp-7); }
+  .group__head { margin-bottom: var(--sp-4); }
+  .group__head h2 { margin: 0; font-size: 1.25rem; }
+  .group__head p { margin: 2px 0 0; font-size: 14px; }
+
+  .cards {
+    list-style: none; margin: 0; padding: 0;
+    display: grid; gap: var(--sp-3);
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+  .cat a { display: flex; gap: var(--sp-3); padding: var(--sp-4); color: var(--text); height: 100%; align-items: flex-start; }
+  .cat a:hover { text-decoration: none; }
+  .cat:hover { border-color: var(--border-strong); }
+  .cat__icon {
+    display: grid; place-items: center; flex: none;
+    width: 40px; height: 40px; border-radius: var(--radius);
+    background: var(--surface-2); color: var(--accent-text);
+  }
+  .cat__body { flex: 1; min-width: 0; }
+  .cat__body strong { display: block; font-weight: 500; }
+  .cat__body em {
+    display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+    font-style: normal; font-size: 13px; margin-top: 2px;
+  }
+  .cat__meta { flex: none; width: 62px; text-align: end; font-size: 12px; }
+  .bar { display: block; height: 4px; border-radius: 99px; background: var(--surface-3); overflow: hidden; margin-top: 6px; }
+  .bar i { display: block; height: 100%; background: var(--accent); }
+</style>

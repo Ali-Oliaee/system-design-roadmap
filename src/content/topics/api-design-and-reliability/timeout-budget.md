@@ -1,0 +1,10 @@
+---
+title: "بودجهٔ تایم‌اوت"
+titleEn: "Timeout budget"
+summary: "یک مهلت کل که در زنجیرهٔ فراخوانی منتشر می‌شود تا فراخوانی‌های تودرتو از صبر فراخوان بیشتر طول نکشند."
+section: "api-design-and-reliability"
+order: 12
+done: false
+---
+
+<!-- stub:auto -->

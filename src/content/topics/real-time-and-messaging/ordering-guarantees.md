@@ -1,0 +1,10 @@
+---
+title: "ضمانت ترتیب"
+titleEn: "Ordering guarantees"
+summary: "معمولاً فقط در سطح پارتیشن یا کلید تضمین می‌شود. ترتیب سراسری توان عملیاتی می‌خورد — کلید پارتیشن را متناسب با نیاز ترتیب انتخاب کنید."
+section: "real-time-and-messaging"
+order: 20
+done: false
+---
+
+<!-- stub:auto -->

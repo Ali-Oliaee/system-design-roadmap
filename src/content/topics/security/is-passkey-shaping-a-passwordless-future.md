@@ -1,0 +1,10 @@
+---
+title: "آیا PassKey آیندهٔ بدون رمز را می‌سازد؟"
+titleEn: "Is PassKey Shaping a Passwordless Future?"
+summary: ""
+section: "security"
+order: 6
+done: false
+---
+
+<!-- stub:auto -->

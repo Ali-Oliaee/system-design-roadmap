@@ -1,0 +1,10 @@
+---
+title: "لاگ ساختاریافته"
+titleEn: "Structured logging"
+summary: "لاگ کلید/مقدار قابل‌تجزیه توسط ماشین. لاگ متن آزاد را نمی‌شود قابل‌اتکا کوئری، تجمیع یا هشداردهی کرد."
+section: "observability-and-delivery"
+order: 4
+done: false
+---
+
+<!-- stub:auto -->

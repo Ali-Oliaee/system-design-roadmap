@@ -1,0 +1,10 @@
+---
+title: "پولینگ بلند"
+titleEn: "Long polling"
+summary: "سرور درخواست را باز نگه می‌دارد تا داده برسد یا تایم‌اوت شود. تقریباً بلادرنگ، بدون نیاز به پروتکل پایدار."
+section: "real-time-and-messaging"
+order: 2
+done: false
+---
+
+<!-- stub:auto -->

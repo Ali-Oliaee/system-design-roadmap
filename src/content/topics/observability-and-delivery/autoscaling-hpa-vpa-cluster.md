@@ -1,0 +1,10 @@
+---
+title: "مقیاس‌دهی خودکار (HPA، VPA و کلاستر)"
+titleEn: "Autoscaling (HPA / VPA / cluster)"
+summary: "تعداد همانندها، منابع هر نمونه یا نودهای استخر را بر اساس متریک و با فاصله‌های منطقی مقیاس بده."
+section: "observability-and-delivery"
+order: 24
+done: false
+---
+
+<!-- stub:auto -->

@@ -1,0 +1,10 @@
+---
+title: "جاوااسکریپت چطور کار می‌کند؟"
+titleEn: "How does Javascript Work?"
+summary: ""
+section: "api-and-web-development"
+order: 14
+done: false
+---
+
+<!-- stub:auto -->

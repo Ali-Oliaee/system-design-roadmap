@@ -1,0 +1,10 @@
+---
+title: "قفل توزیع‌شده به چه درد می‌خورد؟"
+titleEn: "Why Use a Distributed Lock?"
+summary: ""
+section: "cloud-and-distributed-systems"
+order: 31
+done: false
+---
+
+<!-- stub:auto -->

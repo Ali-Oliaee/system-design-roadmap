@@ -1,0 +1,10 @@
+---
+title: "تأخیر دنباله (p95/p99)"
+titleEn: "Tail latency (p95/p99)"
+summary: "همان درخواست‌های کندی که تجربهٔ کاربر را می‌سازند. میانگین پنهانشان می‌کند؛ همیشه صدک‌ها را رسم کنید."
+section: "caching-performance-concepts"
+order: 16
+done: false
+---
+
+<!-- stub:auto -->

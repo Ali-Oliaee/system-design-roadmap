@@ -1,0 +1,10 @@
+---
+title: "Tombstone (نشانهٔ حذف)"
+titleEn: "Tombstone"
+summary: "نشانهٔ حذفی که در لاگ یا مجموعهٔ همانندها نوشته می‌شود تا حذف منتشر شود؛ بعداً در فشرده‌سازی یا vacuum پاک می‌شود."
+section: "data-storage-concepts"
+order: 3
+done: false
+---
+
+<!-- stub:auto -->

@@ -1,0 +1,10 @@
+---
+title: "دریاچه، انبار و لیک‌هاوس داده"
+titleEn: "Data lake / warehouse / lakehouse"
+summary: "ذخیره‌سازی خام، انبار تحلیلی مدل‌شده، و ترکیبی که معنای جدول را روی ذخیره‌سازی شیءگرا سوار می‌کند."
+section: "data-storage-concepts"
+order: 33
+done: false
+---
+
+<!-- stub:auto -->

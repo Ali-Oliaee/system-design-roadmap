@@ -1,0 +1,19 @@
+---
+import Base from '../layouts/Base.astro';
+import { url } from '../lib/nav';
+---
+
+<Base title="صفحه پیدا نشد" crumbs={[{ label: '۴۰۴' }]}>
+  <div class="nf">
+    <p class="ltr dim big">404</p>
+    <h1>این صفحه وجود ندارد</h1>
+    <p class="muted">شاید موضوع جابه‌جا شده یا هنوز نوشته نشده است.</p>
+    <p><a class="btn btn--accent" href={url()}>بازگشت به نقشه‌راه</a></p>
+  </div>
+</Base>
+
+<style>
+  .nf { text-align: center; padding: var(--sp-7) 0; }
+  .big { font-size: 4rem; margin: 0; line-height: 1.2; }
+  .nf h1 { margin: 0 0 var(--sp-2); font-size: 1.5rem; }
+</style>

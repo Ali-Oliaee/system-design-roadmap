@@ -1,0 +1,10 @@
+---
+title: "انسداد سر صف"
+titleEn: "Head-of-line blocking"
+summary: "یک قلم گیرکرده جلوی همهٔ پشت‌سری‌ها را می‌گیرد — در جریان TCP، در پایپ‌لاین HTTP/1.1 و در صف تک‌پارتیشنی."
+section: "networking-and-protocols"
+order: 8
+done: false
+---
+
+<!-- stub:auto -->

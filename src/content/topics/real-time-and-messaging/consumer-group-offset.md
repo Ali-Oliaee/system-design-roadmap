@@ -1,0 +1,10 @@
+---
+title: "گروه مصرف‌کننده و آفست"
+titleEn: "Consumer group / offset"
+summary: "پارتیشن‌ها بین اعضای گروه تقسیم می‌شوند و هر مصرف‌کننده آفستی را ثبت می‌کند که نشان می‌دهد تا کجا پردازش کرده است."
+section: "real-time-and-messaging"
+order: 15
+done: false
+---
+
+<!-- stub:auto -->

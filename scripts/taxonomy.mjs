@@ -1,0 +1,138 @@
+/**
+ * نگاشت فارسیِ گروه‌ها و دسته‌ها.
+ * کلیدها دقیقاً همان متن انگلیسی داخل roadmap.txt هستند.
+ */
+
+export const GROUPS = {
+  'Core Roadmap': {
+    id: 'core',
+    title: 'مسیر اصلی',
+    summary: 'ستون فقرات طراحی سیستم — از مبانی کامپیوتر تا مصاحبهٔ فنی.',
+    order: 1,
+  },
+  'Engineering Tracks': {
+    id: 'tracks',
+    title: 'مسیرهای تخصصی',
+    summary: 'عمق‌بخشی بر اساس نقش: فرانت‌اند، بک‌اند و موبایل.',
+    order: 2,
+  },
+  'Concepts & Glossary': {
+    id: 'concepts',
+    title: 'مفاهیم و واژه‌نامه',
+    summary: 'تعریف‌های کوتاه و دقیق برای مرور سریع پیش از مصاحبه.',
+    order: 3,
+  },
+};
+
+/** category (انگلیسی) → { title, slug?, summary } */
+export const SECTIONS = {
+  'Computer Fundamentals': {
+    title: 'مبانی کامپیوتر',
+    summary: 'شبکه، سیستم‌عامل و ساختارهای پایه‌ای که هر تصمیم معماری روی آن‌ها سوار می‌شود.',
+  },
+  Security: {
+    title: 'امنیت',
+    summary: 'رمزنگاری، احراز هویت، نشست و توکن — از کوکی تا OAuth 2.0.',
+  },
+  'DevOps and CI/CD': {
+    title: 'DevOps و CI/CD',
+    summary: 'کانتینر، Kubernetes، خط لولهٔ استقرار و الگوهای انتشار.',
+  },
+  'How it Works?': {
+    title: 'چطور کار می‌کند؟',
+    summary: 'کالبدشکافی سرویس‌ها و پروتکل‌های آشنا؛ از داخل چه خبر است.',
+  },
+  'Cloud & Distributed Systems': {
+    title: 'ابر و سیستم‌های توزیع‌شده',
+    summary: 'مقیاس‌پذیری، هماهنگی، CAP و الگوهای زیرساخت ابری.',
+  },
+  'Software Development': {
+    title: 'توسعهٔ نرم‌افزار',
+    summary: 'کیفیت کد، تست، الگوهای برنامه‌نویسی و جریان کار تیمی.',
+  },
+  'DevTools & Productivity': {
+    title: 'ابزارها و بهره‌وری',
+    summary: 'Git، ویرایشگر، دیباگ و ابزارهایی که سرعت تیم را می‌سازند.',
+  },
+  'Software Architecture': {
+    title: 'معماری نرم‌افزار',
+    summary: 'میکروسرویس، مونولیت، DDD و تصمیم‌های بلندمدت ساختاری.',
+  },
+  'Payment and Fintech': {
+    title: 'پرداخت و فین‌تک',
+    summary: 'تسویه، درگاه، idempotency و دقت پولی در سیستم‌های مالی.',
+  },
+  'Caching & Performance': {
+    title: 'کش و کارایی',
+    summary: 'لایه‌های کش، سیاست حذف، تأخیر و گلوگاه‌های واقعی.',
+  },
+  'Database and Storage': {
+    title: 'پایگاه داده و ذخیره‌سازی',
+    summary: 'SQL و NoSQL، ایندکس، شاردینگ، تراکنش و موتورهای ذخیره‌سازی.',
+  },
+  'API and Web Development': {
+    title: 'API و توسعهٔ وب',
+    summary: 'REST، GraphQL، gRPC، وب‌هوک و قراردادهای پایدار بین سرویس‌ها.',
+  },
+  'AI and Machine Learning': {
+    title: 'هوش مصنوعی و یادگیری ماشین',
+    summary: 'زیرساخت مدل، بردار، RAG و جای‌گیری ML در معماری سیستم.',
+  },
+  'Real World Case Studies': {
+    title: 'مطالعات موردی واقعی',
+    summary: 'معماری شرکت‌های بزرگ؛ چه ساختند و چرا همان را ساختند.',
+  },
+  'Technical Interviews': {
+    title: 'مصاحبه‌های فنی',
+    summary: 'چارچوب پاسخ‌دهی، سؤال‌های پرتکرار و تمرین طراحی سیستم.',
+  },
+
+  'Frontend Engineering': {
+    title: 'مهندسی فرانت‌اند',
+    summary: 'رندر، حالت، بسته‌بندی، کارایی مرورگر و معماری کلاینت.',
+  },
+  'Backend Engineering': {
+    title: 'مهندسی بک‌اند',
+    summary: 'سرویس‌نویسی، همروندی، صف، پایگاه داده و قابلیت اتکا.',
+  },
+  'Mobile Engineering': {
+    title: 'مهندسی موبایل',
+    summary: 'کلاینت آفلاین‌اول، همگام‌سازی، نوتیفیکیشن و محدودیت‌های دستگاه.',
+  },
+
+  'Networking & Protocols': {
+    title: 'شبکه و پروتکل‌ها',
+    summary: 'از فریم و پکت تا TLS و QUIC — واژگان دقیق لایه‌های شبکه.',
+  },
+  'Real-Time & Messaging': {
+    title: 'بلادرنگ و پیام‌رسانی',
+    summary: 'پولینگ، WebSocket، SSE، صف و استریم رویداد.',
+  },
+  'API Design & Reliability': {
+    title: 'طراحی API و پایداری',
+    summary: 'نسخه‌بندی، idempotency، تلاش مجدد، محدودسازی نرخ و قطع‌کنندهٔ مدار.',
+  },
+  'Data & Storage': {
+    title: 'داده و ذخیره‌سازی',
+    slug: 'data-storage-concepts',
+    summary: 'مدل داده، ایندکس، تراکنش و سازوکارهای درونی موتورهای ذخیره‌سازی.',
+  },
+  'Security, Auth & Identity': {
+    title: 'امنیت، احراز هویت و هویت',
+    summary: 'هش، امضا، نشست، توکن و مرزهای اعتماد.',
+  },
+  'Distributed Systems': {
+    title: 'سیستم‌های توزیع‌شده',
+    summary: 'اجماع، ساعت، پارتیشن، سازگاری و شکست‌های جزئی.',
+  },
+  'Observability & Delivery': {
+    title: 'مشاهده‌پذیری و تحویل',
+    summary: 'لاگ، متریک، ترِیس، SLO و الگوهای انتشار امن.',
+  },
+};
+
+/** ترجمهٔ نام دسته وقتی در دو گروه تکرار شده باشد */
+export const SECTION_SLUG_OVERRIDES = {
+  // «Caching & Performance» هم در مسیر اصلی است هم در واژه‌نامه
+  'concepts::Caching & Performance': 'caching-performance-concepts',
+};

@@ -1,0 +1,10 @@
+---
+title: "بررسی سلامت"
+titleEn: "Health checks"
+summary: "زنده‌بودن (راه‌اندازی مجددم کن)، آمادگی (ترافیک بفرست)، شروع (هنوز بالا می‌آیم). قاطی‌کردنشان حلقهٔ ری‌استارت می‌سازد."
+section: "observability-and-delivery"
+order: 15
+done: false
+---
+
+<!-- stub:auto -->

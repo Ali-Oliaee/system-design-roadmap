@@ -1,0 +1,10 @@
+---
+title: "Idempotency (خنثی‌بودن تکرار)"
+titleEn: "Idempotency"
+summary: "اجرای دوبارهٔ یک درخواست همان اثر یک‌بار اجرا را دارد. GET، PUT و DELETE ذاتاً Idempotent‌اند؛ POST نیست."
+section: "api-design-and-reliability"
+order: 1
+done: false
+---
+
+<!-- stub:auto -->

@@ -1,0 +1,10 @@
+---
+title: "Cache-Control و stale-while-revalidate"
+titleEn: "Cache-Control / stale-while-revalidate"
+summary: "دستورهایی که به لبه اجازه می‌دهند محتوای کمی کهنه را فوری بدهد و در پس‌زمینه تازه‌اش کند."
+section: "caching-performance-concepts"
+order: 14
+done: false
+---
+
+<!-- stub:auto -->

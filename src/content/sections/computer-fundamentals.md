@@ -1,0 +1,11 @@
+---
+title: "مبانی کامپیوتر"
+titleEn: "Computer Fundamentals"
+summary: "شبکه، سیستم‌عامل و ساختارهای پایه‌ای که هر تصمیم معماری روی آن‌ها سوار می‌شود."
+icon: "cpu"
+group: core
+kind: roadmap
+order: 1
+---
+
+<!-- stub:auto -->

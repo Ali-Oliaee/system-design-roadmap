@@ -1,0 +1,10 @@
+---
+title: "۷ الگوی پرکاربرد سیستم‌های توزیع‌شده"
+titleEn: "Top 7 Most-Used Distributed System Patterns"
+summary: ""
+section: "cloud-and-distributed-systems"
+order: 38
+done: false
+---
+
+<!-- stub:auto -->

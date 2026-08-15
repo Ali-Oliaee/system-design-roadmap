@@ -1,0 +1,11 @@
+---
+title: "شبکه و پروتکل‌ها"
+titleEn: "Networking & Protocols"
+summary: "از فریم و پکت تا TLS و QUIC — واژگان دقیق لایه‌های شبکه."
+icon: "network"
+group: concepts
+kind: concept
+order: 19
+---
+
+<!-- stub:auto -->

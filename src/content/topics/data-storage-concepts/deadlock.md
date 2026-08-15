@@ -1,0 +1,10 @@
+---
+title: "بن‌بست"
+titleEn: "Deadlock"
+summary: "دو تراکنش که هرکدام چیزی را گرفته‌اند که دیگری می‌خواهد. با ترتیب یکسان قفل‌گیری و تراکنش کوتاه حل می‌شود."
+section: "data-storage-concepts"
+order: 13
+done: false
+---
+
+<!-- stub:auto -->

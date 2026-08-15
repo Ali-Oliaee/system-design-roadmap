@@ -1,0 +1,10 @@
+---
+title: "Redis را کجاها می‌توان به کار برد؟"
+titleEn: "How can Redis be used?"
+summary: ""
+section: "caching-and-performance"
+order: 20
+done: false
+---
+
+<!-- stub:auto -->

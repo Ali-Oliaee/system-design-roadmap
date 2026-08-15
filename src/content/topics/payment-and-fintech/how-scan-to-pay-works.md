@@ -1,0 +1,10 @@
+---
+title: "پرداخت با اسکن چطور کار می‌کند؟"
+titleEn: "How Scan to Pay Works"
+summary: ""
+section: "payment-and-fintech"
+order: 10
+done: false
+---
+
+<!-- stub:auto -->

@@ -1,0 +1,10 @@
+---
+title: "Event Sourcing"
+titleEn: "Event sourcing"
+summary: "رویدادها را ذخیره کن و حالت را با بازپخش آن‌ها بساز. تاریخچهٔ کامل حسابرسی، به قیمت پیچیدگی کوئری و نسخه‌بندی."
+section: "distributed-systems"
+order: 18
+done: false
+---
+
+<!-- stub:auto -->

@@ -1,0 +1,10 @@
+---
+title: "الگوهای تاب‌آوری: تایم‌اوت، تلاش مجدد با jitter، قطع‌کنندهٔ مدار و Bulkhead"
+titleEn: "Resilience Patterns: Timeout, Retry with Jitter, Circuit Breaker, Bulkhead"
+summary: ""
+section: "backend-engineering"
+order: 32
+done: false
+---
+
+<!-- stub:auto -->

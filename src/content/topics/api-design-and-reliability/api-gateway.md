@@ -1,0 +1,10 @@
+---
+title: "دروازهٔ API"
+titleEn: "API gateway"
+summary: "نقطهٔ ورود واحد که مسیریابی، احراز هویت، محدودیت نرخ، سهمیه و مشاهده‌پذیری چند سرویس را انجام می‌دهد."
+section: "api-design-and-reliability"
+order: 22
+done: false
+---
+
+<!-- stub:auto -->

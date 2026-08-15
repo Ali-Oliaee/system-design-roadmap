@@ -1,0 +1,11 @@
+---
+title: "داده و ذخیره‌سازی"
+titleEn: "Data & Storage"
+summary: "مدل داده، ایندکس، تراکنش و سازوکارهای درونی موتورهای ذخیره‌سازی."
+icon: "db"
+group: concepts
+kind: concept
+order: 22
+---
+
+<!-- stub:auto -->

@@ -1,0 +1,11 @@
+---
+title: "مصاحبه‌های فنی"
+titleEn: "Technical Interviews"
+summary: "چارچوب پاسخ‌دهی، سؤال‌های پرتکرار و تمرین طراحی سیستم."
+icon: "flask"
+group: core
+kind: roadmap
+order: 15
+---
+
+<!-- stub:auto -->

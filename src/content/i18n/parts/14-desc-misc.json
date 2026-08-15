@@ -1,0 +1,6 @@
+{
+  "::Graphql": "GraphQL",
+  "::Graphql, Rest api, Webhook, Soap, WebSocket, GRPC, MQTT, AMPQ, SSE, EDA, Idempotency, soft/hard delete, full duplex, frame, message, ws, ping/pong, Exponential backoff, polling, coupling": "مروری بر GraphQL، REST، وب‌هوک، SOAP، WebSocket، gRPC، MQTT، AMQP، SSE، معماری رویدادمحور، Idempotency، حذف نرم و قطعی، ارتباط تمام‌دوطرفه، فریم و پیام، ping/pong، عقب‌نشینی نمایی، پولینگ و میزان وابستگی.",
+  "::HTTPS, SSL, TLS, OAuth, triple A, Authentication, Authorization, Accounting,  OpenID Connect (OIDC), WebAuthn, Symmetric/Asymmetric Encryption, passkey, API, Leveled API Key, RBAC": "HTTPS، SSL و TLS، OAuth، سه‌گانهٔ AAA (احراز هویت، مجوزدهی، حسابداری)، OIDC، WebAuthn، رمزنگاری متقارن و نامتقارن، Passkey، کلید API سطح‌بندی‌شده و RBAC.",
+  "::Roy Fielding, Stateless, Cacheable, Layered System, Code-On-Demand, Uniform Interface, Resource Identification, Manipulation Through Representations, Self-descriptive Messages, HATEOAS": "روی فیلدینگ، بدون حالت، کش‌پذیر، سیستم لایه‌ای، کد بنا به درخواست، رابط یکنواخت، شناسایی منبع، دستکاری از طریق بازنمایی، پیام‌های خودتوصیف و HATEOAS."
+}

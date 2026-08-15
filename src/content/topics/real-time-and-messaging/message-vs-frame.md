@@ -1,0 +1,10 @@
+---
+title: "پیام در برابر فریم"
+titleEn: "Message vs frame"
+summary: "پیام همان بار منطقی است که اپلیکیشن به آن اهمیت می‌دهد؛ فریم‌ها تکه‌های انتقالی‌اند که پیام به آن‌ها شکسته و دوباره ساخته می‌شود."
+section: "real-time-and-messaging"
+order: 6
+done: false
+---
+
+<!-- stub:auto -->

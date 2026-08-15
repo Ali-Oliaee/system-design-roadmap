@@ -1,0 +1,10 @@
+---
+title: "ACID"
+titleEn: "ACID"
+summary: "اتمی‌بودن، سازگاری، ایزولاسیون و ماندگاری — ضمانت‌های تراکنشی یک پایگاه دادهٔ رابطه‌ای کلاسیک."
+section: "data-storage-concepts"
+order: 4
+done: false
+---
+
+<!-- stub:auto -->

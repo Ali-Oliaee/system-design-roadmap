@@ -1,0 +1,11 @@
+---
+title: "کش و کارایی"
+titleEn: "Caching & Performance"
+summary: "لایه‌های کش، سیاست حذف، تأخیر و گلوگاه‌های واقعی."
+icon: "zap"
+group: concepts
+kind: concept
+order: 23
+---
+
+<!-- stub:auto -->

@@ -1,0 +1,10 @@
+---
+title: "محدودسازی نرخ"
+titleEn: "Rate limiting"
+summary: "سطل توکن (اجازهٔ انفجار)، سطل چکه‌ای (یکنواخت)، پنجرهٔ ثابت (ارزان اما جهش لبه‌ای)، پنجرهٔ لغزان (دقیق)."
+section: "api-design-and-reliability"
+order: 5
+done: false
+---
+
+<!-- stub:auto -->

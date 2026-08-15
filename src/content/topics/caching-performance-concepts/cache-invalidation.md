@@ -1,0 +1,10 @@
+---
+title: "باطل‌سازی کش"
+titleEn: "Cache invalidation"
+summary: "TTL، پاک‌سازی صریح، کلید نسخه‌دار یا باطل‌سازی رویدادمحور با CDC. معروف‌ترین بخش سخت ماجرا."
+section: "caching-performance-concepts"
+order: 11
+done: false
+---
+
+<!-- stub:auto -->

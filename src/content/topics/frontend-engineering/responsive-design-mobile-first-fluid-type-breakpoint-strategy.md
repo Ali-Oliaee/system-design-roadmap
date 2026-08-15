@@ -1,0 +1,10 @@
+---
+title: "طراحی واکنش‌گرا: موبایل‌اول، تایپوگرافی سیال و راهبرد بریک‌پوینت"
+titleEn: "Responsive Design: Mobile-First, Fluid Type, Breakpoint Strategy"
+summary: ""
+section: "frontend-engineering"
+order: 18
+done: false
+---
+
+<!-- stub:auto -->

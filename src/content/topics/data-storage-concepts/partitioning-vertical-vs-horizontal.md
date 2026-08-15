@@ -1,0 +1,10 @@
+---
+title: "پارتیشن‌بندی: عمودی در برابر افقی"
+titleEn: "Partitioning: vertical vs horizontal"
+summary: "عمودی، ستون‌ها و جدول‌ها را بر اساس حوزهٔ مسئولیت جدا می‌کند؛ افقی، سطرها را بر اساس کلید."
+section: "data-storage-concepts"
+order: 23
+done: false
+---
+
+<!-- stub:auto -->

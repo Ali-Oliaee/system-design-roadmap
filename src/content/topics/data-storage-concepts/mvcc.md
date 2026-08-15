@@ -1,0 +1,10 @@
+---
+title: "MVCC"
+titleEn: "MVCC"
+summary: "کنترل همروندی چندنسخه‌ای: خواننده‌ها یک اسنپ‌شات می‌بینند و پشت نویسنده‌ها نمی‌مانند. همان ترفندی که Postgres با آن قفل خواندن نمی‌گیرد."
+section: "data-storage-concepts"
+order: 10
+done: false
+---
+
+<!-- stub:auto -->

@@ -1,0 +1,10 @@
+---
+title: "لاگ، متریک و ترِیس"
+titleEn: "Logs vs metrics vs traces"
+summary: "رویدادهای گسسته، اعداد تجمیع‌شده در طول زمان، و مسیر علّی یک درخواست در میان سرویس‌ها."
+section: "observability-and-delivery"
+order: 3
+done: false
+---
+
+<!-- stub:auto -->

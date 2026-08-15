@@ -1,0 +1,10 @@
+---
+title: "XSS"
+titleEn: "XSS"
+summary: "اسکریپت تزریق‌شده‌ای که در مبدأ شما اجرا می‌شود. با کدگذاری خروجی، CSP سخت‌گیرانه و پرهیز از innerHTML روی ورودی کاربر دفاع کنید."
+section: "security-auth-and-identity"
+order: 24
+done: false
+---
+
+<!-- stub:auto -->

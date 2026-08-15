@@ -1,0 +1,10 @@
+---
+title: "مسئلهٔ کوئری N+1"
+titleEn: "N+1 query"
+summary: "یک کوئری برای فهرست به‌علاوهٔ یکی به‌ازای هر سطر. با JOIN، دسته‌بندی IN یا الگوی DataLoader حل می‌شود."
+section: "data-storage-concepts"
+order: 18
+done: false
+---
+
+<!-- stub:auto -->

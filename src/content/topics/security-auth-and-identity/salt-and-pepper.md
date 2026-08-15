@@ -1,0 +1,10 @@
+---
+title: "Salt و Pepper"
+titleEn: "Salt and pepper"
+summary: "نمک تصادفی به‌ازای هر کاربر جدول‌های رنگین‌کمان را بی‌اثر می‌کند؛ فلفلِ سراسری اگر فقط پایگاه داده لو برود محافظت می‌افزاید."
+section: "security-auth-and-identity"
+order: 18
+done: false
+---
+
+<!-- stub:auto -->

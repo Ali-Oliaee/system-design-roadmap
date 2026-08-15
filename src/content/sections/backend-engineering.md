@@ -1,0 +1,11 @@
+---
+title: "مهندسی بک‌اند"
+titleEn: "Backend Engineering"
+summary: "سرویس‌نویسی، همروندی، صف، پایگاه داده و قابلیت اتکا."
+icon: "server"
+group: tracks
+kind: roadmap
+order: 17
+---
+
+<!-- stub:auto -->

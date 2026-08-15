@@ -1,0 +1,10 @@
+---
+title: "چه چیزی AWS Lambda را این‌قدر سریع می‌کند؟"
+titleEn: "What makes AWS Lambda so fast?"
+summary: ""
+section: "cloud-and-distributed-systems"
+order: 12
+done: false
+---
+
+<!-- stub:auto -->

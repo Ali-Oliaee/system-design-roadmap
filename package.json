@@ -1,0 +1,24 @@
+{
+  "name": "system-design-roadmap",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "import": "node scripts/import-roadmap.mjs",
+    "dev": "astro dev",
+    "build": "astro build && pagefind --site dist",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/sitemap": "^3.7.0",
+    "@fontsource-variable/vazirmatn": "^5.2.8",
+    "astro": "^7.2.0",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.10",
+    "pagefind": "^1.5.2",
+    "typescript": "^6.0.3"
+  }
+}

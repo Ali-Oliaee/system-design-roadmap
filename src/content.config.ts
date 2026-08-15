@@ -1,0 +1,67 @@
+import { defineCollection, reference } from 'astro:content';
+import { z } from 'zod';
+import { glob } from 'astro/loaders';
+
+/** لینک بیرونی (منبع، ویدیو، ابزار) */
+const link = z.object({
+  title: z.string(),
+  url: z.url(),
+  /** برچسب کوچکی که کنار لینک نشان داده می‌شود */
+  kind: z.enum(['article', 'docs', 'video', 'book', 'tool', 'repo', 'telegram']).default('article'),
+  note: z.string().optional(),
+});
+
+/**
+ * دسته‌ها = آیتم‌های نوار کناری.
+ * هر دسته به یک «گروه» تعلق دارد (مسیر اصلی / مسیرهای تخصصی / مفاهیم).
+ */
+const sections = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/sections' }),
+  schema: z.object({
+    title: z.string(),
+    titleEn: z.string(),
+    summary: z.string().default(''),
+    icon: z.string().default('layers'),
+    group: z.enum(['core', 'tracks', 'concepts']),
+    /** concept = چیدمان واژه‌نامه‌ای تک‌ستونه */
+    kind: z.enum(['roadmap', 'concept']).default('roadmap'),
+    order: z.number().default(999),
+    draft: z.boolean().default(false),
+  }),
+});
+
+/**
+ * موضوع‌ها = صفحهٔ اختصاصی هر آیتم.
+ * تب‌ها از همین فرانت‌متر ساخته می‌شوند؛ تبِ خالی اصلاً رندر نمی‌شود.
+ */
+const topics = defineCollection({
+  // رندر مارک‌داون تا لحظهٔ نیاز به تعویق می‌افتد — با ۷۰۰+ فایل تفاوتش محسوس است
+  loader: glob({ pattern: '**/*.md', base: './src/content/topics', deferRender: true }),
+  schema: z.object({
+    title: z.string(),
+    titleEn: z.string().optional(),
+    summary: z.string().default(''),
+    section: reference('sections'),
+    order: z.number().default(999),
+    /** وضعیت پوشش محتوا (نه پیشرفت کاربر) */
+    done: z.boolean().default(false),
+    tags: z.array(z.string()).default([]),
+    updated: z.coerce.date().optional(),
+    icon: z.string().optional(),
+
+    // ---- منابع اصلی (از roadmap.txt) ----
+    telegram: z.url().optional(),
+    source: z.url().optional(),
+
+    // ---- تب‌ها ----
+    resources: z.array(link).default([]),
+    videos: z.array(link).default([]),
+    faq: z.array(z.object({ q: z.string(), a: z.string() })).default([]),
+    cheatsheet: z.array(z.object({ term: z.string(), meaning: z.string() })).default([]),
+
+    related: z.array(z.string()).default([]),
+    draft: z.boolean().default(false),
+  }),
+});
+
+export const collections = { sections, topics };

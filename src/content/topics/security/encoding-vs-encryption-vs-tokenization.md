@@ -1,0 +1,10 @@
+---
+title: "کدگذاری، رمزنگاری و توکن‌سازی"
+titleEn: "Encoding vs Encryption vs Tokenization"
+summary: ""
+section: "security"
+order: 2
+done: false
+---
+
+<!-- stub:auto -->

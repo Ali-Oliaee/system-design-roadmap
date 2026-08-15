@@ -1,0 +1,122 @@
+---
+import Base from '../../layouts/Base.astro';
+import Icon from '../../components/Icon.astro';
+import { getNav, topicUrl, url } from '../../lib/nav';
+import type { NavSection } from '../../lib/nav';
+
+export async function getStaticPaths() {
+  const nav = await getNav();
+  return nav.flatMap((g) =>
+    g.sections.map((s) => ({
+      params: { section: s.slug },
+      props: { section: s, groupTitle: g.title },
+    })),
+  );
+}
+
+type Props = { section: NavSection; groupTitle: string };
+const { section, groupTitle } = Astro.props;
+const d = section.data;
+
+// نمای واژه‌نامه‌ای: توضیح زیر عنوان، بدون کارت‌بندی سنگین
+const glossary = d.kind === 'concept';
+---
+
+<Base
+  title={d.title}
+  description={d.summary}
+  activeSection={section.slug}
+  crumbs={[{ label: groupTitle, href: url() }, { label: d.title }]}
+>
+  <header class="head" data-pagefind-body>
+    <div class="head__icon"><Icon name={d.icon} size={26} /></div>
+    <div>
+      <h1>{d.title}</h1>
+      <p class="dim ltr head__en">{d.titleEn}</p>
+      {d.summary && <p class="muted head__summary">{d.summary}</p>}
+      <div class="head__meta">
+        <span class="chip"><Icon name="list" size={13} />{section.total} موضوع</span>
+        <span class="chip chip--done"><Icon name="check" size={13} />{section.done} پوشش‌داده‌شده</span>
+        {glossary && <span class="chip">واژه‌نامه</span>}
+      </div>
+    </div>
+  </header>
+
+  {glossary ? (
+    <ul class="glossary">
+      {section.topics.map((t) => (
+        <li>
+          <a href={topicUrl(t)}>
+            <strong>{t.data.title}</strong>
+            {t.data.titleEn && t.data.titleEn !== t.data.title && (
+              <span class="ltr dim glossary__en">{t.data.titleEn}</span>
+            )}
+          </a>
+          {t.data.summary && <p class="muted">{t.data.summary}</p>}
+        </li>
+      ))}
+    </ul>
+  ) : (
+    <ul class="grid">
+      {section.topics.map((t) => (
+        <li class="card item">
+          <a href={topicUrl(t)}>
+            <span class={`item__state ${t.data.done ? 'is-done' : ''}`}>
+              <Icon name={t.data.done ? 'check' : 'cog'} size={13} />
+            </span>
+            <span class="item__body">
+              <strong>{t.data.title}</strong>
+              {t.data.summary && <em class="muted">{t.data.summary}</em>}
+            </span>
+            <Icon name="chevron" size={15} class="item__go" />
+          </a>
+        </li>
+      ))}
+    </ul>
+  )}
+</Base>
+
+<style>
+  .head { display: flex; gap: var(--sp-4); margin-bottom: var(--sp-6); }
+  .head__icon {
+    display: grid; place-items: center;
+    width: 64px; height: 64px; flex: none;
+    border-radius: var(--radius-lg);
+    background: var(--surface-2);
+    border: 1px solid var(--border);
+    color: var(--accent-text);
+  }
+  .head h1 { margin: 0; font-size: clamp(1.5rem, 3vw, 2.1rem); line-height: 1.5; }
+  .head__en { margin: 0; font-size: 13px; }
+  .head__summary { margin: var(--sp-3) 0 0; max-width: 70ch; }
+  .head__meta { display: flex; flex-wrap: wrap; gap: var(--sp-2); margin-top: var(--sp-4); }
+
+  .grid {
+    list-style: none; margin: 0; padding: 0;
+    display: grid; gap: var(--sp-3);
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  }
+  .item a { display: flex; align-items: center; gap: var(--sp-3); padding: var(--sp-4); color: var(--text); height: 100%; }
+  .item a:hover { text-decoration: none; }
+  .item:hover { border-color: var(--border-strong); }
+  .item__state {
+    display: grid; place-items: center; flex: none;
+    width: 26px; height: 26px; border-radius: 99px;
+    background: var(--surface-2); color: var(--text-dim);
+  }
+  .item__state.is-done { background: var(--accent-soft); color: var(--accent-text); }
+  .item__body { flex: 1; min-width: 0; }
+  .item__body strong { display: block; font-weight: 500; line-height: 1.6; }
+  .item__body em { display: block; font-style: normal; font-size: 13px; margin-top: 2px;
+    display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+  .item__go { flex: none; color: var(--text-dim); transform: rotate(180deg); }
+
+  .glossary { list-style: none; margin: 0; padding: 0; max-width: 78ch; }
+  .glossary li { padding: var(--sp-4) 0; border-bottom: 1px solid var(--border); }
+  .glossary a { display: flex; align-items: baseline; gap: var(--sp-3); color: var(--text); flex-wrap: wrap; }
+  .glossary a:hover strong { color: var(--accent-text); }
+  .glossary a:hover { text-decoration: none; }
+  .glossary strong { font-weight: 600; }
+  .glossary__en { font-size: 12.5px; }
+  .glossary p { margin: var(--sp-2) 0 0; font-size: 14.4px; }
+</style>

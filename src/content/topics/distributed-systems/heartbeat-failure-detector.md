@@ -1,0 +1,10 @@
+---
+title: "ضربان و تشخیص‌دهندهٔ خرابی"
+titleEn: "Heartbeat / failure detector"
+summary: "سیگنال‌های دوره‌ای زنده‌بودن. تنظیم تایم‌اوت، مثبت کاذب را با کندی تشخیص معامله می‌کند."
+section: "distributed-systems"
+order: 7
+done: false
+---
+
+<!-- stub:auto -->

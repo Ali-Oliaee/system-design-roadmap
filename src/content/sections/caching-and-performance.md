@@ -1,0 +1,11 @@
+---
+title: "کش و کارایی"
+titleEn: "Caching & Performance"
+summary: "لایه‌های کش، سیاست حذف، تأخیر و گلوگاه‌های واقعی."
+icon: "zap"
+group: core
+kind: roadmap
+order: 10
+---
+
+<!-- stub:auto -->

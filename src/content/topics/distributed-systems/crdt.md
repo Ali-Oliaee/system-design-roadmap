@@ -1,0 +1,10 @@
+---
+title: "CRDT"
+titleEn: "CRDT"
+summary: "انواع داده‌ای که ویرایش‌های هم‌زمان را بدون هماهنگی و به‌شکل قطعی ادغام می‌کنند. هستهٔ ویرایش مشارکتی."
+section: "distributed-systems"
+order: 14
+done: false
+---
+
+<!-- stub:auto -->

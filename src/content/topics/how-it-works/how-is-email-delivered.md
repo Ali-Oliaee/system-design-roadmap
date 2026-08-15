@@ -1,0 +1,10 @@
+---
+title: "ایمیل چطور تحویل داده می‌شود؟"
+titleEn: "How is Email Delivered?"
+summary: ""
+section: "how-it-works"
+order: 2
+done: false
+---
+
+<!-- stub:auto -->

@@ -1,0 +1,10 @@
+---
+title: "پارتیشن داغ"
+titleEn: "Hot partition / hotspot"
+summary: "یک شارد یا کلید که سهم نامتناسبی از ترافیک می‌گیرد. با نمک‌زدن کلید یا شاردینگ دوباره حل می‌شود."
+section: "data-storage-concepts"
+order: 21
+done: false
+---
+
+<!-- stub:auto -->

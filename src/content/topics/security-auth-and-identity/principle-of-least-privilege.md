@@ -1,0 +1,10 @@
+---
+title: "اصل کمترین دسترسی"
+titleEn: "Principle of least privilege"
+summary: "کمترین دسترسی لازم را، برای کوتاه‌ترین زمان بده. ارزان‌ترین راه کوچک‌کردن شعاع انفجار."
+section: "security-auth-and-identity"
+order: 16
+done: false
+---
+
+<!-- stub:auto -->

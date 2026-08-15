@@ -1,0 +1,10 @@
+---
+title: "AirTag چطور کار می‌کند؟"
+titleEn: "How do AirTags work?"
+summary: ""
+section: "how-it-works"
+order: 1
+done: false
+---
+
+<!-- stub:auto -->

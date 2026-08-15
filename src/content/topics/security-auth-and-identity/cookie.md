@@ -1,0 +1,10 @@
+---
+title: "کوکی"
+titleEn: "Cookie"
+summary: "کلید/مقدار کوچکی که مرورگر با هر درخواست می‌فرستد. پرچم‌های Secure، HttpOnly، SameSite، Domain و Path تعیین می‌کنند چقدر امن است."
+section: "security-auth-and-identity"
+order: 4
+done: false
+---
+
+<!-- stub:auto -->

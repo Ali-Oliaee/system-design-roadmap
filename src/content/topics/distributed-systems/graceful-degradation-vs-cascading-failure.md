@@ -1,0 +1,10 @@
+---
+title: "افت کنترل‌شده در برابر خرابی آبشاری"
+titleEn: "Graceful degradation vs cascading failure"
+summary: "رهاکردن زودهنگام بار، هسته را زنده نگه می‌دارد؛ صف بی‌کران و تلاش مجدد، یک سرویس کند را به قطعی کامل تبدیل می‌کند."
+section: "distributed-systems"
+order: 26
+done: false
+---
+
+<!-- stub:auto -->

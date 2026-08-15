@@ -1,0 +1,10 @@
+---
+title: "استخر اتصال"
+titleEn: "Connection pool"
+summary: "مجموعه‌ای محدود از اتصال‌های قابل‌استفادهٔ مجدد. خیلی کوچک اپ را گرسنه می‌گذارد، خیلی بزرگ پایگاه داده را ذوب می‌کند."
+section: "data-storage-concepts"
+order: 19
+done: false
+---
+
+<!-- stub:auto -->

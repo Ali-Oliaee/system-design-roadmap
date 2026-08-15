@@ -1,0 +1,5 @@
+dist/
+node_modules/
+.astro/
+.DS_Store
+src/content/i18n/_missing.json

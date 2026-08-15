@@ -1,0 +1,10 @@
+---
+title: "دست‌دهی سه‌مرحله‌ای"
+titleEn: "Three-way handshake"
+summary: "SYN، SYN-ACK، ACK — برقراری اتصال TCP. پیش از جریان هر داده‌ای یک RTT هزینه دارد."
+section: "networking-and-protocols"
+order: 6
+done: false
+---
+
+<!-- stub:auto -->

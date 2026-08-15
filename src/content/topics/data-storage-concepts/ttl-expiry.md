@@ -1,0 +1,10 @@
+---
+title: "TTL و انقضا"
+titleEn: "TTL / expiry"
+summary: "حذف خودکار پس از یک بازه. سیاست نگه‌داری ارزان برای نشست، کش و دادهٔ سری‌زمانی."
+section: "data-storage-concepts"
+order: 35
+done: false
+---
+
+<!-- stub:auto -->

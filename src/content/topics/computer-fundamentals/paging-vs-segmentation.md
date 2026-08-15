@@ -1,0 +1,10 @@
+---
+title: "صفحه‌بندی در برابر قطعه‌بندی حافظه"
+titleEn: "Paging vs Segmentation"
+summary: ""
+section: "computer-fundamentals"
+order: 1
+done: false
+---
+
+<!-- stub:auto -->

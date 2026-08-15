@@ -1,0 +1,10 @@
+---
+title: "فشار برگشتی"
+titleEn: "Backpressure"
+summary: "وقتی مصرف‌کننده عقب می‌ماند، به بالادست علامت کندشدن بدهید؛ نه اینکه آن‌قدر بافر کنید تا حافظه تمام شود."
+section: "real-time-and-messaging"
+order: 21
+done: false
+---
+
+<!-- stub:auto -->

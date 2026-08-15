@@ -1,0 +1,10 @@
+---
+title: "BASE"
+titleEn: "BASE"
+summary: "اساساً در دسترس، حالت نرم، سازگاری نهایی — جایگزین عمل‌گرایانه برای ذخیره‌سازهای توزیع‌شدهٔ بزرگ."
+section: "data-storage-concepts"
+order: 5
+done: false
+---
+
+<!-- stub:auto -->

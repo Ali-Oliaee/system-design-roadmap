@@ -1,0 +1,10 @@
+---
+title: "انفجار کاردینالیتی"
+titleEn: "Cardinality explosion"
+summary: "برچسب‌های پرتنوع (شناسهٔ کاربر، URL دارای شناسه) سری‌های زمانی را چند برابر می‌کنند تا صورت‌حساب متریک از خود اپ بیشتر شود."
+section: "observability-and-delivery"
+order: 7
+done: false
+---
+
+<!-- stub:auto -->

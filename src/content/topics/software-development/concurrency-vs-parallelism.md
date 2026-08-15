@@ -1,0 +1,10 @@
+---
+title: "همروندی در برابر موازی‌سازی"
+titleEn: "Concurrency vs Parallelism"
+summary: ""
+section: "software-development"
+order: 25
+done: false
+---
+
+<!-- stub:auto -->

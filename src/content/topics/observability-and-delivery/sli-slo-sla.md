@@ -1,0 +1,10 @@
+---
+title: "SLI، SLO و SLA"
+titleEn: "SLI / SLO / SLA"
+summary: "آنچه اندازه می‌گیرید، هدفی که درون‌سازمانی متعهد می‌شوید، و قراردادی که بیرون با جریمه می‌بندید."
+section: "observability-and-delivery"
+order: 1
+done: false
+---
+
+<!-- stub:auto -->

@@ -1,0 +1,199 @@
+---
+import '../styles/global.css';
+import Sidebar from '../components/Sidebar.astro';
+import TopBar from '../components/TopBar.astro';
+import { url } from '../lib/nav';
+
+interface Crumb { label: string; href?: string }
+interface Props {
+  title: string;
+  description?: string;
+  crumbs?: Crumb[];
+  activeSection?: string;
+  activeTopic?: string;
+}
+
+const {
+  title,
+  description = 'نقشه‌راه طراحی سیستم — دسته‌بندی‌شده، فارسی و قابل جست‌وجو.',
+  crumbs = [],
+  activeSection,
+  activeTopic,
+} = Astro.props;
+
+const fullTitle = title === 'خانه' ? 'نقشه‌راه طراحی سیستم' : `${title} — نقشه‌راه طراحی سیستم`;
+const canonical = new URL(Astro.url.pathname, Astro.site ?? 'https://example.com');
+---
+
+<!doctype html>
+<html lang="fa" dir="rtl" data-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+
+    <link rel="icon" href={url('assets/favicon.svg')} type="image/svg+xml" />
+    <link rel="icon" href={url('assets/favicon-32.png')} sizes="32x32" type="image/png" />
+    <link rel="apple-touch-icon" href={url('assets/apple-touch-icon.png')} />
+    <link rel="manifest" href={url('site.webmanifest')} />
+
+    <meta name="theme-color" content="#0B1120" media="(prefers-color-scheme:dark)" />
+    <meta name="theme-color" content="#F6F8FC" media="(prefers-color-scheme:light)" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="fa_IR" />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+
+    <!-- پوسته پیش از رنگ‌آمیزی صفحه اعمال می‌شود تا پرشِ سفید نبینیم -->
+    <script is:inline>
+      (() => {
+        const saved = localStorage.getItem('theme');
+        const sys = matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+        document.documentElement.dataset.theme = saved || sys;
+      })();
+    </script>
+  </head>
+
+  <body>
+    <a class="skip" href="#content">پرش به محتوا</a>
+
+    <div class="shell">
+      <Sidebar activeSection={activeSection} activeTopic={activeTopic} />
+
+      <div class="main">
+        <TopBar crumbs={crumbs} />
+        <main class="container" id="content">
+          <slot />
+        </main>
+      </div>
+    </div>
+
+    <script>
+      const html = document.documentElement;
+      const body = document.body;
+
+      document.getElementById('themeToggle')?.addEventListener('click', () => {
+        const next = html.dataset.theme === 'dark' ? 'light' : 'dark';
+        html.dataset.theme = next;
+        localStorage.setItem('theme', next);
+      });
+
+      const scrim = document.getElementById('sidebarScrim');
+      const setNav = (open: boolean) => {
+        body.dataset.nav = open ? 'open' : '';
+        document.getElementById('navToggle')?.setAttribute('aria-expanded', String(open));
+        if (scrim) scrim.hidden = !open;
+      };
+      setNav(false);
+      document.getElementById('navToggle')?.addEventListener('click', () => setNav(body.dataset.nav !== 'open'));
+      scrim?.addEventListener('click', () => setNav(false));
+
+      // --- جست‌وجو: Pagefind فقط بعد از بیلد ساخته می‌شود، پس تنبل و با تگ script ---
+      // (pagefind-ui.js یک IIFE است که window.PagefindUI را ست می‌کند، نه ES module)
+      const dialog = document.getElementById('searchDialog') as HTMLDialogElement | null;
+      let booted = false;
+
+      const loadAsset = (tag: 'script' | 'link', url: string) =>
+        new Promise<void>((resolve, reject) => {
+          const el = document.createElement(tag);
+          el.onload = () => resolve();
+          el.onerror = () => reject(new Error(url));
+          if (el instanceof HTMLLinkElement) {
+            el.rel = 'stylesheet';
+            el.href = url;
+          } else {
+            (el as HTMLScriptElement).src = url;
+          }
+          document.head.append(el);
+        });
+
+      async function openSearch() {
+        if (!dialog) return;
+        if (!booted) {
+          booted = true;
+          // BASE_URL بسته به تنظیمات ممکن است اسلش پایانی نداشته باشد
+          const base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
+          try {
+            await Promise.all([
+              loadAsset('link', `${base}pagefind/pagefind-ui.css`),
+              loadAsset('script', `${base}pagefind/pagefind-ui.js`),
+            ]);
+            const PagefindUI = (window as any).PagefindUI;
+            if (!PagefindUI) throw new Error('PagefindUI missing');
+            new PagefindUI({ element: '#pagefind', showSubResults: true, translations: {
+              placeholder: 'جست‌وجو در موضوع‌ها…',
+              zero_results: 'چیزی برای «[SEARCH_TERM]» پیدا نشد',
+              many_results: '[COUNT] نتیجه برای «[SEARCH_TERM]»',
+              one_result: 'یک نتیجه برای «[SEARCH_TERM]»',
+              searching: 'در حال جست‌وجوی «[SEARCH_TERM]»…',
+              load_more: 'نتایج بیشتر',
+              clear_search: 'پاک کردن',
+            } });
+          } catch {
+            const box = document.getElementById('pagefind');
+            if (box) box.textContent = 'جست‌وجو فقط روی نسخهٔ بیلدشده کار می‌کند (npm run build).';
+          }
+        }
+        dialog.showModal();
+        dialog.querySelector<HTMLInputElement>('input')?.focus();
+      }
+
+      document.getElementById('searchTrigger')?.addEventListener('click', openSearch);
+      dialog?.addEventListener('click', (e) => {
+        if (e.target === dialog) dialog.close();
+      });
+
+      addEventListener('keydown', (e) => {
+        if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') {
+          e.preventDefault();
+          openSearch();
+        }
+        if (e.key === 'Escape') setNav(false);
+      });
+    </script>
+
+    <style is:global>
+      .skip {
+        position: absolute;
+        inset-inline-start: -9999px;
+        top: var(--sp-2);
+        z-index: var(--z-toast);
+        padding: var(--sp-2) var(--sp-4);
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+      }
+      .skip:focus { inset-inline-start: var(--sp-4); }
+
+      /*
+        هماهنگ‌سازی رابط Pagefind با توکن‌های ما.
+        روی #pagefind تعریف می‌شود نه :root — چون pagefind-ui.css بعد از استایل ما
+        تزریق می‌شود و :root خودش برنده می‌شد.
+      */
+      #pagefind {
+        --pagefind-ui-primary: var(--accent-text);
+        --pagefind-ui-text: var(--text);
+        --pagefind-ui-background: var(--surface);
+        --pagefind-ui-border: var(--border);
+        --pagefind-ui-tag: var(--surface-2);
+        --pagefind-ui-border-width: 1px;
+        --pagefind-ui-border-radius: var(--radius);
+        --pagefind-ui-font: var(--font-sans);
+      }
+      #pagefind .pagefind-ui__search-input {
+        background: var(--surface-2);
+        color: var(--text);
+        font-size: 15px;
+      }
+      #pagefind .pagefind-ui__search-clear { background: transparent; color: var(--text-dim); }
+      #pagefind .pagefind-ui__result { border-top-color: var(--border); }
+      #pagefind .pagefind-ui__result-title a { color: var(--text); font-weight: 600; }
+      #pagefind .pagefind-ui__result-excerpt { color: var(--text-muted); font-size: 13.5px; }
+      #pagefind mark { background: var(--mark-bg); color: var(--mark-text); border-radius: 4px; }
+      #pagefind .pagefind-ui__message { color: var(--text-dim); font-size: 13px; }
+    </style>
+  </body>
+</html>

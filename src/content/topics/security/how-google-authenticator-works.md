@@ -1,0 +1,10 @@
+---
+title: "Google Authenticator چطور کار می‌کند؟"
+titleEn: "How Google Authenticator Works"
+summary: ""
+section: "security"
+order: 26
+done: false
+---
+
+<!-- stub:auto -->

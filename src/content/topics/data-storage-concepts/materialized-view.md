@@ -1,0 +1,10 @@
+---
+title: "نمای مادی‌شده"
+titleEn: "Materialized view"
+summary: "نتیجهٔ کوئریِ از پیش محاسبه و ذخیره‌شده که زمان‌بندی‌شده یا تدریجی تازه می‌شود. تازگی را با سرعت خواندن معامله می‌کند."
+section: "data-storage-concepts"
+order: 29
+done: false
+---
+
+<!-- stub:auto -->

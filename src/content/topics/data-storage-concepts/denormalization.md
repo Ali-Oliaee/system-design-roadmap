@@ -1,0 +1,10 @@
+---
+title: "غیرنرمال‌سازی"
+titleEn: "Denormalization"
+summary: "تکرار داده برای حذف JOIN در مسیر خواندن. تأخیر می‌خرد و پیچیدگی نوشتن و سازگاری هزینه می‌دهد."
+section: "data-storage-concepts"
+order: 30
+done: false
+---
+
+<!-- stub:auto -->

@@ -1,0 +1,10 @@
+---
+title: "پردازه در برابر نخ: تفاوت‌های کلیدی"
+titleEn: "Process vs Thread: Key Differences"
+summary: ""
+section: "computer-fundamentals"
+order: 8
+done: false
+---
+
+<!-- stub:auto -->

@@ -1,0 +1,10 @@
+---
+title: "شاردینگ"
+titleEn: "Sharding"
+summary: "تقسیم داده بین پایگاه‌های دادهٔ مستقل بر اساس کلید. کلید شارد را برای توزیع یکنواخت و محلی‌بودن کوئری انتخاب کنید."
+section: "data-storage-concepts"
+order: 20
+done: false
+---
+
+<!-- stub:auto -->

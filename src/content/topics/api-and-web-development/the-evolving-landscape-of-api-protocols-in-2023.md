@@ -1,0 +1,12 @@
+---
+title: "چشم‌انداز در حال تغییر پروتکل‌های API"
+titleEn: "The Evolving Landscape of API Protocols in 2023"
+summary: "مروری بر GraphQL، REST، وب‌هوک، SOAP، WebSocket، gRPC، MQTT، AMQP، SSE، معماری رویدادمحور، Idempotency، حذف نرم و قطعی، ارتباط تمام‌دوطرفه، فریم و پیام، ping/pong، عقب‌نشینی نمایی، پولینگ و میزان وابستگی."
+section: "api-and-web-development"
+order: 49
+done: true
+telegram: "https://t.me/daily_tech_stuff/6"
+source: "https://bytebytego.com/guides/the-evolving-landscape-of-api-protocols-in-2023/"
+---
+
+<!-- stub:auto -->

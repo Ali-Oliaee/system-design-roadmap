@@ -1,0 +1,216 @@
+---
+import Icon from './Icon.astro';
+import { getNav, getStats, sectionUrl, topicUrl, url } from '../lib/nav';
+
+interface Props {
+  activeSection?: string;
+  activeTopic?: string;
+}
+const { activeSection, activeTopic } = Astro.props;
+
+const nav = await getNav();
+const stats = await getStats();
+
+// نوار کناری فقط پیش‌نمایش می‌دهد؛ فهرست کامل در صفحهٔ دسته است.
+// (۷۷۲ لینک در هر صفحه یعنی HTML چند صد کیلوبایتی — نمی‌ارزد.)
+const PREVIEW = 6;
+
+function preview(topics: typeof nav[number]['sections'][number]['topics']) {
+  const head = topics.slice(0, PREVIEW);
+  const active = topics.find((t) => t.id.endsWith(`/${activeTopic}`));
+  if (active && !head.includes(active)) head.push(active);
+  return head;
+}
+---
+
+<aside class="sidebar" id="sidebar" aria-label="فهرست بخش‌ها">
+  <a class="brand" href={url()}>
+    <span class="brand__mark"><Icon name="check" size={20} /></span>
+    <span>
+      <strong>طراحی سیستم</strong>
+      <small class="dim">{stats.total} موضوع · {stats.sections} دسته</small>
+    </span>
+  </a>
+
+  <nav class="tree">
+    {nav.map((group) => (
+      <section class="group">
+        <h2 class="group__title">{group.title}</h2>
+
+        {group.sections.map((s) => {
+          const open = s.slug === activeSection;
+          const shown = open ? preview(s.topics) : [];
+          return (
+            <details class="sec" open={open}>
+              <summary class="sec__head" data-active={open ? '' : undefined}>
+                <Icon name={s.data.icon} size={17} />
+                <span class="sec__name">{s.data.title}</span>
+                <span class="sec__count ltr">{s.done}/{s.total}</span>
+                <Icon name="chevron" size={15} class="sec__caret" />
+              </summary>
+
+              <ul class="sec__list">
+                <li>
+                  <a href={sectionUrl(s.slug)} class="sec__link" aria-current={activeSection === s.slug && !activeTopic ? 'page' : undefined}>
+                    نمای کلی
+                  </a>
+                </li>
+                {shown.map((t) => (
+                  <li>
+                    <a
+                      href={topicUrl(t)}
+                      class="sec__link"
+                      aria-current={t.id.endsWith(`/${activeTopic}`) ? 'page' : undefined}
+                    >
+                      <span class="sec__linkText">{t.data.title}</span>
+                      {t.data.done && <span class="dot" aria-label="دارای محتوا"></span>}
+                    </a>
+                  </li>
+                ))}
+                {open && s.topics.length > PREVIEW && (
+                  <li>
+                    <a href={sectionUrl(s.slug)} class="sec__more">
+                      دیدن همهٔ {s.total} موضوع
+                    </a>
+                  </li>
+                )}
+              </ul>
+            </details>
+          );
+        })}
+      </section>
+    ))}
+  </nav>
+
+  <div class="sidebar__foot card">
+    <p class="dim">پوشش محتوا</p>
+    <div class="bar"><i style={`width:${stats.pct}%`}></i></div>
+    <p class="ltr" style="text-align:end">{stats.done} / {stats.total} — {stats.pct}%</p>
+  </div>
+</aside>
+
+<div class="scrim" id="sidebarScrim" hidden></div>
+
+<script>
+  // نوار کناری بلند است؛ بدون این، آیتم فعال معمولاً زیر خط تا می‌ماند
+  const active = document.querySelector('#sidebar [aria-current="page"], #sidebar [data-active]');
+  active?.scrollIntoView({ block: 'center' });
+</script>
+
+<style>
+  .sidebar {
+    position: sticky;
+    top: 0;
+    align-self: start;
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    gap: var(--sp-4);
+    padding: var(--sp-4);
+    border-inline-start: 1px solid var(--border);
+    background: color-mix(in srgb, var(--surface) 72%, transparent);
+    backdrop-filter: blur(10px);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+  }
+
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: var(--sp-3);
+    color: var(--text);
+    padding: var(--sp-2);
+    border-radius: var(--radius);
+  }
+  .brand:hover { text-decoration: none; background: var(--surface-2); }
+  .brand strong { display: block; line-height: 1.5; }
+  .brand small { display: block; font-size: 12px; line-height: 1.4; }
+  .brand__mark {
+    display: grid;
+    place-items: center;
+    width: 38px; height: 38px;
+    border-radius: 11px;
+    background: linear-gradient(140deg, var(--accent), var(--info));
+    color: #04121f;
+    flex: none;
+  }
+
+  .tree { display: flex; flex-direction: column; gap: var(--sp-5); flex: 1; }
+  .group__title {
+    margin: 0 0 var(--sp-2);
+    padding-inline: var(--sp-2);
+    font-size: 11.5px;
+    font-weight: 600;
+    letter-spacing: .04em;
+    color: var(--text-dim);
+    text-transform: uppercase;
+  }
+
+  .sec { border-radius: var(--radius); }
+  .sec__head {
+    display: flex;
+    align-items: center;
+    gap: var(--sp-2);
+    padding: 8px var(--sp-2);
+    border-radius: var(--radius);
+    color: var(--text-muted);
+    cursor: pointer;
+    list-style: none;
+    user-select: none;
+  }
+  .sec__head::-webkit-details-marker { display: none; }
+  .sec__head:hover { background: var(--surface-2); color: var(--text); }
+  .sec__head[data-active] { background: var(--accent-soft); color: var(--accent-text); }
+  .sec__name { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 14.5px; }
+  .sec__count { font-size: 12px; color: var(--text-dim); flex: none; }
+  .sec__caret { flex: none; transition: transform var(--dur) var(--ease); transform: rotate(180deg); }
+  .sec[open] .sec__caret { transform: rotate(90deg); }
+
+  .sec__list { list-style: none; margin: var(--sp-1) 0 0; padding: 0 var(--sp-4) 0 0; }
+  .sec__list::before { content: none; }
+  .sec__link {
+    display: flex;
+    align-items: center;
+    gap: var(--sp-2);
+    padding: 5px var(--sp-3);
+    margin-inline-end: var(--sp-2);
+    border-radius: var(--radius-sm);
+    color: var(--text-muted);
+    font-size: 13.6px;
+    border-inline-end: 2px solid transparent;
+  }
+  .sec__link:hover { background: var(--surface-2); color: var(--text); text-decoration: none; }
+  .sec__link[aria-current='page'] {
+    color: var(--accent-text);
+    background: var(--accent-soft);
+    border-inline-end-color: var(--accent);
+  }
+  .sec__linkText { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .sec__more { display: block; padding: 5px var(--sp-3); font-size: 13px; color: var(--info); }
+  .dot { width: 6px; height: 6px; border-radius: 99px; background: var(--accent); flex: none; }
+
+  .sidebar__foot { padding: var(--sp-3) var(--sp-4); font-size: 12.5px; }
+  .sidebar__foot p { margin: 0 0 var(--sp-2); }
+  .bar { height: 6px; border-radius: 99px; background: var(--surface-3); overflow: hidden; margin-bottom: var(--sp-2); }
+  .bar i { display: block; height: 100%; background: linear-gradient(90deg, var(--accent), var(--info)); }
+
+  .scrim {
+    position: fixed; inset: 0; z-index: var(--z-overlay);
+    background: var(--scrim); border: 0;
+  }
+
+  @media (max-width: 1023px) {
+    .sidebar {
+      position: fixed;
+      inset-block: 0;
+      /* در RTL، inline-start همان لبهٔ راست است — کشو از سمت راست می‌آید */
+      inset-inline-start: 0;
+      width: min(320px, 86vw);
+      z-index: var(--z-modal);
+      transform: translateX(100%);
+      transition: transform var(--dur) var(--ease);
+      background: var(--surface);
+    }
+    :global(body[data-nav='open']) .sidebar { transform: none; }
+  }
+</style>

@@ -1,0 +1,10 @@
+---
+title: "پهنای باند، توان عملیاتی و داده‌های مفید"
+titleEn: "Bandwidth vs throughput vs goodput"
+summary: "ظرفیت لوله، در برابر آنچه واقعاً جاری می‌شود، در برابر بایت‌های مفید اپلیکیشن پس از سربار و ارسال مجدد."
+section: "networking-and-protocols"
+order: 12
+done: false
+---
+
+<!-- stub:auto -->

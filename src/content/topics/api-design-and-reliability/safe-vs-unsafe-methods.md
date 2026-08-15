@@ -1,0 +1,10 @@
+---
+title: "متدهای امن در برابر ناامن"
+titleEn: "Safe vs unsafe methods"
+summary: "متدهای امن (GET، HEAD، OPTIONS) نباید حالت را تغییر دهند — پراکسی‌ها و خزنده‌ها روی همین حساب می‌کنند."
+section: "api-design-and-reliability"
+order: 3
+done: false
+---
+
+<!-- stub:auto -->

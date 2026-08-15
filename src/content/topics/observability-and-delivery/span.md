@@ -1,0 +1,10 @@
+---
+title: "Span (بازهٔ ترِیس)"
+titleEn: "Span"
+summary: "یک عملیات زمان‌دار درون یک ترِیس، با رابطهٔ والد/فرزند و ویژگی‌ها."
+section: "observability-and-delivery"
+order: 6
+done: false
+---
+
+<!-- stub:auto -->

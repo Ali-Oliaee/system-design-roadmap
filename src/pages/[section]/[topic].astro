@@ -1,0 +1,274 @@
+---
+import { getCollection, render, type CollectionEntry } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import Icon from '../../components/Icon.astro';
+import Tabs from '../../components/Tabs.astro';
+import type { Tab } from '../../lib/types';
+import { getNav, refId, sectionUrl, topicSlug, topicUrl } from '../../lib/nav';
+
+export async function getStaticPaths() {
+  const topics = await getCollection('topics', (t) => import.meta.env.DEV || !t.data.draft);
+  return topics.map((topic) => ({
+    params: { section: refId(topic.data.section), topic: topic.id.split('/').pop()! },
+    props: { topic },
+  }));
+}
+
+type Props = { topic: CollectionEntry<'topics'> };
+const { topic } = Astro.props;
+const d = topic.data;
+const sectionSlug = refId(d.section);
+
+const nav = await getNav();
+const section = nav.flatMap((g) => g.sections).find((s) => s.slug === sectionSlug)!;
+const siblings = section.topics;
+const idx = siblings.findIndex((t) => t.id === topic.id);
+const prev = siblings[idx - 1];
+const next = siblings[idx + 1];
+
+const { Content, headings } = await render(topic);
+const toc = headings.filter((h) => h.depth === 2 || h.depth === 3);
+const hasBody = toc.length > 0 || (topic.body ?? '').replace(/<!--[\s\S]*?-->/g, '').trim().length > 0;
+
+const related = siblings
+  .filter((t) => t.id !== topic.id && d.related.includes(topicSlug(t)))
+  .concat(d.related.length ? [] : siblings.filter((t) => t.id !== topic.id).slice(0, 4));
+
+const tabs: Tab[] = [{ id: 'overview', label: 'نمای کلی', icon: 'book' }];
+if (toc.length) tabs.push({ id: 'contents', label: 'سرفصل‌ها', icon: 'list', count: toc.length });
+if (d.resources.length) tabs.push({ id: 'resources', label: 'منابع', icon: 'link', count: d.resources.length });
+if (d.videos.length) tabs.push({ id: 'videos', label: 'ویدیوها', icon: 'play', count: d.videos.length });
+if (d.cheatsheet.length) tabs.push({ id: 'cheatsheet', label: 'برگهٔ تقلب', icon: 'flask', count: d.cheatsheet.length });
+if (d.faq.length) tabs.push({ id: 'faq', label: 'پرسش و پاسخ', icon: 'help', count: d.faq.length });
+
+const fmt = new Intl.DateTimeFormat('fa-IR', { dateStyle: 'medium' });
+---
+
+<Base
+  title={d.title}
+  description={d.summary || `${d.title} — بخشی از ${section.data.title} در نقشه‌راه طراحی سیستم.`}
+  activeSection={sectionSlug}
+  activeTopic={topicSlug(topic)}
+  crumbs={[
+    { label: section.data.title, href: sectionUrl(sectionSlug) },
+    { label: d.title },
+  ]}
+>
+  <article data-pagefind-body>
+    <header class="head">
+      <div class="head__icon"><Icon name={d.icon ?? section.data.icon} size={28} /></div>
+
+      <div class="head__body">
+        <h1>{d.title}</h1>
+        {d.titleEn && d.titleEn !== d.title && <p class="head__en ltr dim">{d.titleEn}</p>}
+        {d.summary && <p class="head__summary muted">{d.summary}</p>}
+
+        <div class="head__meta">
+          <span class={`chip ${d.done ? 'chip--done' : ''}`}>
+            {d.done ? <Icon name="check" size={13} /> : <Icon name="cog" size={13} />}
+            {d.done ? 'پوشش‌داده‌شده' : 'در دست تکمیل'}
+          </span>
+          {d.tags.map((t) => <span class="chip">{t}</span>)}
+          {d.updated && <span class="chip">آخرین بروزرسانی: {fmt.format(d.updated)}</span>}
+        </div>
+
+        {(d.telegram || d.source) && (
+          <div class="head__links">
+            {d.telegram && (
+              <a class="btn btn--accent" href={d.telegram} target="_blank" rel="noopener">
+                <Icon name="telegram" size={16} /> پست تلگرام
+              </a>
+            )}
+            {d.source && (
+              <a class="btn" href={d.source} target="_blank" rel="noopener">
+                <Icon name="link" size={16} /> منبع اصلی
+              </a>
+            )}
+          </div>
+        )}
+      </div>
+    </header>
+
+    <Tabs tabs={tabs} />
+
+    <div class="panels">
+      <section id="panel-overview" role="tabpanel" aria-labelledby="tab-overview">
+        {hasBody ? (
+          <div class="prose"><Content /></div>
+        ) : (
+          <div class="empty card">
+            <Icon name="flask" size={22} />
+            <p><strong>این صفحه هنوز محتوای فارسی ندارد.</strong></p>
+            <p class="muted">لینک‌های بالا فعلاً مرجع اصلی‌اند.</p>
+            <p class="muted">
+              برای نوشتن محتوا فایل <code class="ltr">src/content/topics/{topic.id}.md</code> را ویرایش کنید.
+            </p>
+          </div>
+        )}
+      </section>
+
+      {toc.length > 0 && (
+        <section id="panel-contents" role="tabpanel" aria-labelledby="tab-contents" hidden>
+          <ol class="toc">
+            {toc.map((h) => (
+              <li data-depth={h.depth}><a href={`#${h.slug}`}>{h.text}</a></li>
+            ))}
+          </ol>
+        </section>
+      )}
+
+      {d.resources.length > 0 && (
+        <section id="panel-resources" role="tabpanel" aria-labelledby="tab-resources" hidden>
+          <ul class="links">
+            {d.resources.map((r) => (
+              <li class="card">
+                <a href={r.url} target="_blank" rel="noopener">
+                  <Icon name="link" size={16} />
+                  <span>
+                    <strong>{r.title}</strong>
+                    {r.note && <em class="muted">{r.note}</em>}
+                  </span>
+                  <span class="chip">{r.kind}</span>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
+      {d.videos.length > 0 && (
+        <section id="panel-videos" role="tabpanel" aria-labelledby="tab-videos" hidden>
+          <ul class="links">
+            {d.videos.map((v) => (
+              <li class="card">
+                <a href={v.url} target="_blank" rel="noopener">
+                  <Icon name="play" size={16} />
+                  <span>
+                    <strong>{v.title}</strong>
+                    {v.note && <em class="muted">{v.note}</em>}
+                  </span>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
+      {d.cheatsheet.length > 0 && (
+        <section id="panel-cheatsheet" role="tabpanel" aria-labelledby="tab-cheatsheet" hidden>
+          <div class="table-scroll">
+            <table class="sheet">
+              <thead><tr><th>اصطلاح</th><th>معنی</th></tr></thead>
+              <tbody>
+                {d.cheatsheet.map((c) => (
+                  <tr><td class="sheet__term">{c.term}</td><td>{c.meaning}</td></tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </section>
+      )}
+
+      {d.faq.length > 0 && (
+        <section id="panel-faq" role="tabpanel" aria-labelledby="tab-faq" hidden>
+          {d.faq.map((f) => (
+            <details class="faq card">
+              <summary>{f.q}</summary>
+              <p class="muted">{f.a}</p>
+            </details>
+          ))}
+        </section>
+      )}
+    </div>
+
+    <nav class="pager" aria-label="موضوع قبلی و بعدی">
+      {prev ? (
+        <a class="pager__link card" href={topicUrl(prev)}>
+          <small class="dim">قبلی</small>
+          <strong>{prev.data.title}</strong>
+        </a>
+      ) : <span></span>}
+      {next && (
+        <a class="pager__link card pager__link--next" href={topicUrl(next)}>
+          <small class="dim">بعدی</small>
+          <strong>{next.data.title}</strong>
+        </a>
+      )}
+    </nav>
+
+    {related.length > 0 && (
+      <section class="related">
+        <h2>موضوع‌های مرتبط</h2>
+        <ul>
+          {related.slice(0, 6).map((t) => (
+            <li><a href={topicUrl(t)}><Icon name={section.data.icon} size={15} />{t.data.title}</a></li>
+          ))}
+        </ul>
+      </section>
+    )}
+  </article>
+</Base>
+
+<style>
+  .head { display: flex; gap: var(--sp-5); margin-bottom: var(--sp-6); }
+  .head__icon {
+    display: grid; place-items: center;
+    width: 84px; height: 84px; flex: none;
+    border-radius: var(--radius-lg);
+    background: var(--surface-2);
+    border: 1px solid var(--border);
+    color: var(--accent-text);
+  }
+  .head__body { min-width: 0; }
+  .head h1 { margin: 0; font-size: clamp(1.6rem, 3.4vw, 2.3rem); line-height: 1.45; }
+  .head__en { margin: 2px 0 0; font-size: 13px; }
+  .head__summary { margin: var(--sp-3) 0 0; max-width: 68ch; }
+  .head__meta { display: flex; flex-wrap: wrap; gap: var(--sp-2); margin-top: var(--sp-4); }
+  .head__links { display: flex; flex-wrap: wrap; gap: var(--sp-2); margin-top: var(--sp-4); }
+
+  @media (max-width: 640px) {
+    .head { gap: var(--sp-4); }
+    .head__icon { width: 56px; height: 56px; }
+  }
+
+  .empty { padding: var(--sp-6); text-align: center; color: var(--text-muted); }
+  .empty p { margin: var(--sp-2) 0 0; }
+
+  .toc { margin: 0; padding: 0; list-style: none; counter-reset: toc; }
+  .toc li { border-inline-start: 2px solid var(--border); }
+  .toc li[data-depth='3'] { padding-inline-start: var(--sp-5); }
+  .toc a { display: block; padding: 8px var(--sp-4); color: var(--text-muted); }
+  .toc a:hover { color: var(--accent-text); background: var(--surface-2); text-decoration: none; }
+
+  .links { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--sp-3); }
+  .links a {
+    display: flex; align-items: center; gap: var(--sp-3);
+    padding: var(--sp-4); color: var(--text);
+  }
+  .links a:hover { text-decoration: none; color: var(--accent-text); }
+  .links span { flex: 1; min-width: 0; }
+  .links strong { display: block; font-weight: 500; }
+  .links em { display: block; font-size: 13px; font-style: normal; }
+
+  .sheet { width: 100%; border-collapse: collapse; }
+  .sheet th, .sheet td { border: 1px solid var(--border); padding: var(--sp-3); text-align: start; vertical-align: top; }
+  .sheet th { background: var(--surface-2); font-weight: 600; }
+  .sheet__term { white-space: nowrap; color: var(--accent-text); }
+
+  .faq { padding: var(--sp-3) var(--sp-4); margin-bottom: var(--sp-3); }
+  .faq summary { cursor: pointer; font-weight: 500; }
+  .faq p { margin: var(--sp-3) 0 0; }
+
+  .pager { display: grid; grid-template-columns: 1fr 1fr; gap: var(--sp-3); margin-top: var(--sp-7); }
+  .pager__link { display: block; padding: var(--sp-4); color: var(--text); }
+  .pager__link:hover { text-decoration: none; border-color: var(--border-strong); }
+  .pager__link small { display: block; font-size: 12px; }
+  .pager__link--next { text-align: end; }
+  @media (max-width: 640px) { .pager { grid-template-columns: 1fr; } }
+
+  .related { margin-top: var(--sp-6); }
+  .related h2 { font-size: 1.05rem; margin: 0 0 var(--sp-3); }
+  .related ul { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--sp-1); grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); }
+  .related a { display: flex; align-items: center; gap: var(--sp-2); padding: 8px var(--sp-3); border-radius: var(--radius-sm); color: var(--text-muted); font-size: 14px; }
+  .related a:hover { background: var(--surface-2); color: var(--text); text-decoration: none; }
+</style>

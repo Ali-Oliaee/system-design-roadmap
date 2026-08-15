@@ -1,0 +1,10 @@
+---
+title: "الگوی Saga"
+titleEn: "Saga"
+summary: "یک تراکنش بلندمدت به‌شکل زنجیره‌ای از تراکنش‌های محلی، با کنش‌های جبرانی هنگام خطا."
+section: "distributed-systems"
+order: 16
+done: false
+---
+
+<!-- stub:auto -->

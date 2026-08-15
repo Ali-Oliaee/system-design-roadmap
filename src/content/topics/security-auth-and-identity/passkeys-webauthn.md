@@ -1,0 +1,10 @@
+---
+title: "Passkey و WebAuthn"
+titleEn: "Passkeys / WebAuthn"
+summary: "اعتبارنامه‌های کلید عمومی که به مبدأ گره خورده و در احرازکنندهٔ دستگاه ذخیره می‌شوند. مقاوم در برابر فیشینگ و بدون رمز."
+section: "security-auth-and-identity"
+order: 14
+done: false
+---
+
+<!-- stub:auto -->

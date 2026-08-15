@@ -1,0 +1,10 @@
+---
+title: "نوتیفیکیشن چطور به گوشی و رایانه می‌رسد؟"
+titleEn: "How are Notifications Pushed to Our Phones or PCs?"
+summary: ""
+section: "how-it-works"
+order: 15
+done: false
+---
+
+<!-- stub:auto -->

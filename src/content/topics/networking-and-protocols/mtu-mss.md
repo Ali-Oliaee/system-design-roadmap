@@ -1,0 +1,10 @@
+---
+title: "MTU و MSS"
+titleEn: "MTU / MSS"
+summary: "MTU بزرگ‌ترین فریمی است که یک لینک می‌پذیرد (معمولاً ۱۵۰۰ بایت)؛ MSS بزرگ‌ترین بار TCP است که بدون تکه‌تکه شدن جا می‌شود."
+section: "networking-and-protocols"
+order: 5
+done: false
+---
+
+<!-- stub:auto -->

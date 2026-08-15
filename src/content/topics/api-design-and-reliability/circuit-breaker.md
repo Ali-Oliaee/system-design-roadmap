@@ -1,0 +1,10 @@
+---
+title: "قطع‌کنندهٔ مدار"
+titleEn: "Circuit breaker"
+summary: "سه حالت بسته، باز و نیمه‌باز. پس از خطاهای پیاپی فراخوانی وابستگی را قطع می‌کند و بعد بهبود را محک می‌زند."
+section: "api-design-and-reliability"
+order: 10
+done: false
+---
+
+<!-- stub:auto -->

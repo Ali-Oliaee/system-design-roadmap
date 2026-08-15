@@ -1,0 +1,10 @@
+---
+title: "CDC (ثبت تغییرات داده)"
+titleEn: "CDC (change data capture)"
+summary: "جریان‌دادن تغییرات تثبیت‌شدهٔ سطرها از لاگ به سامانه‌های دیگر (جست‌وجو، کش، انبار داده)."
+section: "data-storage-concepts"
+order: 27
+done: false
+---
+
+<!-- stub:auto -->

@@ -1,0 +1,10 @@
+---
+title: "هجوم به کش (Thundering Herd)"
+titleEn: "Cache stampede / thundering herd"
+summary: "یک کلید داغ منقضی می‌شود و هزاران درخواست هم‌زمان به پایگاه داده می‌خورند. با قفل، محاسبهٔ زودهنگام و jitter روی TTL درست می‌شود."
+section: "caching-performance-concepts"
+order: 7
+done: false
+---
+
+<!-- stub:auto -->

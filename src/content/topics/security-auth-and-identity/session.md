@@ -1,0 +1,10 @@
+---
+title: "نشست"
+titleEn: "Session"
+summary: "حالت سمت سرور که با یک کوکی مبهم کلیدگذاری می‌شود. فوری قابل ابطال، اما برای مقیاس به ذخیره‌سازی مشترک نیاز دارد."
+section: "security-auth-and-identity"
+order: 3
+done: false
+---
+
+<!-- stub:auto -->
